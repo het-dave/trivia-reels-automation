@@ -9,88 +9,226 @@
  "audio": null,
  "timeline": {
   "fps": 30,
-  "totalFrames": 2074,
+  "totalFrames": 5354,
   "timerFrames": 90,
   "hook": {
    "from": 0,
-   "dur": 112
+   "dur": 118
   },
   "outro": {
-   "from": 1954,
-   "dur": 120
+   "from": 5241,
+   "dur": 113
   },
   "questions": [
    {
-    "from": 112,
-    "dur": 614,
+    "from": 118,
+    "dur": 539,
     "optionsAt": [
-     181,
-     214,
-     247,
-     280
+     103,
+     132,
+     160,
+     196
     ],
-    "timerAt": 317,
-    "revealAt": 407
+    "timerAt": 225,
+    "revealAt": 315
    },
    {
-    "from": 726,
-    "dur": 614,
+    "from": 657,
+    "dur": 591,
     "optionsAt": [
-     181,
-     214,
-     247,
-     280
+     98,
+     134,
+     165,
+     194
     ],
-    "timerAt": 317,
-    "revealAt": 407
+    "timerAt": 238,
+    "revealAt": 328
    },
    {
-    "from": 1340,
-    "dur": 614,
+    "from": 1248,
+    "dur": 510,
     "optionsAt": [
-     181,
-     214,
-     247,
-     280
+     101,
+     132,
+     161,
+     197
     ],
-    "timerAt": 317,
-    "revealAt": 407
+    "timerAt": 229,
+    "revealAt": 319
+   },
+   {
+    "from": 1758,
+    "dur": 527,
+    "optionsAt": [
+     92,
+     126,
+     166,
+     203
+    ],
+    "timerAt": 238,
+    "revealAt": 328
+   },
+   {
+    "from": 2285,
+    "dur": 628,
+    "optionsAt": [
+     89,
+     139,
+     180,
+     231
+    ],
+    "timerAt": 278,
+    "revealAt": 368
+   },
+   {
+    "from": 2913,
+    "dur": 532,
+    "optionsAt": [
+     77,
+     113,
+     142,
+     177
+    ],
+    "timerAt": 209,
+    "revealAt": 299
+   },
+   {
+    "from": 3445,
+    "dur": 625,
+    "optionsAt": [
+     132,
+     163,
+     191,
+     234
+    ],
+    "timerAt": 278,
+    "revealAt": 368
+   },
+   {
+    "from": 4070,
+    "dur": 526,
+    "optionsAt": [
+     87,
+     114,
+     142,
+     173
+    ],
+    "timerAt": 213,
+    "revealAt": 303
+   },
+   {
+    "from": 4596,
+    "dur": 645,
+    "optionsAt": [
+     129,
+     178,
+     221,
+     279
+    ],
+    "timerAt": 331,
+    "revealAt": 421
    }
   ]
  },
  "questions": [
   {
-   "question": "Which planet in our solar system has the most confirmed moons?",
+   "question": "Which planet in our solar system is closest to the Sun?",
    "options": [
-    "Jupiter",
-    "Saturn",
-    "Uranus",
-    "Neptune"
+    "Mercury",
+    "Mars",
+    "Venus",
+    "Earth"
    ],
-   "answerIndex": 1,
-   "funFact": "Saturn has more than 140 confirmed moons, far more than any other planet."
+   "answerIndex": 0,
+   "funFact": "Mercury has almost no air, so its days are scorching and its nights are freezing."
   },
   {
    "question": "What is the name of the galaxy that contains our solar system?",
    "options": [
-    "Andromeda",
+    "Sombrero",
     "Milky Way",
-    "Triangulum",
-    "Whirlpool"
+    "Whirlpool",
+    "Andromeda"
    ],
    "answerIndex": 1,
-   "funFact": "The Milky Way is about 100,000 light-years across."
+   "funFact": "From inside, we see our galaxy as a faint, milky band of stars across the night sky."
   },
   {
-   "question": "Which spacecraft was the first to land humans on the Moon in nineteen sixty-nine?",
+   "question": "Which planet is famous for its bright, wide rings?",
    "options": [
-    "Apollo 8",
-    "Gemini 4",
-    "Apollo 11",
-    "Vostok 1"
+    "Saturn",
+    "Mercury",
+    "Venus",
+    "Mars"
+   ],
+   "answerIndex": 0,
+   "funFact": "Saturn is so light for its size that it is less dense than water."
+  },
+  {
+   "question": "What is the name of Earth's only natural satellite?",
+   "options": [
+    "Europa",
+    "The Moon",
+    "Titan",
+    "Phobos"
+   ],
+   "answerIndex": 1,
+   "funFact": "The Moon drifts about four centimeters farther from Earth every year."
+  },
+  {
+   "question": "Who was the first human to travel into space?",
+   "options": [
+    "Neil Armstrong",
+    "Buzz Aldrin",
+    "Yuri Gagarin",
+    "John Glenn"
    ],
    "answerIndex": 2,
-   "funFact": "Neil Armstrong and Buzz Aldrin spent about two and a half hours walking on the Moon."
+   "funFact": "His orbit around Earth in 1961 lasted only about one hour and forty-eight minutes."
+  },
+  {
+   "question": "Which planet is known as the Red Planet?",
+   "options": [
+    "Neptune",
+    "Mercury",
+    "Jupiter",
+    "Mars"
+   ],
+   "answerIndex": 3,
+   "funFact": "Mars looks red because its dusty surface contains lots of rust, or iron oxide."
+  },
+  {
+   "question": "Which planet spins on its side, rolling around the Sun like a ball?",
+   "options": [
+    "Saturn",
+    "Mars",
+    "Uranus",
+    "Neptune"
+   ],
+   "answerIndex": 2,
+   "funFact": "Its poles each get about forty-two years of sunlight, then forty-two years of darkness."
+  },
+  {
+   "question": "Which planet is the hottest in our solar system?",
+   "options": [
+    "Jupiter",
+    "Mars",
+    "Mercury",
+    "Venus"
+   ],
+   "answerIndex": 3,
+   "funFact": "Venus is hotter than Mercury because its thick carbon dioxide air traps heat."
+  },
+  {
+   "question": "Which mission first landed humans on the Moon in 1969?",
+   "options": [
+    "Apollo Eleven",
+    "Vostok One",
+    "Apollo Thirteen",
+    "Gemini Four"
+   ],
+   "answerIndex": 0,
+   "funFact": "Two astronauts walked on the Moon's surface for about two and a half hours."
   }
  ]
 }

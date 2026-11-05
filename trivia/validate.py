@@ -6,6 +6,8 @@ from pathlib import Path
 
 import numpy as np
 
+from .audio import lufs
+
 AN_SR = 16000  # analysis sample rate
 
 
@@ -29,7 +31,7 @@ def rms_db(x: np.ndarray) -> float:
     return 20 * np.log10(np.sqrt(np.mean(x.astype(np.float64) ** 2)) + 1e-9) if len(x) else -120.0
 
 
-def check_media(mp4: Path, timeline: dict, max_seconds: float) -> list[str]:
+def check_media(mp4: Path, timeline: dict, max_seconds: float, target_lufs: float) -> list[str]:
     errors = []
     info = probe(mp4)
     v = next((s for s in info["streams"] if s["codec_type"] == "video"), None)
@@ -55,6 +57,15 @@ def check_media(mp4: Path, timeline: dict, max_seconds: float) -> list[str]:
     a_dur = float(a.get("duration") or 0)
     if abs(a_dur - float(v.get("duration") or dur)) > 0.15:
         errors.append(f"audio length {a_dur:.2f}s != video length {v.get('duration')}s")
+    if any(float(st.get("start_time") or 0) != 0 for st in (v, a)):
+        errors.append(f"streams don't start at 0 (video {v.get('start_time')}, audio {a.get('start_time')})")
+    head = mp4.read_bytes()
+    head = head[: head.find(b"mdat")]
+    if b"moov" not in head or b"elst" in head:
+        errors.append("moov atom not before mdat, or edit list present (Instagram rejects both)")
+    loud = lufs(mp4)
+    if abs(loud - target_lufs) > 1.0:
+        errors.append(f"loudness {loud:.1f} LUFS, expected {target_lufs} +/- 1")
     return errors
 
 
@@ -79,6 +90,17 @@ def check_voice(mp4: Path, stem: Path, timeline: dict, events: list[dict]) -> li
     voiced = total - silence_seconds(stem, -40, 0.35)
     if voiced / total < 0.4:
         errors.append(f"voiceover is mostly silence ({voiced:.1f}s of {total:.1f}s voiced)")
+    # A/V sync: every countdown tick must start within 20 ms of its frame.
+    hp = np.convolve(np.abs(np.diff(x, prepend=0)), np.ones(16) / 16, "same")
+    worst = 0.0
+    for e in (e for e in events if e["kind"] == "tick"):
+        t = e["frame"] / fps
+        a, b = int((t - 0.12) * AN_SR), int((t + 0.12) * AN_SR)
+        seg = hp[max(a, 0) : b]
+        if len(seg) and seg.max() > 0:
+            worst = max(worst, abs((max(a, 0) + int(np.argmax(seg > seg.max() * 0.5))) / AN_SR - t))
+    if worst > 0.02:
+        errors.append(f"audio out of sync: tick off by {worst * 1000:.0f} ms")
     # Whole-file silencedetect: no dropout anywhere.
     if silence_seconds(mp4, -50, 1.5) > 0:
         errors.append("final audio contains a silent gap >= 1.5s")
@@ -99,7 +121,7 @@ def check_post(n_questions: int, n_min: int, caption: str) -> list[str]:
 
 
 def validate(mp4: Path, stem: Path, timeline: dict, events: list[dict], n_questions: int, caption: str, cfg: dict) -> list[str]:
-    errors = check_post(n_questions, cfg["questions"]["min"], caption) + check_media(mp4, timeline, cfg["max_duration_seconds"])
+    errors = check_post(n_questions, cfg["questions"]["min"], caption) + check_media(mp4, timeline, cfg["max_duration_seconds"], cfg["mix"]["target_lufs"])
     if not any("audio track" in e for e in errors):
         errors += check_voice(mp4, stem, timeline, events)
     return errors

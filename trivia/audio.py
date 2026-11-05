@@ -1,5 +1,4 @@
 """Master audio: narration + synthesized SFX + ducked music, placed at exact timeline frames, loudness-normalized."""
-import json
 import random
 import subprocess
 import wave
@@ -120,24 +119,33 @@ def mix(events: list[dict], timeline: dict, clip_dir: Path, cfg: dict, out_wav: 
     master = speech + sfx + music[:total]
     _write(out_wav.with_name("speech_stem.wav"), speech)  # narration only, for the validator's silencedetect
     raw = out_wav.with_suffix(".raw.wav")
-    _write(raw, master)
+    _write(raw, master, channels=2)
     loudnorm(raw, out_wav, m["target_lufs"])
 
 
-def _write(path: Path, x: np.ndarray) -> None:
+def _write(path: Path, x: np.ndarray, channels: int = 1) -> None:
     pcm = (np.clip(x, -1, 1) * 32767).astype(np.int16)
+    if channels == 2:
+        pcm = np.repeat(pcm, 2)  # dual mono, so Remotion's stereo AAC keeps the measured loudness
     with wave.open(str(path), "wb") as w:
-        w.setnchannels(1)
+        w.setnchannels(channels)
         w.setsampwidth(2)
         w.setframerate(SR)
         w.writeframes(pcm.tobytes())
 
 
+def lufs(path: Path) -> float:
+    err = subprocess.run(["ffmpeg", "-hide_banner", "-i", str(path), "-af", "ebur128", "-f", "null", "-"], capture_output=True, text=True, check=True).stderr
+    return float(err.rsplit("I:", 1)[1].split("LUFS")[0])
+
+
 def loudnorm(src: Path, dst: Path, target: float) -> None:
-    """Two-pass EBU R128 normalization to `target` LUFS, true peak <= -1.5 dBTP."""
-    base = f"loudnorm=I={target}:TP=-1.5:LRA=11"
-    p1 = subprocess.run(["ffmpeg", "-hide_banner", "-i", str(src), "-af", base + ":print_format=json", "-f", "null", "-"], capture_output=True, text=True, check=True)
-    js = json.loads(p1.stderr[p1.stderr.rindex("{") : p1.stderr.rindex("}") + 1])
-    second = (f"{base}:measured_I={js['input_i']}:measured_TP={js['input_tp']}:measured_LRA={js['input_lra']}"
-              f":measured_thresh={js['input_thresh']}:offset={js['target_offset']}:linear=true")
-    subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(src), "-af", second, "-ar", str(SR), "-ac", "1", "-c:a", "pcm_s16le", str(dst)], check=True)
+    """Gain to `target` LUFS + true-peak limiter at -1.5 dBFS. The limiter shaves a little loudness, so re-measure and correct."""
+    gain = target - lufs(src)
+    for _ in range(3):
+        subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(src), "-af", f"volume={gain:.2f}dB,alimiter=limit=0.84:attack=3:release=50:level=false",
+                        "-ar", str(SR), "-ac", "2", "-c:a", "pcm_s16le", str(dst)], check=True)
+        miss = target - lufs(dst)
+        if abs(miss) <= 0.3:
+            return
+        gain += miss

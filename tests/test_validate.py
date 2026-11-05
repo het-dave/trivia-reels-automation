@@ -39,7 +39,10 @@ def reel(tmp_path_factory):
 
 def encode(out, audio_args, size="1080x1920", seconds=None):
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-f", "lavfi", "-i", f"color=c=purple:s={size}:r=30:d={seconds}", *audio_args,
-                    "-c:v", "libx264", "-preset", "ultrafast", "-pix_fmt", "yuv420p", "-c:a", "aac", "-ar", "48000", "-shortest", str(out)], check=True)
+                    "-c:v", "libx264", "-preset", "ultrafast", "-pix_fmt", "yuv420p", "-c:a", "aac", "-ar", "48000", "-shortest", str(out.with_suffix(".tmp.mp4"))], check=True)
+    # same post-processing as trivia/render.py
+    subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(out.with_suffix(".tmp.mp4")), "-c", "copy", "-bsf:a", "noise=drop=lt(pts\\,0)",
+                    "-movflags", "+faststart+negative_cts_offsets", "-use_editlist", "0", str(out)], check=True)
 
 
 def test_good_reel_passes(reel):
@@ -51,9 +54,9 @@ def test_good_reel_passes(reel):
 
 def test_master_is_loudness_normalized(reel):
     _, d, _, _ = reel
-    err = subprocess.run(["ffmpeg", "-hide_banner", "-i", str(d / "master.wav"), "-af", "ebur128", "-f", "null", "-"], capture_output=True, text=True).stderr
-    integrated = float(err.rsplit("I:", 1)[1].split("LUFS")[0])
-    assert -16 <= integrated <= -12
+    assert abs(audio.lufs(d / "master.wav") - (-14)) <= 0.5
+    peak = subprocess.run(["ffmpeg", "-hide_banner", "-i", str(d / "master.wav"), "-af", "astats", "-f", "null", "-"], capture_output=True, text=True).stderr
+    assert float(peak.rsplit("Peak level dB:", 1)[1].split()[0]) <= -1.0
 
 
 def test_silent_reel_fails(reel):
@@ -73,6 +76,13 @@ def test_missing_audio_wrong_size_and_short_reel_fail(reel):
     errors = validate.validate(d / "mute.mp4", d / "speech_stem.wav", tl, ev, 7, "", cfg)
     joined = " | ".join(errors)
     assert "no audio track" in joined and "resolution" in joined and "only 7 questions" in joined and "empty caption" in joined
+
+
+def test_audio_delay_fails(reel):
+    cfg, d, tl, ev = reel
+    encode(d / "late.mp4", ["-itsoffset", "0.08", "-i", str(d / "master.wav")], seconds=tl["totalFrames"] / 30)
+    errors = validate.validate(d / "late.mp4", d / "speech_stem.wav", tl, ev, 8, "c", cfg)
+    assert any("out of sync" in e for e in errors)
 
 
 def test_duration_mismatch_fails(reel):
