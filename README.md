@@ -67,6 +67,7 @@ Local runs use your logged-in `claude` CLI and need `ffmpeg` installed.
 gh workflow run reels.yml -f mode=dry_run                 # render only, MP4 attached to the run as an artifact
 gh workflow run reels.yml -f mode=dry_run -f force_piper=true   # test the Piper fallback
 gh workflow run reels.yml -f mode=publish_test            # publish one real reel now
+gh workflow run reels.yml -f mode=check_ig                # verify the Instagram token, permissions and account ID
 ```
 
 The job summary shows the TTS engine used, render time, length and permalink.

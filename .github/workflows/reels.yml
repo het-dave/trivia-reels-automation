@@ -7,9 +7,9 @@ on:
   workflow_dispatch:
     inputs:
       mode:
-        description: "dry_run = render only, MP4 uploaded as artifact (no posting). publish_test = publish one real reel now."
+        description: "dry_run = render only, MP4 uploaded as artifact (no posting). publish_test = publish one real reel now. check_ig = verify the Instagram token + account ID."
         type: choice
-        options: [dry_run, publish_test]
+        options: [dry_run, publish_test, check_ig]
         default: dry_run
       force_piper:
         description: "Skip edge-tts and use the Piper fallback (to test it)"
@@ -60,9 +60,16 @@ jobs:
           pip install -q "$(grep -i '^pyyaml' requirements.txt)"
           python -m trivia gate
 
+      - name: Check Instagram token + account ID
+        if: env.MODE == 'check_ig'
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+        run: python3 -m trivia.instagram
+
       - name: Continue?
         id: go
-        run: echo "go=${{ env.MODE != 'schedule' || steps.gate.outputs.work == 'true' }}" >> "$GITHUB_OUTPUT"
+        run: echo "go=${{ env.MODE != 'check_ig' && (env.MODE != 'schedule' || steps.gate.outputs.work == 'true') }}" >> "$GITHUB_OUTPUT"
 
       - name: System packages (ffmpeg + Chrome Headless Shell libs per remotion.dev/docs/miscellaneous/linux-dependencies)
         if: steps.go.outputs.go == 'true'
@@ -132,5 +139,5 @@ jobs:
 
       # Python reports its own failures; this catches setup failures (apt, npm, pip, tests) before it ran.
       - name: Report setup failure
-        if: failure() && steps.run.outcome != 'failure'
+        if: failure() && steps.run.outcome != 'failure' && env.MODE != 'check_ig'
         run: python3 -m trivia.issues "workflow setup failed" "A step before the reel run failed (mode $MODE). See the run log."

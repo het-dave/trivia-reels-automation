@@ -84,3 +84,36 @@ class IG:
         except GraphError:
             permalink = ""
         return {"media_id": media_id, "container_id": cid, "permalink": permalink}
+
+
+def diagnose(version: str = "v27.0") -> int:
+    """`python3 -m trivia.instagram`: check the stored token + account ID. Prints API results, never the token."""
+    import os
+
+    token, uid = os.environ.get("IG_ACCESS_TOKEN", ""), os.environ.get("IG_USER_ID", "").strip()
+    print(f"IG_ACCESS_TOKEN set: {bool(token)} | IG_USER_ID set: {bool(uid)}, {len(uid)} chars, "
+          f"digits only: {uid.isdigit()}, starts with 17841 (professional-account ID format): {uid.startswith('17841')}")
+    if not token:
+        return 1
+    ig = IG(token, uid or "-", version)
+    checks = [
+        ("token owner", "me", {"fields": "name"}),
+        ("granted permissions", "me/permissions", {}),
+        ("Pages + linked Instagram accounts", "me/accounts", {"fields": "name,instagram_business_account{id,username}"}),
+        ("IG_USER_ID -> account", uid or "-", {"fields": "username"}),
+        ("publishing quota", f"{uid or '-'}/content_publishing_limit", {"fields": "quota_usage,config"}),
+    ]
+    ok = True
+    for label, path, params in checks:
+        try:
+            print(f"OK   {label}: {json.dumps(ig._call('GET', f'{ig.graph}/{path}', params))[:800]}")
+        except (AuthError, GraphError) as e:
+            ok = ok and label in ("Pages + linked Instagram accounts",)  # optional: needs pages_show_list
+            print(f"FAIL {label}: {e}")
+    return 0 if ok else 1
+
+
+if __name__ == "__main__":
+    import sys
+
+    sys.exit(diagnose())

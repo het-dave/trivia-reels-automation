@@ -69,11 +69,20 @@ for page in data:
     ask "Paste IG_USER_ID (hidden)"
     IG_ID="$REPLY_SECRET"; REPLY_SECRET=""
   fi
-  NAME="$(graph_get "$TOKEN" "$IG_ID?fields=username" | python3 -c 'import json,sys; print(json.load(sys.stdin).get("username",""))' 2>/dev/null || true)"
+  NAME="$(graph_get "$TOKEN" "$IG_ID?fields=username" | python3 -c '
+import json, sys
+try:
+    r = json.load(sys.stdin)
+except Exception:
+    r = {}
+e = r.get("error", {})
+print(r.get("username") or "ERROR: %s (code %s, subcode %s)" % (e.get("message", "no response"), e.get("code"), e.get("error_subcode")))
+' 2>/dev/null || true)"
   if [ "$(printf '%s' "$NAME" | tr '[:upper:]' '[:lower:]')" = "$HANDLE" ]; then
     echo "  verified: token can read @$NAME" >&2
   else
-    echo "  WARNING: token/ID check did not return @$HANDLE (got '${NAME:-error}'). Check the token's permissions." >&2
+    echo "  WARNING: token/ID check did not return @$HANDLE. Meta said: $NAME" >&2
+    echo "  Diagnose with: gh workflow run reels.yml -f mode=check_ig" >&2
   fi
   if want IG_USER_ID; then put IG_USER_ID "$IG_ID"; fi
   TOKEN=""; IG_ID=""
