@@ -1,0 +1,136 @@
+name: reels
+
+# Only schedule + manual triggers: no pull_request / issues / fork events can ever run with the secrets.
+on:
+  schedule:
+    - cron: "17 3,7,11,15 * * *" # 08:47, 12:47, 16:47, 20:47 IST = slots 1-4
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "dry_run = render only, MP4 uploaded as artifact (no posting). publish_test = publish one real reel now."
+        type: choice
+        options: [dry_run, publish_test]
+        default: dry_run
+      force_piper:
+        description: "Skip edge-tts and use the Piper fallback (to test it)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: reels
+  cancel-in-progress: false
+
+jobs:
+  reel:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    env:
+      MODE: ${{ github.event_name == 'schedule' && 'schedule' || inputs.mode }}
+      GH_TOKEN: ${{ github.token }}
+      PIPER_VOICE_DIR: /home/runner/.cache/piper
+      PYTHONUNBUFFERED: "1"
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Git identity + pre-commit secret scan for state commits
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config core.hooksPath .githooks
+
+      - name: Secret scan (all tracked files)
+        env:
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+        run: python3 scripts/secret_scan.py --all
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Gate (inactive slots exit here)
+        id: gate
+        if: env.MODE == 'schedule'
+        run: |
+          pip install -q "$(grep -i '^pyyaml' requirements.txt)"
+          python -m trivia gate
+
+      - name: Continue?
+        id: go
+        run: echo "go=${{ env.MODE != 'schedule' || steps.gate.outputs.work == 'true' }}" >> "$GITHUB_OUTPUT"
+
+      - name: System packages (ffmpeg + Chrome Headless Shell libs per remotion.dev/docs/miscellaneous/linux-dependencies)
+        if: steps.go.outputs.go == 'true'
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq --no-install-recommends ffmpeg libnss3 libdbus-1-3 libatk1.0-0 libasound2t64 \
+            libxrandr2 libxkbcommon-dev libxfixes3 libxcomposite1 libxdamage1 libgbm-dev libcups2 libcairo2 \
+            libpango-1.0-0 libatk-bridge2.0-0 >/dev/null
+
+      - name: Python deps + tests
+        if: steps.go.outputs.go == 'true'
+        run: |
+          pip install -q -r requirements.txt
+          python -m pytest -q tests
+
+      - uses: actions/setup-node@v7
+        if: steps.go.outputs.go == 'true'
+        with:
+          node-version: "22"
+
+      - name: Cache node_modules (includes Remotion's Chrome Headless Shell)
+        id: nm
+        if: steps.go.outputs.go == 'true'
+        uses: actions/cache@v6
+        with:
+          path: remotion/node_modules
+          key: remotion-nm-${{ runner.os }}-${{ hashFiles('remotion/package-lock.json') }}
+
+      - name: Remotion install + browser
+        if: steps.go.outputs.go == 'true'
+        working-directory: remotion
+        run: |
+          if [ "${{ steps.nm.outputs.cache-hit }}" != "true" ]; then npm ci --no-audit --no-fund; fi
+          npx remotion browser ensure
+
+      - name: Cache Piper voice
+        if: steps.go.outputs.go == 'true'
+        uses: actions/cache@v6
+        with:
+          path: /home/runner/.cache/piper
+          key: piper-en_US-ryan-high-v1
+
+      - name: Piper voice + Claude CLI
+        if: steps.go.outputs.go == 'true'
+        run: |
+          [ -f "$PIPER_VOICE_DIR/en_US-ryan-high.onnx" ] || python -m piper.download_voices en_US-ryan-high --data-dir "$PIPER_VOICE_DIR"
+          npm install -g @anthropic-ai/claude-code --no-audit --no-fund
+          claude --version
+
+      - name: Generate, render, validate, publish
+        id: run
+        if: steps.go.outputs.go == 'true'
+        env:
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+        run: python -m trivia run --mode "$MODE" ${{ inputs.force_piper && '--force-piper' || '' }}
+
+      - name: Upload dry-run reel
+        if: always() && env.MODE == 'dry_run' && steps.go.outputs.go == 'true'
+        uses: actions/upload-artifact@v7
+        with:
+          name: dry-run-reel
+          path: out/*.mp4
+          retention-days: 7
+          if-no-files-found: ignore
+
+      # Python reports its own failures; this catches setup failures (apt, npm, pip, tests) before it ran.
+      - name: Report setup failure
+        if: failure() && steps.run.outcome != 'failure'
+        run: python3 -m trivia.issues "workflow setup failed" "A step before the reel run failed (mode $MODE). See the run log."

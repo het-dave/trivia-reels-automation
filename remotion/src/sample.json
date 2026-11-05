@@ -1,0 +1,96 @@
+{
+ "topic": "Space",
+ "handle": "trivia_quiz_master",
+ "palette": {
+  "bg1": "#0D0624",
+  "bg2": "#2A1066",
+  "accent": "#A78BFA"
+ },
+ "audio": null,
+ "timeline": {
+  "fps": 30,
+  "totalFrames": 2074,
+  "timerFrames": 90,
+  "hook": {
+   "from": 0,
+   "dur": 112
+  },
+  "outro": {
+   "from": 1954,
+   "dur": 120
+  },
+  "questions": [
+   {
+    "from": 112,
+    "dur": 614,
+    "optionsAt": [
+     181,
+     214,
+     247,
+     280
+    ],
+    "timerAt": 317,
+    "revealAt": 407
+   },
+   {
+    "from": 726,
+    "dur": 614,
+    "optionsAt": [
+     181,
+     214,
+     247,
+     280
+    ],
+    "timerAt": 317,
+    "revealAt": 407
+   },
+   {
+    "from": 1340,
+    "dur": 614,
+    "optionsAt": [
+     181,
+     214,
+     247,
+     280
+    ],
+    "timerAt": 317,
+    "revealAt": 407
+   }
+  ]
+ },
+ "questions": [
+  {
+   "question": "Which planet in our solar system has the most confirmed moons?",
+   "options": [
+    "Jupiter",
+    "Saturn",
+    "Uranus",
+    "Neptune"
+   ],
+   "answerIndex": 1,
+   "funFact": "Saturn has more than 140 confirmed moons, far more than any other planet."
+  },
+  {
+   "question": "What is the name of the galaxy that contains our solar system?",
+   "options": [
+    "Andromeda",
+    "Milky Way",
+    "Triangulum",
+    "Whirlpool"
+   ],
+   "answerIndex": 1,
+   "funFact": "The Milky Way is about 100,000 light-years across."
+  },
+  {
+   "question": "Which spacecraft was the first to land humans on the Moon in nineteen sixty-nine?",
+   "options": [
+    "Apollo 8",
+    "Gemini 4",
+    "Apollo 11",
+    "Vostok 1"
+   ],
+   "answerIndex": 2,
+   "funFact": "Neil Armstrong and Buzz Aldrin spent about two and a half hours walking on the Moon."
+  }
+ ]
+}

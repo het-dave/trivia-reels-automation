@@ -1,0 +1,4 @@
+#!/bin/sh
+# Blocks commits containing anything that looks like a secret. Enable once per clone:
+#   git config core.hooksPath .githooks
+exec python3 scripts/secret_scan.py --staged

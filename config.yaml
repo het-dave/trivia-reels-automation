@@ -1,0 +1,74 @@
+# Trivia Reels Automation config. Everything here is public: never put secrets in this file.
+
+account_handle: trivia_quiz_master
+timezone: Asia/Kolkata
+
+# Day 1 of the ramp. null = scheduled posting is OFF (runs exit in seconds).
+# Set to the day after the first successful publish_test.
+start_date: null
+
+# Slot N runs at slot_times_ist[N-1]. Must match the cron in .github/workflows/reels.yml
+# (cron "17 3,7,11,15 * * *" UTC = 08:47, 12:47, 16:47, 20:47 IST).
+slot_times_ist: ["08:47", "12:47", "16:47", "20:47"]
+
+ramp:
+  - {from_day: 1, slots: [2, 4]}        # days 1-14: 2 reels/day
+  - {from_day: 15, slots: [1, 2, 3, 4]} # day 15 onward: 4 reels/day
+max_reels_per_day: 4
+# A run starts another reel (catch-up + current) only if this many minutes remain in its budget.
+run_budget_minutes: 26
+reel_minutes_estimate: 11
+
+# Least-recently-used rotation. With 10 topics a repeat inside 7 days is unavoidable
+# at 2+ reels/day; LRU keeps repeats as far apart as possible.
+topics:
+  Geography:  {bg1: "#1B0B3A", bg2: "#0E4D5C", accent: "#2DD4BF"}
+  Science:    {bg1: "#1B0B3A", bg2: "#0B3D6B", accent: "#38BDF8"}
+  Movies:     {bg1: "#1F0A33", bg2: "#5C0F2E", accent: "#FB7185"}
+  History:    {bg1: "#1E0B36", bg2: "#4A2A0E", accent: "#F59E0B"}
+  Food:       {bg1: "#200A34", bg2: "#5A2A0A", accent: "#FB923C"}
+  Sports:     {bg1: "#1B0B3A", bg2: "#0F4D2A", accent: "#4ADE80"}
+  Space:      {bg1: "#0D0624", bg2: "#2A1066", accent: "#A78BFA"}
+  Animals:    {bg1: "#1C0B38", bg2: "#3F4A0E", accent: "#A3E635"}
+  Technology: {bg1: "#120A3A", bg2: "#0B2F6B", accent: "#60A5FA"}
+  Music:      {bg1: "#1E0838", bg2: "#5B0E5E", accent: "#F472B6"}
+
+questions:
+  target: 10        # aim for this many
+  min: 8            # never publish fewer
+  candidates: 14    # generated before fact-check and dedupe
+
+timer_seconds: 3
+# Instagram's in-app Reel limit. Questions are dropped (never below min) to fit.
+max_duration_seconds: 180
+
+voice:
+  edge: en-US-AndrewNeural
+  piper: en_US-ryan-high
+  edge_attempts: 4
+
+claude:
+  generate_model: sonnet
+  factcheck_model: opus
+  fallback_model: sonnet
+  attempts: 3
+
+mix:
+  tick_db: -18
+  ding_db: -21
+  whoosh_db: -24
+  music_db: -25
+  music_duck_db: -9   # extra reduction under speech
+  target_lufs: -14
+
+render:
+  crf: 20
+  x264_preset: medium
+  concurrency: null   # null = all CPU cores
+
+instagram:
+  graph_version: v27.0
+  status_poll_seconds: 20
+  status_timeout_seconds: 600
+
+hashtags_common: ["trivia", "quiz", "triviaquiz", "quiztime", "generalknowledge", "funfacts", "brainteaser", "triviaquizmaster"]

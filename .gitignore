@@ -1,0 +1,11 @@
+out/
+remotion/node_modules/
+remotion/public/run/
+remotion/out/
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+.env
+.env.*
+.DS_Store
