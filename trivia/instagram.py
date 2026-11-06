@@ -151,8 +151,7 @@ def upload_probe(ig: IG) -> bool:
         return out
 
     # (label, seconds, video bitrate): separates a duration limit from a size limit.
-    specs = [("60s high bitrate", 60, "2600k"), ("89s low bitrate", 89, "150k"), ("95s low bitrate", 95, "150k"),
-             ("120s low bitrate", 120, "150k"), ("176s low bitrate", 176, "150k")]
+    specs = [("4s low bitrate", 4, "300k"), ("60s low bitrate", 60, "150k")]
     variants = []
     for label, secs, rate in specs:
         raw = encode(label.split()[0], secs, ["-b:v", rate, "-maxrate", rate, "-bufsize", rate])
