@@ -6,8 +6,8 @@ timezone: Asia/Kolkata
 # Day 1 of the ramp. null = scheduled posting is OFF (runs exit in seconds).
 start_date: 2026-11-06
 
-# Slot N runs at slot_times_ist[N-1]. Must match the cron in .github/workflows/reels.yml
-# (cron "17 3,7,11,15 * * *" UTC = 08:47, 12:47, 16:47, 20:47 IST).
+# Slot N is due from slot_times_ist[N-1]. The workflow wakes every 30 min (cron "17,47 * * * *" UTC, i.e. :17 and :47 IST),
+# so keep slot times on :17 or :47 and a due slot is published at the next wake.
 slot_times_ist: ["08:47", "12:47", "16:47", "20:47"]
 
 # Add steps to ramp up gradually, e.g. [{from_day: 1, slots: [2, 4]}, {from_day: 15, slots: [1, 2, 3, 4]}].

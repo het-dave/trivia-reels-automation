@@ -158,7 +158,7 @@ def cmd_run(cfg: dict, mode: str, topic: str | None, force_piper: bool) -> int:
     todo = schedule.plan(cfg, now, state.read(state.PUBLISHED, []))
     log(f"slot {schedule.current_slot(cfg, now)}; to publish now: {todo or 'nothing'}")
     failed = 0
-    for slot in todo:
+    for slot in todo[:1]:  # one reel per wake: missed slots are caught up 30 min apart, not back to back
         if not time_left(cfg):
             log(f"time budget reached after {(time.time() - T0) / 60:.0f} min, slot {slot} left for the next run's catch-up")
             break

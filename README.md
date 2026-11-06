@@ -12,7 +12,7 @@ slot gate -> reconcile log with Instagram -> pick topic (least recently used)
 -> Remotion render (1080x1920, 30fps, H.264/AAC) -> validate -> publish -> commit state
 ```
 
-- **Schedule:** `17 3,7,11,15 * * *` UTC = 08:47 / 12:47 / 16:47 / 20:47 IST = slots 1-4. From `start_date` (2026-11-06) all four slots post, 4 reels/day (the `ramp` in config.yaml can stage this). Inactive slots exit in about 15 seconds.
+- **Schedule:** slots 1-4 at 08:47 / 12:47 / 16:47 / 20:47 IST. The workflow wakes every 30 min (`17,47 * * * *` UTC) because GitHub's scheduler drops runs; each wake publishes at most one due slot, so a missed slot is caught up 30 min later instead of being lost. From `start_date` (2026-11-06) all four slots post, 4 reels/day (the `ramp` in config.yaml can stage this). Inactive slots exit in about 15 seconds.
 - **Catch-up:** a missed earlier slot today is filled first, then the current slot. Both respect `max_reels_per_day` and the run's time budget.
 - **Publishing:** Meta fetches each MP4 from a throwaway `media` branch (raw.githubusercontent.com: direct, no redirect, no expiry). The branch is deleted as soon as Meta has processed the file. Direct upload isn't used because Meta's upload host rejects this account's videos longer than about 45-60s.
 - **No double posts:** the log is committed right after `media_publish`. Each run also reconciles the log against the account's recent media.
