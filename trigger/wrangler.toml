@@ -1,0 +1,11 @@
+# Cloudflare Worker that wakes the reels workflow. GitHub's own `schedule` trigger is best-effort and never fired for
+# this repo, so this calls workflow_dispatch (mode=schedule) at :17 and :47 past every hour (UTC = :47 and :17 IST).
+# Deploy + token: scripts/set_trigger.sh
+name = "trivia-reels-trigger"
+main = "worker.js"
+compatibility_date = "2026-10-01"
+workers_dev = false   # no public URL: the Worker only runs on its cron
+preview_urls = false
+
+[triggers]
+crons = ["17,47 * * * *"]

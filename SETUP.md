@@ -39,6 +39,17 @@ After the test reel is live, set `start_date` in `config.yaml` to the next day a
 - Days 1-14: 2 reels/day.
 - From day 15: 4 reels/day.
 
+## 5. Wake-up trigger (Cloudflare Worker)
+
+GitHub's own schedule never fired for this repo, so a free Cloudflare Worker starts the workflow every 30 min.
+Create a fine-grained token at github.com/settings/personal-access-tokens/new: Repository access > Only select
+repositories > `het-dave/trivia-reels-automation`; Repository permissions > Actions: Read and write; the longest
+expiration offered. Then run (logs in to Cloudflare if needed, deploys the Worker, stores the token with hidden input):
+
+```bash
+scripts/set_trigger.sh
+```
+
 ## Yearly
 
 The Claude token expires one year after it was created. You'll get a GitHub Issue when runs start failing. Renew with:
@@ -47,6 +58,8 @@ The Claude token expires one year after it was created. You'll get a GitHub Issu
 claude setup-token
 scripts/set_secrets.sh CLAUDE_CODE_OAUTH_TOKEN
 ```
+
+When the trigger's GitHub token expires (GitHub emails you a week before), create a new one as in step 5 and run `scripts/set_trigger.sh` again.
 
 ## Good to know
 
