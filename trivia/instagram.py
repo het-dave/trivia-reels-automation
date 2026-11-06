@@ -4,6 +4,7 @@ Docs: developers.facebook.com/docs/instagram-platform/content-publishing (checke
 The token only ever travels in the Authorization header, never in URLs or logs.
 """
 import json
+import subprocess
 import time
 import urllib.error
 import urllib.parse
@@ -39,11 +40,13 @@ class IG:
             with urllib.request.urlopen(req, timeout=timeout) as r:
                 return json.loads(r.read() or b"{}")
         except urllib.error.HTTPError as e:
+            raw = e.read()
             try:
-                err = json.loads(e.read()).get("error", {})
+                err = json.loads(raw).get("error", {})
             except ValueError:
                 err = {}
-            msg = f"Graph API HTTP {e.code}: {err.get('message', e.reason)} (code {err.get('code')}, subcode {err.get('error_subcode')})"
+            detail = err.get("message") or raw.decode("utf-8", "replace")[:600] or e.reason
+            msg = f"Graph API HTTP {e.code}: {detail} (code {err.get('code')}, subcode {err.get('error_subcode')})"
             if e.code == 401 or err.get("code") in AUTH_CODES:
                 raise AuthError(msg) from None
             raise GraphError(msg) from None
@@ -55,29 +58,44 @@ class IG:
     def username(self) -> str:
         return self._call("GET", f"{self.graph}/{self.user_id}", {"fields": "username"}).get("username", "")
 
-    def publish_reel(self, mp4: Path, caption: str, cfg: dict, log=print) -> dict:
-        ic = cfg["instagram"]
+    def create_container(self, caption: str) -> tuple[str, str]:
         c = self._call("POST", f"{self.graph}/{self.user_id}/media", {
             "media_type": "REELS", "upload_type": "resumable", "caption": caption, "share_to_feed": "true", "thumb_offset": "1000",
         })
-        cid = c["id"]
-        log(f"  container {cid} created, uploading {mp4.stat().st_size / 1e6:.1f} MB")
-        body = mp4.read_bytes()
-        up = self._call("POST", c.get("uri") or f"{self.rupload}/{cid}", data=body, timeout=600,
-                        headers={"offset": "0", "file_size": str(len(body)), "Content-Type": "application/octet-stream"})
-        if not up.get("success"):
-            raise GraphError(f"upload failed: {up}")
-        deadline = time.time() + ic["status_timeout_seconds"]
+        return c["id"], c.get("uri") or f"{self.rupload}/{c['id']}"
+
+    def upload(self, uri: str, mp4: Path) -> None:
+        """Resumable upload exactly as Meta's example: curl with lowercase `offset` / `file_size` headers.
+        Headers go through stdin (-H @-), so the token never appears in a process list."""
+        hdr = f"Authorization: OAuth {self._token}\noffset: 0\nfile_size: {mp4.stat().st_size}\n"
+        r = subprocess.run(["curl", "-sS", "--max-time", "900", "-X", "POST", uri, "-H", "@-", "--data-binary", f"@{mp4}", "-w", "\n%{http_code}"],
+                           input=hdr, capture_output=True, text=True)
+        if r.returncode != 0:
+            raise GraphError(f"upload failed: curl exit {r.returncode}: {r.stderr.strip()[-300:]}")
+        body, _, code = r.stdout.rpartition("\n")
+        if code != "200" or '"success":true' not in body.replace(" ", ""):
+            msg = f"upload HTTP {code}: {body[:600]}"
+            raise (AuthError if code == "401" or "OAuthException" in body else GraphError)(msg)
+
+    def wait_finished(self, cid: str, timeout_s: int, poll_s: int) -> None:
+        deadline = time.time() + timeout_s
         while True:
             st = self._call("GET", f"{self.graph}/{cid}", {"fields": "status_code,status"})
             code = st.get("status_code")
             if code == "FINISHED":
-                break
+                return
             if code in ("ERROR", "EXPIRED"):
                 raise GraphError(f"container {cid} {code}: {st.get('status')}")
             if time.time() > deadline:
-                raise GraphError(f"container {cid} still {code} after {ic['status_timeout_seconds']}s")
-            time.sleep(ic["status_poll_seconds"])
+                raise GraphError(f"container {cid} still {code} after {timeout_s}s")
+            time.sleep(poll_s)
+
+    def publish_reel(self, mp4: Path, caption: str, cfg: dict, log=print) -> dict:
+        ic = cfg["instagram"]
+        cid, uri = self.create_container(caption)
+        log(f"  container {cid} created, uploading {mp4.stat().st_size / 1e6:.1f} MB")
+        self.upload(uri, mp4)
+        self.wait_finished(cid, ic["status_timeout_seconds"], ic["status_poll_seconds"])
         media_id = self._call("POST", f"{self.graph}/{self.user_id}/media_publish", {"creation_id": cid})["id"]
         try:
             permalink = self._call("GET", f"{self.graph}/{media_id}", {"fields": "permalink"}).get("permalink", "")
@@ -110,7 +128,29 @@ def diagnose(version: str = "v27.0") -> int:
         except (AuthError, GraphError) as e:
             ok = ok and label.startswith(("Pages", "Instagram accounts assigned"))  # optional lookups
             print(f"FAIL {label}: {e}")
+    if ok and "--upload-probe" in __import__("sys").argv:
+        ok = upload_probe(ig)
     return 0 if ok else 1
+
+
+def upload_probe(ig: IG) -> bool:
+    """Upload a 4 s test clip to a container that is never published (Meta drops it after 24 h)."""
+    import tempfile
+
+    mp4 = Path(tempfile.mkdtemp()) / "probe.mp4"
+    subprocess.run(["ffmpeg", "-v", "error", "-y", "-f", "lavfi", "-i", "color=c=0x2B0B57:s=1080x1920:r=30:d=4", "-f", "lavfi", "-i", "sine=f=440:d=4",
+                    "-c:v", "libx264", "-pix_fmt", "yuv420p", "-c:a", "aac", "-shortest", "-movflags", "+faststart", str(mp4)], check=True)
+    try:
+        cid, uri = ig.create_container("upload probe (never published)")
+        print(f"OK   probe container created ({uri.split('/')[2]})")
+        ig.upload(uri, mp4)
+        print("OK   probe upload accepted")
+        ig.wait_finished(cid, 180, 10)
+        print("OK   probe container FINISHED processing (not published)")
+        return True
+    except (AuthError, GraphError) as e:
+        print(f"FAIL upload probe: {e}")
+        return False
 
 
 if __name__ == "__main__":
