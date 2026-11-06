@@ -72,18 +72,33 @@ jobs:
         id: go
         run: echo "go=${{ env.MODE != 'check_ig' && (env.MODE != 'schedule' || steps.gate.outputs.work == 'true') }}" >> "$GITHUB_OUTPUT"
 
-      - name: System packages (ffmpeg + Chrome Headless Shell libs per remotion.dev/docs/miscellaneous/linux-dependencies)
+      # ffmpeg/ffprobe: pinned, checksum-verified static build (FFmpeg 8.1, GitHub Releases) kept in the Actions cache,
+      # so runs don't depend on Ubuntu mirrors. apt is only a fallback.
+      - name: Cache ffmpeg
         if: steps.go.outputs.go == 'true'
-        timeout-minutes: 12
+        uses: actions/cache@v6
+        with:
+          path: /home/runner/.cache/ffmpeg
+          key: ffmpeg-n8.1.3-27-g8dca1586f4-linux64-gpl
+
+      - name: ffmpeg
+        if: steps.go.outputs.go == 'true'
+        timeout-minutes: 10
+        env:
+          FFMPEG_URL: https://github.com/BtbN/FFmpeg-Builds/releases/download/autobuild-2026-10-31-12-59/ffmpeg-n8.1.3-27-g8dca1586f4-linux64-gpl-8.1.tar.xz
+          FFMPEG_SHA256: 41e9c565594c390622cf968d82fa4135d9e9a11d06c1515644288cbc844e3380
         run: |
-          # Bounded: a stalled Ubuntu mirror once ate 27 min of a 30-min job (2026-11-06).
-          # Download with timeouts; if the Azure mirror stalls, retry once on archive.ubuntu.com.
-          APT="apt-get -qq -o Acquire::Retries=3 -o Acquire::http::Timeout=20 -o Acquire::https::Timeout=20"
-          PKGS="ffmpeg libnss3 libdbus-1-3 libatk1.0-0 libasound2t64 libxrandr2 libxkbcommon-dev libxfixes3 libxcomposite1
-                libxdamage1 libgbm-dev libcups2 libcairo2 libpango-1.0-0 libatk-bridge2.0-0"
-          fetch() { sudo timeout 240 $APT update && sudo timeout 240 $APT install -y --no-install-recommends --download-only $PKGS; }
-          fetch || { echo "apt mirror slow, switching to archive.ubuntu.com"; sudo sed -i 's#azure.archive.ubuntu.com#archive.ubuntu.com#g' /etc/apt/sources.list.d/*.sources; fetch; }
-          sudo $APT install -y --no-install-recommends $PKGS >/dev/null
+          D=/home/runner/.cache/ffmpeg
+          if [ ! -x "$D/ffmpeg" ]; then
+            if curl -fsSL --retry 3 --max-time 300 -o /tmp/ff.tar.xz "$FFMPEG_URL" \
+               && echo "$FFMPEG_SHA256  /tmp/ff.tar.xz" | sha256sum -c --quiet - \
+               && mkdir -p "$D" && tar -xJf /tmp/ff.tar.xz -C "$D" --strip-components=2 --wildcards '*/bin/ffmpeg' '*/bin/ffprobe'; then
+              echo "ffmpeg: pinned static build downloaded"
+            else
+              rm -rf "$D"; echo "static ffmpeg unavailable, falling back to apt"; scripts/apt_install.sh ffmpeg
+            fi
+          fi
+          if [ -x "$D/ffmpeg" ]; then echo "$D" >> "$GITHUB_PATH"; fi
 
       - name: Python deps + tests
         if: steps.go.outputs.go == 'true'
@@ -110,6 +125,17 @@ jobs:
         run: |
           if [ "${{ steps.nm.outputs.cache-hit }}" != "true" ]; then npm ci --no-audit --no-fund; fi
           npx remotion browser ensure
+          # Chrome Headless Shell's Linux libs (remotion.dev/docs/miscellaneous/linux-dependencies) ship with the
+          # runner's preinstalled Google Chrome. Verify, and apt-install the documented list only if something's missing.
+          CHS=$(find node_modules/.remotion -type f -name chrome-headless-shell | head -1)
+          MISSING=$(ldd "$CHS" | grep "not found" || true)
+          if [ -n "$MISSING" ]; then
+            echo "missing Chrome libs:"; echo "$MISSING"
+            ../scripts/apt_install.sh libnss3 libdbus-1-3 libatk1.0-0 libasound2t64 libxrandr2 libxkbcommon-dev libxfixes3 \
+              libxcomposite1 libxdamage1 libgbm-dev libcups2 libcairo2 libpango-1.0-0 libatk-bridge2.0-0
+          else
+            echo "Chrome Headless Shell libs: all present"
+          fi
 
       - name: Cache Piper voice
         if: steps.go.outputs.go == 'true'
