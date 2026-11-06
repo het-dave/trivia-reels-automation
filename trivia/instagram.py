@@ -134,23 +134,38 @@ def diagnose(version: str = "v27.0") -> int:
 
 
 def upload_probe(ig: IG) -> bool:
-    """Upload a 4 s test clip to a container that is never published (Meta drops it after 24 h)."""
+    """Upload test clips to containers that are never published (Meta drops them after 24 h).
+    Variants isolate what Meta's upload host accepts: plain encode, our Instagram remux, remux without
+    negative CTS offsets, and a reel-sized file."""
     import tempfile
 
-    mp4 = Path(tempfile.mkdtemp()) / "probe.mp4"
-    subprocess.run(["ffmpeg", "-v", "error", "-y", "-f", "lavfi", "-i", "color=c=0x2B0B57:s=1080x1920:r=30:d=4", "-f", "lavfi", "-i", "sine=f=440:d=4",
-                    "-c:v", "libx264", "-pix_fmt", "yuv420p", "-c:a", "aac", "-shortest", "-movflags", "+faststart", str(mp4)], check=True)
-    try:
-        cid, uri = ig.create_container("upload probe (never published)")
-        print(f"OK   probe container created ({uri.split('/')[2]})")
-        ig.upload(uri, mp4)
-        print("OK   probe upload accepted")
-        ig.wait_finished(cid, 180, 10)
-        print("OK   probe container FINISHED processing (not published)")
-        return True
-    except (AuthError, GraphError) as e:
-        print(f"FAIL upload probe: {e}")
-        return False
+    from .render import instagram_remux
+
+    d = Path(tempfile.mkdtemp())
+
+    def encode(name: str, seconds: int, extra: list[str]) -> Path:
+        out = d / f"{name}.mp4"
+        subprocess.run(["ffmpeg", "-v", "error", "-y", "-f", "lavfi", "-i", f"testsrc2=s=1080x1920:r=30:d={seconds}", "-f", "lavfi", "-i", f"sine=f=440:d={seconds}",
+                        "-c:v", "libx264", "-preset", "veryfast", "-pix_fmt", "yuv420p", *extra, "-c:a", "aac", "-b:a", "128k", "-ar", "48000", "-shortest",
+                        "-movflags", "+faststart", str(out)], check=True)
+        return out
+
+    plain = encode("plain", 20, [])
+    instagram_remux(plain, d / "remux.mp4")
+    instagram_remux(plain, d / "remux_no_negcts.mp4", negative_cts=False)
+    variants = [("plain 20s", plain), ("our remux 20s", d / "remux.mp4"), ("remux without negative CTS 20s", d / "remux_no_negcts.mp4"),
+                ("plain 176s ~20MB", encode("big", 176, ["-b:v", "800k", "-maxrate", "800k", "-bufsize", "1600k"]))]
+    ok = True
+    for label, mp4 in variants:
+        try:
+            cid, uri = ig.create_container(f"upload probe: {label} (never published)")
+            ig.upload(uri, mp4)
+            ig.wait_finished(cid, 150, 10)
+            print(f"OK   probe [{label}, {mp4.stat().st_size / 1e6:.1f} MB]: uploaded + FINISHED (not published)")
+        except (AuthError, GraphError) as e:
+            ok = False
+            print(f"FAIL probe [{label}, {mp4.stat().st_size / 1e6:.1f} MB]: {e}")
+    return ok
 
 
 if __name__ == "__main__":

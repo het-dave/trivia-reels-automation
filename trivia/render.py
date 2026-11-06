@@ -26,11 +26,16 @@ def render(props: dict, master_wav: Path, out_mp4: Path, cfg: dict, log=print) -
     t0 = time.time()
     subprocess.run(cmd, cwd=REMOTION, check=True)
     secs = time.time() - t0
-    # Instagram wants the moov atom up front and no edit lists. Without an edit list, players would play the AAC
-    # priming packets (negative pts, ~43 ms) and delay the B-frame video by 2 frames, so drop the priming packets
-    # and use negative CTS offsets: audio and video both start at exactly 0 (checked by validate.check_sync).
-    subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(raw), "-c", "copy", "-bsf:a", "noise=drop=lt(pts\\,0)",
-                    "-movflags", "+faststart+negative_cts_offsets", "-use_editlist", "0", str(out_mp4)], check=True)
+    instagram_remux(raw, out_mp4)
     raw.unlink()
     log(f"  remotion render: {secs:.0f}s")
     return secs
+
+
+def instagram_remux(src: Path, dst: Path, negative_cts: bool = True) -> None:
+    """Instagram wants the moov atom up front and no edit lists. Without an edit list, players would play the AAC
+    priming packets (negative pts, ~43 ms) and delay the B-frame video by 2 frames, so drop the priming packets
+    and use negative CTS offsets: audio and video both start at exactly 0 (checked by validate.check_media/check_voice)."""
+    flags = "+faststart+negative_cts_offsets" if negative_cts else "+faststart"
+    subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(src), "-c", "copy", "-bsf:a", "noise=drop=lt(pts\\,0)",
+                    "-movflags", flags, "-use_editlist", "0", str(dst)], check=True)
