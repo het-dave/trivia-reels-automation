@@ -154,5 +154,53 @@
   "topic": "Movies",
   "q": "Which ocean liner is the setting of James Cameron's 1997 romantic film?",
   "a": "Titanic"
+ },
+ {
+  "date": "2026-11-06",
+  "topic": "History",
+  "q": "Which ancient civilization built the pyramids of Giza?",
+  "a": "Egyptians"
+ },
+ {
+  "date": "2026-11-06",
+  "topic": "History",
+  "q": "Who was the first president of the United States?",
+  "a": "George Washington"
+ },
+ {
+  "date": "2026-11-06",
+  "topic": "History",
+  "q": "Which wall in northern England was built by Romans to guard their empire's frontier?",
+  "a": "Hadrian's Wall"
+ },
+ {
+  "date": "2026-11-06",
+  "topic": "History",
+  "q": "What was the name of the ship that carried the Pilgrims to America in 1620?",
+  "a": "Mayflower"
+ },
+ {
+  "date": "2026-11-06",
+  "topic": "History",
+  "q": "Which ancient city was home to the famous Colosseum?",
+  "a": "Rome"
+ },
+ {
+  "date": "2026-11-06",
+  "topic": "History",
+  "q": "Which Egyptian queen is famous for ruling alongside Julius Caesar and Mark Antony?",
+  "a": "Cleopatra"
+ },
+ {
+  "date": "2026-11-06",
+  "topic": "History",
+  "q": "What writing system did ancient Mesopotamians press into clay tablets?",
+  "a": "Cuneiform"
+ },
+ {
+  "date": "2026-11-06",
+  "topic": "History",
+  "q": "Whose printing press with movable type began spreading in Europe around 1450?",
+  "a": "Johannes Gutenberg"
  }
 ]
