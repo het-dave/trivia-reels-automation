@@ -41,33 +41,41 @@ if want CLAUDE_CODE_OAUTH_TOKEN; then
   REPLY_SECRET=""
 fi
 
-if want IG_ACCESS_TOKEN || want IG_USER_ID; then
-  echo "IG_ACCESS_TOKEN: your Meta system-user token (Business Settings > System users > Generate token)." >&2
+if [ "$ONLY" = "IG_USER_ID" ]; then
+  # Just the account ID: it's all digits and starts with 17841 (Business Settings > Accounts > Instagram accounts).
+  ask "Paste IG_USER_ID, the 17841... number (hidden)"
+  IG_ID="$(printf '%s' "$REPLY_SECRET" | tr -cd '0-9')"; REPLY_SECRET=""
+  case "$IG_ID" in 17841*) put IG_USER_ID "$IG_ID" ;; *) echo "That isn't an Instagram account ID (all digits, starts with 17841). Nothing stored." >&2; exit 1 ;; esac
+  echo "  verify with: gh workflow run reels.yml -f mode=check_ig" >&2
+elif want IG_ACCESS_TOKEN || want IG_USER_ID; then
+  echo "IG_ACCESS_TOKEN: the never-expiring token from your app's 'API setup with Unified login'." >&2
   ask "Paste IG_ACCESS_TOKEN (hidden)"
   TOKEN="$REPLY_SECRET"; REPLY_SECRET=""
   [ -n "$TOKEN" ] || { echo "No token entered, stopping." >&2; exit 1; }
   if want IG_ACCESS_TOKEN; then put IG_ACCESS_TOKEN "$TOKEN"; fi
 
-  # Try to find the Instagram account ID automatically (needs the Page to be assigned to the system user).
-  IG_ID="$(graph_get "$TOKEN" "me/accounts?fields=instagram_business_account%7Bid,username%7D&limit=100" | python3 -c '
+  # Find the account ID: Unified-login tokens list it under me/assigned_instagram_accounts; Page tokens under me/accounts.
+  FIND='
 import json, sys
 try:
     data = json.load(sys.stdin).get("data", [])
 except Exception:
     data = []
-for page in data:
-    ig = page.get("instagram_business_account") or {}
+for item in data:
+    ig = item.get("instagram_business_account") or item
     if ig.get("username", "").lower() == sys.argv[1].lower():
         print(ig["id"])
         break
-' "$HANDLE" || true)"
+'
+  IG_ID="$(graph_get "$TOKEN" "me/assigned_instagram_accounts?fields=id,username&limit=100" | python3 -c "$FIND" "$HANDLE" || true)"
+  [ -n "$IG_ID" ] || IG_ID="$(graph_get "$TOKEN" "me/accounts?fields=instagram_business_account%7Bid,username%7D&limit=100" | python3 -c "$FIND" "$HANDLE" || true)"
   if [ -n "$IG_ID" ]; then
-    echo "  found Instagram account @$HANDLE automatically" >&2
+    echo "  found @$HANDLE automatically" >&2
   else
-    echo "Couldn't look up the account ID automatically. Find it in Meta Business Settings > Accounts > Instagram accounts" >&2
-    echo "(or the App Dashboard 'API setup with Facebook login' page)." >&2
+    echo "Couldn't find @$HANDLE with this token. Its ID (all digits, starts with 17841) is in" >&2
+    echo "Meta Business Settings > Accounts > Instagram accounts." >&2
     ask "Paste IG_USER_ID (hidden)"
-    IG_ID="$REPLY_SECRET"; REPLY_SECRET=""
+    IG_ID="$(printf '%s' "$REPLY_SECRET" | tr -cd '0-9')"; REPLY_SECRET=""
   fi
   NAME="$(graph_get "$TOKEN" "$IG_ID?fields=username" | python3 -c '
 import json, sys

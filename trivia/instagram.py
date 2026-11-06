@@ -97,7 +97,6 @@ def diagnose(version: str = "v27.0") -> int:
         return 1
     ig = IG(token, uid or "-", version)
     checks = [
-        ("token owner", "me", {"fields": "name"}),
         ("granted permissions", "me/permissions", {}),
         ("Instagram accounts assigned to this token (Unified login)", "me/assigned_instagram_accounts", {"fields": "id,username"}),
         ("Pages + linked Instagram accounts", "me/accounts", {"fields": "name,instagram_business_account{id,username}"}),

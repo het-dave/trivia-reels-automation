@@ -8,12 +8,10 @@ In a terminal, run `claude setup-token`, approve in the browser, and copy the pr
 
 ## 2. Instagram (Meta) token
 
-Your app uses **API setup with Facebook Login** (graph.facebook.com). You need:
-
-- **@trivia_quiz_master** is a Professional (Business or Creator) account linked to a Facebook Page.
-- In Business Settings > System users, a system user assigned to that Page and Instagram account and to your app.
-- A token for that system user with **instagram_basic** and **instagram_content_publish**, expiry "Never".
-  - Optionally add `pages_show_list` so step 3 can find the Instagram account ID automatically. Otherwise you'll be asked to paste it.
+The app "Trivia Reels Publisher" uses **API setup with Unified login** (Facebook Login for Business with a system-user token configuration, graph.facebook.com).
+- Meta issues the token to a hidden *business integration system user*. It never expires and doesn't appear under Business Settings > System users.
+- It needs **instagram_basic** and **instagram_content_publish**.
+- `IG_USER_ID` is the numeric account ID, which starts with `17841` (it is not the @username). Business Settings > Accounts > Instagram accounts shows it, and the script finds it automatically via `me/assigned_instagram_accounts`.
 
 `IG_APP_ID` and `IG_APP_SECRET` are not needed. Nothing refreshes or exchanges the token.
 
