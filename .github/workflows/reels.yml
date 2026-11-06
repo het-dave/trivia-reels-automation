@@ -41,6 +41,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config core.hooksPath .githooks
+          echo "JOB_STARTED=$(date +%s)" >> "$GITHUB_ENV"   # time budget counts from job start (job timeout: 30 min)
 
       - name: Secret scan (all tracked files)
         env:
@@ -73,11 +74,16 @@ jobs:
 
       - name: System packages (ffmpeg + Chrome Headless Shell libs per remotion.dev/docs/miscellaneous/linux-dependencies)
         if: steps.go.outputs.go == 'true'
+        timeout-minutes: 12
         run: |
-          sudo apt-get update -qq
-          sudo apt-get install -y -qq --no-install-recommends ffmpeg libnss3 libdbus-1-3 libatk1.0-0 libasound2t64 \
-            libxrandr2 libxkbcommon-dev libxfixes3 libxcomposite1 libxdamage1 libgbm-dev libcups2 libcairo2 \
-            libpango-1.0-0 libatk-bridge2.0-0 >/dev/null
+          # Bounded: a stalled Ubuntu mirror once ate 27 min of a 30-min job (2026-11-06).
+          # Download with timeouts; if the Azure mirror stalls, retry once on archive.ubuntu.com.
+          APT="apt-get -qq -o Acquire::Retries=3 -o Acquire::http::Timeout=20 -o Acquire::https::Timeout=20"
+          PKGS="ffmpeg libnss3 libdbus-1-3 libatk1.0-0 libasound2t64 libxrandr2 libxkbcommon-dev libxfixes3 libxcomposite1
+                libxdamage1 libgbm-dev libcups2 libcairo2 libpango-1.0-0 libatk-bridge2.0-0"
+          fetch() { sudo timeout 240 $APT update && sudo timeout 240 $APT install -y --no-install-recommends --download-only $PKGS; }
+          fetch || { echo "apt mirror slow, switching to archive.ubuntu.com"; sudo sed -i 's#azure.archive.ubuntu.com#archive.ubuntu.com#g' /etc/apt/sources.list.d/*.sources; fetch; }
+          sudo $APT install -y --no-install-recommends $PKGS >/dev/null
 
       - name: Python deps + tests
         if: steps.go.outputs.go == 'true'

@@ -16,7 +16,7 @@ from pathlib import Path
 from . import config, schedule, state
 from .issues import open_issue, redact
 
-T0 = time.time()
+T0 = float(os.environ.get("JOB_STARTED") or time.time())  # job start in CI, so slow setup counts against the budget
 
 
 class ValidationFailed(RuntimeError):
@@ -92,6 +92,11 @@ def reconcile(ig, cfg: dict, now: datetime, published: list[dict]) -> list[dict]
     return found
 
 
+def time_left(cfg: dict) -> bool:
+    """Only start a reel if it can finish before the job timeout (render + publish ~ reel_minutes_estimate)."""
+    return (time.time() - T0) / 60 + cfg["reel_minutes_estimate"] <= cfg["run_budget_minutes"]
+
+
 def publish_one(cfg: dict, ig, slot: int, kind: str, force_piper: bool) -> None:
     today = config.now(cfg).date()
     topic = state.pick_topic(cfg, state.read(state.TOPICS, {}))
@@ -138,6 +143,8 @@ def cmd_run(cfg: dict, mode: str, topic: str | None, force_piper: bool) -> int:
     ig = IG(os.environ.get("IG_ACCESS_TOKEN", ""), os.environ.get("IG_USER_ID", ""), cfg["instagram"]["graph_version"])
     summary("| run | topic | questions | length | voice | render | link |\n|---|---|---|---|---|---|---|")
     if mode == "publish_test":
+        if not time_left(cfg):
+            raise RuntimeError(f"setup took {(time.time() - T0) / 60:.0f} min, not enough time left to render and publish safely")
         publish_one(cfg, ig, 0, "test", force_piper)
         return 0
 
@@ -152,8 +159,8 @@ def cmd_run(cfg: dict, mode: str, topic: str | None, force_piper: bool) -> int:
     log(f"slot {schedule.current_slot(cfg, now)}; to publish now: {todo or 'nothing'}")
     failed = 0
     for slot in todo:
-        if (time.time() - T0) / 60 + cfg["reel_minutes_estimate"] > cfg["run_budget_minutes"]:
-            log(f"time budget reached, slot {slot} left for the next run")
+        if not time_left(cfg):
+            log(f"time budget reached after {(time.time() - T0) / 60:.0f} min, slot {slot} left for the next run's catch-up")
             break
         try:
             publish_one(cfg, ig, slot, "scheduled", force_piper)
