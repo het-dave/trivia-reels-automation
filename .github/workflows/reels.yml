@@ -9,9 +9,9 @@ on:
   workflow_dispatch:
     inputs:
       mode:
-        description: "dry_run = render only, MP4 uploaded as artifact (no posting). publish_test = publish one real reel now. check_ig = verify the Instagram token + account ID."
+        description: "dry_run = render only, MP4 uploaded as artifact (no posting). publish_test = publish one real reel now. check_ig = verify the Instagram token + account ID. schedule = same as a scheduled wake (publishes a due slot, if any)."
         type: choice
-        options: [dry_run, publish_test, check_ig]
+        options: [dry_run, publish_test, check_ig, schedule]
         default: dry_run
       force_piper:
         description: "Skip edge-tts and use the Piper fallback (to test it)"
