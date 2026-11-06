@@ -1,6 +1,10 @@
-"""Instagram API with Facebook Login (graph.facebook.com) - resumable Reels upload, no public video URL needed.
+"""Instagram API with Unified login / Facebook Login for Business (graph.facebook.com, API v27.0).
 
-Docs: developers.facebook.com/docs/instagram-platform/content-publishing (checked 2026-11, API v27.0).
+Upload path: Meta's direct resumable upload (rupload.facebook.com) rejects this account's videos longer than
+~45-60 s with ProcessingFailedError (probed 2026-11-06: 30 s and 45 s OK, 60 s+ fail), while video_url
+containers accept full-length reels. So each reel is served from a throwaway public `media` branch
+(raw.githubusercontent.com: direct, no redirect, no expiring signature) and the branch is deleted right after.
+
 The token only ever travels in the Authorization header, never in URLs or logs.
 """
 import json
@@ -28,14 +32,14 @@ class IG:
             raise AuthError("IG_ACCESS_TOKEN / IG_USER_ID secrets are not set")
         self._token, self.user_id = token, user_id
         self.graph = f"https://graph.facebook.com/{version}"
-        self.rupload = f"https://rupload.facebook.com/ig-api-upload/{version}"
 
-    def _call(self, method: str, url: str, params: dict | None = None, data: bytes | None = None, headers: dict | None = None, timeout: int = 120) -> dict:
+    def _call(self, method: str, url: str, params: dict | None = None, timeout: int = 120) -> dict:
+        data = None
         if params and method == "GET":
             url += "?" + urllib.parse.urlencode(params)
         elif params:
             data = urllib.parse.urlencode(params).encode()
-        req = urllib.request.Request(url, data=data, method=method, headers={"Authorization": f"OAuth {self._token}", **(headers or {})})
+        req = urllib.request.Request(url, data=data, method=method, headers={"Authorization": f"OAuth {self._token}"})
         try:
             with urllib.request.urlopen(req, timeout=timeout) as r:
                 return json.loads(r.read() or b"{}")
@@ -55,28 +59,10 @@ class IG:
         r = self._call("GET", f"{self.graph}/{self.user_id}/media", {"fields": "id,caption,timestamp,media_product_type", "limit": limit})
         return r.get("data", [])
 
-    def username(self) -> str:
-        return self._call("GET", f"{self.graph}/{self.user_id}", {"fields": "username"}).get("username", "")
-
-    def create_container(self, caption: str, video_url: str | None = None) -> tuple[str, str]:
-        """Resumable container (we upload the bytes), or with video_url Meta fetches the file itself."""
-        params = {"media_type": "REELS", "caption": caption, "share_to_feed": "true", "thumb_offset": "1000"}
-        params.update({"video_url": video_url} if video_url else {"upload_type": "resumable"})
-        c = self._call("POST", f"{self.graph}/{self.user_id}/media", params)
-        return c["id"], c.get("uri") or f"{self.rupload}/{c['id']}"
-
-    def upload(self, uri: str, mp4: Path) -> None:
-        """Resumable upload exactly as Meta's example: curl with lowercase `offset` / `file_size` headers.
-        Headers go through stdin (-H @-), so the token never appears in a process list."""
-        hdr = f"Authorization: OAuth {self._token}\noffset: 0\nfile_size: {mp4.stat().st_size}\n"
-        r = subprocess.run(["curl", "-sS", "--max-time", "900", "-X", "POST", uri, "-H", "@-", "--data-binary", f"@{mp4}", "-w", "\n%{http_code}"],
-                           input=hdr, capture_output=True, text=True)
-        if r.returncode != 0:
-            raise GraphError(f"upload failed: curl exit {r.returncode}: {r.stderr.strip()[-300:]}")
-        body, _, code = r.stdout.rpartition("\n")
-        if code != "200" or '"success":true' not in body.replace(" ", ""):
-            msg = f"upload HTTP {code}: {body[:600]}"
-            raise (AuthError if code == "401" or "OAuthException" in body else GraphError)(msg)
+    def create_container(self, caption: str, video_url: str) -> str:
+        return self._call("POST", f"{self.graph}/{self.user_id}/media", {
+            "media_type": "REELS", "video_url": video_url, "caption": caption, "share_to_feed": "true", "thumb_offset": "1000",
+        })["id"]
 
     def wait_finished(self, cid: str, timeout_s: int, poll_s: int) -> None:
         deadline = time.time() + timeout_s
@@ -91,12 +77,22 @@ class IG:
                 raise GraphError(f"container {cid} still {code} after {timeout_s}s")
             time.sleep(poll_s)
 
+    def prepare(self, mp4: Path, caption: str, timeout_s: int, poll_s: int, log=print) -> str:
+        """Host the file, let Meta fetch + process it, then remove it. Returns a FINISHED container id."""
+        from . import state
+
+        url = state.host_on_media_branch(mp4)
+        try:
+            cid = self.create_container(caption, url)
+            log(f"  container {cid} created from {mp4.stat().st_size / 1e6:.1f} MB file, waiting for Meta to process it")
+            self.wait_finished(cid, timeout_s, poll_s)
+        finally:
+            state.drop_media_branch()
+        return cid
+
     def publish_reel(self, mp4: Path, caption: str, cfg: dict, log=print) -> dict:
         ic = cfg["instagram"]
-        cid, uri = self.create_container(caption)
-        log(f"  container {cid} created, uploading {mp4.stat().st_size / 1e6:.1f} MB")
-        self.upload(uri, mp4)
-        self.wait_finished(cid, ic["status_timeout_seconds"], ic["status_poll_seconds"])
+        cid = self.prepare(mp4, caption, ic["status_timeout_seconds"], ic["status_poll_seconds"], log)
         media_id = self._call("POST", f"{self.graph}/{self.user_id}/media_publish", {"creation_id": cid})["id"]
         try:
             permalink = self._call("GET", f"{self.graph}/{media_id}", {"fields": "permalink"}).get("permalink", "")
@@ -106,8 +102,10 @@ class IG:
 
 
 def diagnose(version: str = "v27.0") -> int:
-    """`python3 -m trivia.instagram`: check the stored token + account ID. Prints API results, never the token."""
+    """`python -m trivia.instagram [--upload-probe]`: check the stored token + account ID (and the upload path).
+    Prints API results, never the token."""
     import os
+    import sys
 
     token, uid = os.environ.get("IG_ACCESS_TOKEN", ""), os.environ.get("IG_USER_ID", "").strip()
     print(f"IG_ACCESS_TOKEN set: {bool(token)} | IG_USER_ID set: {bool(uid)}, {len(uid)} chars, "
@@ -118,7 +116,6 @@ def diagnose(version: str = "v27.0") -> int:
     checks = [
         ("granted permissions", "me/permissions", {}),
         ("Instagram accounts assigned to this token (Unified login)", "me/assigned_instagram_accounts", {"fields": "id,username"}),
-        ("Pages + linked Instagram accounts", "me/accounts", {"fields": "name,instagram_business_account{id,username}"}),
         ("IG_USER_ID -> account", uid or "-", {"fields": "username"}),
         ("publishing quota", f"{uid or '-'}/content_publishing_limit", {"fields": "quota_usage,config"}),
     ]
@@ -127,54 +124,31 @@ def diagnose(version: str = "v27.0") -> int:
         try:
             print(f"OK   {label}: {json.dumps(ig._call('GET', f'{ig.graph}/{path}', params))[:800]}")
         except (AuthError, GraphError) as e:
-            ok = ok and label.startswith(("Pages", "Instagram accounts assigned"))  # optional lookups
+            ok = ok and label.startswith("Instagram accounts assigned")  # optional lookup
             print(f"FAIL {label}: {e}")
-    if ok and "--upload-probe" in __import__("sys").argv:
+    if ok and "--upload-probe" in sys.argv:
         ok = upload_probe(ig)
     return 0 if ok else 1
 
 
 def upload_probe(ig: IG) -> bool:
-    """Upload test clips to containers that are never published (Meta drops them after 24 h).
-    Variants isolate what Meta's upload host accepts: plain encode, our Instagram remux, remux without
-    negative CTS offsets, and a reel-sized file."""
+    """Run the real upload path on a 60 s test clip, up to FINISHED. It is never published (Meta drops it after 24 h)."""
     import tempfile
 
     from .render import instagram_remux
 
     d = Path(tempfile.mkdtemp())
-
-    def encode(name: str, seconds: int, extra: list[str]) -> Path:
-        out = d / f"{name}.mp4"
-        subprocess.run(["ffmpeg", "-v", "error", "-y", "-f", "lavfi", "-i", f"testsrc2=s=1080x1920:r=30:d={seconds}", "-f", "lavfi", "-i", f"sine=f=440:d={seconds}",
-                        "-c:v", "libx264", "-preset", "veryfast", "-pix_fmt", "yuv420p", *extra, "-c:a", "aac", "-b:a", "128k", "-ar", "48000", "-shortest",
-                        "-movflags", "+faststart", str(out)], check=True)
-        return out
-
-    from . import state
-
-    ok = True
-    for label, secs, rate, via_url in [("30s direct upload", 30, "200k", False), ("45s direct upload", 45, "200k", False),
-                                       ("60s via video_url", 60, "200k", True), ("176s via video_url", 176, "200k", True)]:
-        raw = encode(f"p{secs}{'u' if via_url else 'd'}", secs, ["-b:v", rate, "-maxrate", rate, "-bufsize", rate])
-        mp4 = d / f"ig_{raw.name}"
-        instagram_remux(raw, mp4)
-        try:
-            if via_url:
-                url = state.host_on_media_branch(mp4)
-                cid, _ = ig.create_container(f"upload probe: {label} (never published)", video_url=url)
-            else:
-                cid, uri = ig.create_container(f"upload probe: {label} (never published)")
-                ig.upload(uri, mp4)
-            ig.wait_finished(cid, 240, 10)
-            print(f"OK   probe [{label}, {mp4.stat().st_size / 1e6:.1f} MB]: accepted + FINISHED (not published)")
-        except (AuthError, GraphError) as e:
-            ok = False
-            print(f"FAIL probe [{label}, {mp4.stat().st_size / 1e6:.1f} MB]: {e}")
-        finally:
-            if via_url:
-                state.drop_media_branch()
-    return ok
+    subprocess.run(["ffmpeg", "-v", "error", "-y", "-f", "lavfi", "-i", "testsrc2=s=1080x1920:r=30:d=60", "-f", "lavfi", "-i", "sine=f=440:d=60",
+                    "-c:v", "libx264", "-preset", "veryfast", "-b:v", "300k", "-pix_fmt", "yuv420p", "-c:a", "aac", "-ar", "48000", "-shortest",
+                    str(d / "raw.mp4")], check=True)
+    instagram_remux(d / "raw.mp4", d / "probe.mp4")
+    try:
+        ig.prepare(d / "probe.mp4", "upload probe (never published)", 240, 10)
+        print("OK   upload probe: 60 s clip fetched by Meta and FINISHED processing (not published); media branch removed")
+        return True
+    except (AuthError, GraphError, subprocess.CalledProcessError) as e:
+        print(f"FAIL upload probe: {e}")
+        return False
 
 
 if __name__ == "__main__":
