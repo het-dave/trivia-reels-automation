@@ -150,11 +150,14 @@ def upload_probe(ig: IG) -> bool:
                         "-movflags", "+faststart", str(out)], check=True)
         return out
 
-    plain = encode("plain", 20, [])
-    instagram_remux(plain, d / "remux.mp4")
-    instagram_remux(plain, d / "remux_no_negcts.mp4", negative_cts=False)
-    variants = [("plain 20s", plain), ("our remux 20s", d / "remux.mp4"), ("remux without negative CTS 20s", d / "remux_no_negcts.mp4"),
-                ("plain 176s ~20MB", encode("big", 176, ["-b:v", "800k", "-maxrate", "800k", "-bufsize", "1600k"]))]
+    # (label, seconds, video bitrate): separates a duration limit from a size limit.
+    specs = [("60s high bitrate", 60, "2600k"), ("89s low bitrate", 89, "150k"), ("95s low bitrate", 95, "150k"),
+             ("120s low bitrate", 120, "150k"), ("176s low bitrate", 176, "150k")]
+    variants = []
+    for label, secs, rate in specs:
+        raw = encode(label.split()[0], secs, ["-b:v", rate, "-maxrate", rate, "-bufsize", rate])
+        instagram_remux(raw, d / f"ig_{raw.name}")
+        variants.append((label, d / f"ig_{raw.name}"))
     ok = True
     for label, mp4 in variants:
         try:
