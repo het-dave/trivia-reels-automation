@@ -99,6 +99,7 @@ def diagnose(version: str = "v27.0") -> int:
     checks = [
         ("token owner", "me", {"fields": "name"}),
         ("granted permissions", "me/permissions", {}),
+        ("Instagram accounts assigned to this token (Unified login)", "me/assigned_instagram_accounts", {"fields": "id,username"}),
         ("Pages + linked Instagram accounts", "me/accounts", {"fields": "name,instagram_business_account{id,username}"}),
         ("IG_USER_ID -> account", uid or "-", {"fields": "username"}),
         ("publishing quota", f"{uid or '-'}/content_publishing_limit", {"fields": "quota_usage,config"}),
@@ -108,7 +109,7 @@ def diagnose(version: str = "v27.0") -> int:
         try:
             print(f"OK   {label}: {json.dumps(ig._call('GET', f'{ig.graph}/{path}', params))[:800]}")
         except (AuthError, GraphError) as e:
-            ok = ok and label in ("Pages + linked Instagram accounts",)  # optional: needs pages_show_list
+            ok = ok and label.startswith(("Pages", "Instagram accounts assigned"))  # optional lookups
             print(f"FAIL {label}: {e}")
     return 0 if ok else 1
 
