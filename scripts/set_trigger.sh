@@ -20,7 +20,8 @@ code=$(printf 'Authorization: Bearer %s\n' "$TOKEN" | curl -s -o /dev/null -w '%
   -H 'Accept: application/vnd.github+json' "https://api.github.com/repos/$REPO/actions/workflows/reels.yml")
 [ "$code" = 200 ] || { echo "GitHub rejected the token for $REPO (HTTP $code): check its repository access and Actions permission." >&2; exit 1; }
 
-"${WRANGLER[@]}" deploy
+# A brand-new Worker can fail its first deploy with "does not exist" (code 10007) right after upload; once more fixes it.
+"${WRANGLER[@]}" deploy || { sleep 5; "${WRANGLER[@]}" deploy; }
 printf '%s' "$TOKEN" | "${WRANGLER[@]}" secret put GH_DISPATCH_TOKEN
 unset TOKEN
 echo "Done: the Worker wakes the reels workflow at :17 and :47 past every hour (UTC)." >&2
