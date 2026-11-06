@@ -58,10 +58,11 @@ class IG:
     def username(self) -> str:
         return self._call("GET", f"{self.graph}/{self.user_id}", {"fields": "username"}).get("username", "")
 
-    def create_container(self, caption: str) -> tuple[str, str]:
-        c = self._call("POST", f"{self.graph}/{self.user_id}/media", {
-            "media_type": "REELS", "upload_type": "resumable", "caption": caption, "share_to_feed": "true", "thumb_offset": "1000",
-        })
+    def create_container(self, caption: str, video_url: str | None = None) -> tuple[str, str]:
+        """Resumable container (we upload the bytes), or with video_url Meta fetches the file itself."""
+        params = {"media_type": "REELS", "caption": caption, "share_to_feed": "true", "thumb_offset": "1000"}
+        params.update({"video_url": video_url} if video_url else {"upload_type": "resumable"})
+        c = self._call("POST", f"{self.graph}/{self.user_id}/media", params)
         return c["id"], c.get("uri") or f"{self.rupload}/{c['id']}"
 
     def upload(self, uri: str, mp4: Path) -> None:
@@ -150,23 +151,29 @@ def upload_probe(ig: IG) -> bool:
                         "-movflags", "+faststart", str(out)], check=True)
         return out
 
-    # (label, seconds, video bitrate): separates a duration limit from a size limit.
-    specs = [("4s low bitrate", 4, "300k"), ("60s low bitrate", 60, "150k")]
-    variants = []
-    for label, secs, rate in specs:
-        raw = encode(label.split()[0], secs, ["-b:v", rate, "-maxrate", rate, "-bufsize", rate])
-        instagram_remux(raw, d / f"ig_{raw.name}")
-        variants.append((label, d / f"ig_{raw.name}"))
+    from . import state
+
     ok = True
-    for label, mp4 in variants:
+    for label, secs, rate, via_url in [("30s direct upload", 30, "200k", False), ("45s direct upload", 45, "200k", False),
+                                       ("60s via video_url", 60, "200k", True), ("176s via video_url", 176, "200k", True)]:
+        raw = encode(f"p{secs}{'u' if via_url else 'd'}", secs, ["-b:v", rate, "-maxrate", rate, "-bufsize", rate])
+        mp4 = d / f"ig_{raw.name}"
+        instagram_remux(raw, mp4)
         try:
-            cid, uri = ig.create_container(f"upload probe: {label} (never published)")
-            ig.upload(uri, mp4)
-            ig.wait_finished(cid, 150, 10)
-            print(f"OK   probe [{label}, {mp4.stat().st_size / 1e6:.1f} MB]: uploaded + FINISHED (not published)")
+            if via_url:
+                url = state.host_on_media_branch(mp4)
+                cid, _ = ig.create_container(f"upload probe: {label} (never published)", video_url=url)
+            else:
+                cid, uri = ig.create_container(f"upload probe: {label} (never published)")
+                ig.upload(uri, mp4)
+            ig.wait_finished(cid, 240, 10)
+            print(f"OK   probe [{label}, {mp4.stat().st_size / 1e6:.1f} MB]: accepted + FINISHED (not published)")
         except (AuthError, GraphError) as e:
             ok = False
             print(f"FAIL probe [{label}, {mp4.stat().st_size / 1e6:.1f} MB]: {e}")
+        finally:
+            if via_url:
+                state.drop_media_branch()
     return ok
 
 

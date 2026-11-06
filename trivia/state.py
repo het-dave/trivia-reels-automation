@@ -1,10 +1,12 @@
 """Repo-committed state: published log, question history, topic rotation, heartbeat."""
 import json
+import os
 import re
 import subprocess
 import time
 from datetime import date
 from difflib import SequenceMatcher
+from pathlib import Path
 
 from .config import ROOT, STATE
 
@@ -59,8 +61,25 @@ def record_reel(topic: str, questions: list[dict], day: date, entry: dict) -> No
     write(TOPICS, rotation)
 
 
-def _git(*args: str) -> subprocess.CompletedProcess:
-    return subprocess.run(["git", *args], cwd=ROOT, check=True, capture_output=True, text=True)
+def _git(*args: str, stdin: str | None = None) -> subprocess.CompletedProcess:
+    return subprocess.run(["git", *args], cwd=ROOT, check=True, capture_output=True, text=True, input=stdin)
+
+
+MEDIA_BRANCH = "media"
+
+
+def host_on_media_branch(f: Path) -> str:
+    """Push one file as the only content of a throwaway orphan branch and return its raw.githubusercontent.com URL
+    (served directly, no redirect, no expiring signature). Plumbing only: the checked-out branch is untouched."""
+    blob = _git("hash-object", "-w", str(f)).stdout.strip()
+    tree = _git("mktree", stdin=f"100644 blob {blob}\t{f.name}\n").stdout.strip()
+    commit = _git("commit-tree", tree, "-m", "temporary media for Instagram (deleted after publish)").stdout.strip()
+    _git("push", "-f", "origin", f"{commit}:refs/heads/{MEDIA_BRANCH}")
+    return f"https://raw.githubusercontent.com/{os.environ['GITHUB_REPOSITORY']}/{MEDIA_BRANCH}/{f.name}"
+
+
+def drop_media_branch() -> None:
+    subprocess.run(["git", "push", "origin", "--delete", MEDIA_BRANCH], cwd=ROOT, capture_output=True)
 
 
 def commit_push(message: str, attempts: int = 5) -> None:
