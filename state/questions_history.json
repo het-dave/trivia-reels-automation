@@ -1,1 +1,56 @@
-[]
+[
+ {
+  "date": "2026-11-06",
+  "topic": "Geography",
+  "q": "Which is the largest ocean on Earth?",
+  "a": "Pacific Ocean"
+ },
+ {
+  "date": "2026-11-06",
+  "topic": "Geography",
+  "q": "On which continent is the Sahara Desert found?",
+  "a": "Africa"
+ },
+ {
+  "date": "2026-11-06",
+  "topic": "Geography",
+  "q": "What is the capital city of Australia?",
+  "a": "Canberra"
+ },
+ {
+  "date": "2026-11-06",
+  "topic": "Geography",
+  "q": "Which river flows through Cairo, Egypt?",
+  "a": "Nile"
+ },
+ {
+  "date": "2026-11-06",
+  "topic": "Geography",
+  "q": "Which mountain range separates Europe from Asia in Russia?",
+  "a": "Urals"
+ },
+ {
+  "date": "2026-11-06",
+  "topic": "Geography",
+  "q": "What is the smallest country in the world by area?",
+  "a": "Vatican City"
+ },
+ {
+  "date": "2026-11-06",
+  "topic": "Geography",
+  "q": "Which line of latitude is at zero degrees?",
+  "a": "Equator"
+ },
+ {
+  "date": "2026-11-06",
+  "topic": "Geography",
+  "q": "Which country has the most time zones when counting its overseas territories?",
+  "a": "France"
+ },
+ {
+  "date": "2026-11-06",
+  "topic": "Geography",
+  "q": "Lake Titicaca lies on the border of Peru and which other country?",
+  "a": "Bolivia"
+ }
+]
