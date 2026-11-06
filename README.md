@@ -12,7 +12,7 @@ slot gate -> reconcile log with Instagram -> pick topic (least recently used)
 -> Remotion render (1080x1920, 30fps, H.264/AAC) -> validate -> publish -> commit state
 ```
 
-- **Schedule:** `17 3,7,11,15 * * *` UTC = 08:47 / 12:47 / 16:47 / 20:47 IST = slots 1-4. Days 1-14 after `start_date` post slots 2 and 4. From day 15, all four slots post. Inactive slots exit in about 15 seconds.
+- **Schedule:** `17 3,7,11,15 * * *` UTC = 08:47 / 12:47 / 16:47 / 20:47 IST = slots 1-4. From `start_date` (2026-11-06) all four slots post, 4 reels/day (the `ramp` in config.yaml can stage this). Inactive slots exit in about 15 seconds.
 - **Catch-up:** a missed earlier slot today is filled first, then the current slot. Both respect `max_reels_per_day` and the run's time budget.
 - **No double posts:** the log is committed right after `media_publish`. Each run also reconciles the log against the account's recent media.
 - **Voiceover is mandatory.** If edge-tts and Piper both fail, the slot is skipped and an Issue is opened. The validator rejects any reel without narration at the expected timestamps.

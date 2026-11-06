@@ -4,16 +4,15 @@ account_handle: trivia_quiz_master
 timezone: Asia/Kolkata
 
 # Day 1 of the ramp. null = scheduled posting is OFF (runs exit in seconds).
-# Set to the day after the first successful publish_test.
-start_date: null
+start_date: 2026-11-06
 
 # Slot N runs at slot_times_ist[N-1]. Must match the cron in .github/workflows/reels.yml
 # (cron "17 3,7,11,15 * * *" UTC = 08:47, 12:47, 16:47, 20:47 IST).
 slot_times_ist: ["08:47", "12:47", "16:47", "20:47"]
 
+# Add steps to ramp up gradually, e.g. [{from_day: 1, slots: [2, 4]}, {from_day: 15, slots: [1, 2, 3, 4]}].
 ramp:
-  - {from_day: 1, slots: [2, 4]}        # days 1-14: 2 reels/day
-  - {from_day: 15, slots: [1, 2, 3, 4]} # day 15 onward: 4 reels/day
+  - {from_day: 1, slots: [1, 2, 3, 4]} # 4 reels/day from day 1
 max_reels_per_day: 4
 # A run starts another reel (catch-up + current) only if this many minutes remain in its budget.
 run_budget_minutes: 26
