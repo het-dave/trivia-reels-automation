@@ -8,7 +8,7 @@ from datetime import date
 from difflib import SequenceMatcher
 from pathlib import Path
 
-from .config import ROOT, STATE
+from .config import ACCOUNT, ROOT, STATE, state_dir
 
 PUBLISHED = "published.json"
 HISTORY = "questions_history.json"
@@ -17,19 +17,27 @@ HEARTBEAT = "heartbeat.txt"
 FUZZY_DUP = 0.85
 
 
-def read(name: str, default):
-    p = STATE / name
+def read(name: str, default, account: str | None = None):
+    """This job's account state (state/<handle>/), or another account's when `account` is given."""
+    p = (state_dir(account) if account else STATE) / name
     return json.loads(p.read_text()) if p.exists() else default
 
 
 def write(name: str, data) -> None:
-    STATE.mkdir(exist_ok=True)
+    STATE.mkdir(parents=True, exist_ok=True)
     (STATE / name).write_text(json.dumps(data, indent=1, ensure_ascii=False) + "\n")
 
 
+def all_history(cfg: dict) -> list[dict]:
+    """Question history of every account, so the same question is never posted on two accounts."""
+    return [h for a in cfg["all_handles"] for h in read(HISTORY, [], a)]
+
+
 def pick_topic(cfg: dict, rotation: dict) -> str:
-    """Least recently used topic; config order breaks ties."""
+    """Least recently used topic; config order, rotated by the account's topic_shift, breaks ties."""
     topics = list(cfg["topics"])
+    k = cfg.get("topic_shift", 0) % len(topics)
+    topics = topics[k:] + topics[:k]
     return min(topics, key=lambda t: (rotation.get(t, ""), topics.index(t)))
 
 
@@ -65,7 +73,7 @@ def _git(*args: str, stdin: str | None = None) -> subprocess.CompletedProcess:
     return subprocess.run(["git", *args], cwd=ROOT, check=True, capture_output=True, text=True, input=stdin)
 
 
-MEDIA_BRANCH = "media"
+MEDIA_BRANCH = f"media-{ACCOUNT}"  # one per account: accounts can publish in parallel jobs
 
 
 def host_on_media_branch(f: Path) -> str:

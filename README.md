@@ -1,6 +1,6 @@
 # trivia-reels-automation
 
-Generates and publishes narrated trivia Reels to Instagram [@trivia_quiz_master](https://instagram.com/trivia_quiz_master) on a schedule, with no manual steps after setup. Runs on free GitHub Actions minutes (public repo). The only paid component is a Claude subscription.
+Generates and publishes narrated trivia Reels to three Instagram accounts ([@trivia_quiz_master](https://instagram.com/trivia_quiz_master), @triviaquizmaster, @trivia.quiz.master), each in its own parallel job with its own state, on a schedule, with no manual steps after setup. Runs on free GitHub Actions minutes (public repo). The only paid component is a Claude subscription.
 
 ## What each run does
 
@@ -12,9 +12,9 @@ slot gate -> reconcile log with Instagram -> pick topic (least recently used)
 -> Remotion render (1080x1920, 30fps, H.264/AAC) -> validate -> publish -> commit state
 ```
 
-- **Schedule:** slots 1-4 at 08:47 / 12:47 / 16:47 / 20:47 IST. A Cloudflare Worker (`trigger/`, free cron) wakes the workflow every 30 min (`17,47 * * * *` UTC) via workflow_dispatch, because GitHub's own scheduler never fired for this repo; the same GitHub cron stays as a backup (duplicate wakes are harmless: one concurrency group, and the gate sees what's already posted); each wake publishes at most one due slot, so a missed slot is caught up 30 min later instead of being lost. From `start_date` (2026-11-06) all four slots post, 4 reels/day (the `ramp` in config.yaml can stage this). Inactive slots exit in about 15 seconds.
+- **Schedule:** slots 1-4 at 08:47 / 12:47 / 16:47 / 20:47 IST for @trivia_quiz_master; the other accounts are staggered +1 h and +2 h (`accounts` in `config.yaml`). A Cloudflare Worker (`trigger/`, free cron) wakes the workflow every 30 min (`17,47 * * * *` UTC) via workflow_dispatch, because GitHub's own scheduler never fired for this repo; the same GitHub cron stays as a backup (duplicate wakes are harmless: one concurrency group, and the gate sees what's already posted); each wake publishes at most one due slot, so a missed slot is caught up 30 min later instead of being lost. From `start_date` (2026-11-06) all four slots post, 4 reels/day (the `ramp` in config.yaml can stage this). Inactive slots exit in about 15 seconds.
 - **Catch-up:** a missed earlier slot today is filled first, then the current slot. Both respect `max_reels_per_day` and the run's time budget.
-- **Publishing:** Meta fetches each MP4 from a throwaway `media` branch (raw.githubusercontent.com: direct, no redirect, no expiry). The branch is deleted as soon as Meta has processed the file. Direct upload isn't used because Meta's upload host rejects this account's videos longer than about 45-60s.
+- **Publishing:** Meta fetches each MP4 from a throwaway per-account `media-<handle>` branch (raw.githubusercontent.com: direct, no redirect, no expiry). The branch is deleted as soon as Meta has processed the file. Direct upload isn't used because Meta's upload host rejects this account's videos longer than about 45-60s.
 - **No double posts:** the log is committed right after `media_publish`. Each run also reconciles the log against the account's recent media.
 - **Voiceover is mandatory.** If edge-tts and Piper both fail, the slot is skipped and an Issue is opened. The validator rejects any reel without narration at the expected timestamps.
 - **Failures** skip the slot and open a GitHub Issue (GitHub emails you). The same failure is reported at most once per 24 hours.

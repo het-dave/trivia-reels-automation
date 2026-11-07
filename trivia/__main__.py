@@ -51,7 +51,7 @@ def produce(cfg: dict, topic: str, seed: str, force_piper: bool) -> dict:
     work = config.OUT / seed
     work.mkdir(parents=True, exist_ok=True)
     log(f"[1/5] questions: {topic}")
-    qs = questions.get_questions(cfg, topic, state.read(state.HISTORY, []), seed, log)
+    qs = questions.get_questions(cfg, topic, state.all_history(cfg), seed, log)
     log(f"[2/5] voiceover ({len(qs)} questions)")
     n_min = cfg["questions"]["min"]
     engine, durs = tts.synthesize(narration(topic, qs, n_min), work / "clips", cfg, force_piper, log)
@@ -100,7 +100,7 @@ def time_left(cfg: dict) -> bool:
 def publish_one(cfg: dict, ig, slot: int, kind: str, force_piper: bool) -> None:
     today = config.now(cfg).date()
     topic = state.pick_topic(cfg, state.read(state.TOPICS, {}))
-    seed = f"{today.isoformat()}-s{slot}-{topic.lower()}"
+    seed = f"{today.isoformat()}-{cfg['account_handle']}-s{slot}-{topic.lower()}"
     reel = produce(cfg, topic, seed, force_piper)
     log(f"publishing slot {slot}: {topic}")
     res = ig.publish_reel(reel["mp4"], reel["caption"], cfg, log)

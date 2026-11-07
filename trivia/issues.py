@@ -25,7 +25,8 @@ def _fingerprint(title: str) -> str:
 
 
 def open_issue(kind: str, summary: str, details: str = "") -> None:
-    title = redact(f"[reels] {kind}: {summary.splitlines()[0][:90] if summary else 'failure'}")
+    who = f" @{os.environ['TRIVIA_ACCOUNT']}" if os.environ.get("TRIVIA_ACCOUNT") else ""  # per-account: dedupe must not hide another account's failure
+    title = redact(f"[reels{who}] {kind}: {summary.splitlines()[0][:90] if summary else 'failure'}")
     run_url = f"{os.environ.get('GITHUB_SERVER_URL', 'https://github.com')}/{os.environ.get('GITHUB_REPOSITORY', '')}/actions/runs/{os.environ.get('GITHUB_RUN_ID', '')}"
     body = redact(f"**Run:** {run_url}\n**Event:** {os.environ.get('GITHUB_EVENT_NAME', 'local')}\n\n```\n{summary}\n\n{details}\n```"[:60000])
     if not os.environ.get("GITHUB_ACTIONS"):
