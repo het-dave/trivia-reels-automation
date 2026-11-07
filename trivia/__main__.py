@@ -119,6 +119,7 @@ def cmd_gate(cfg: dict) -> int:
     due = schedule.plan(cfg, now, state.read(state.PUBLISHED, []))
     hb = config.STATE / state.HEARTBEAT
     if not hb.exists() or hb.read_text().strip() != now.date().isoformat():
+        hb.parent.mkdir(parents=True, exist_ok=True)  # a new account's state/<handle>/ doesn't exist before its first run
         hb.write_text(now.date().isoformat() + "\n")  # keeps the repo "active" so GitHub never disables the schedule
         state.commit_push(f"state: heartbeat {now.date()}")
     log(f"{now:%Y-%m-%d %H:%M %Z}: slot {schedule.current_slot(cfg, now)}, due {due or 'nothing'}")

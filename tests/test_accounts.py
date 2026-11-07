@@ -41,3 +41,14 @@ def test_pick_topic_still_least_recently_used():
     cfg = config.load(account=HANDLES[1])
     first = state.pick_topic(cfg, {})
     assert state.pick_topic(cfg, {first: "2026-11-07"}) != first
+
+
+def test_gate_creates_a_new_accounts_state_dir(tmp_path, monkeypatch, cfg):
+    from trivia import __main__ as cli
+
+    fresh = tmp_path / "state" / "brand_new_account"  # does not exist yet, like a new account's first wake
+    monkeypatch.setattr(config, "STATE", fresh)
+    monkeypatch.setattr(state, "STATE", fresh)
+    monkeypatch.setattr(state, "commit_push", lambda *a, **k: None)  # no git in the test
+    assert cli.cmd_gate(cfg) == 0
+    assert (fresh / state.HEARTBEAT).read_text().strip() == config.now(cfg).date().isoformat()
