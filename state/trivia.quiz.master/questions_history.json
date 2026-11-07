@@ -52,5 +52,65 @@
   "topic": "Space",
   "q": "What is the name of the largest volcano known in our solar system, found on Mars?",
   "a": "Olympus Mons"
+ },
+ {
+  "date": "2026-11-07",
+  "topic": "Animals",
+  "q": "What do baby kangaroos get called?",
+  "a": "Joeys"
+ },
+ {
+  "date": "2026-11-07",
+  "topic": "Animals",
+  "q": "Which animal is known as the king of the jungle?",
+  "a": "Lion"
+ },
+ {
+  "date": "2026-11-07",
+  "topic": "Animals",
+  "q": "How many legs does a spider have?",
+  "a": "Eight"
+ },
+ {
+  "date": "2026-11-07",
+  "topic": "Animals",
+  "q": "Which bird is famous for being unable to fly and living in Antarctica?",
+  "a": "Penguin"
+ },
+ {
+  "date": "2026-11-07",
+  "topic": "Animals",
+  "q": "What is a group of lions called?",
+  "a": "Pride"
+ },
+ {
+  "date": "2026-11-07",
+  "topic": "Animals",
+  "q": "Which mammal can truly fly?",
+  "a": "Bat"
+ },
+ {
+  "date": "2026-11-07",
+  "topic": "Animals",
+  "q": "What do pandas mainly eat?",
+  "a": "Bamboo"
+ },
+ {
+  "date": "2026-11-07",
+  "topic": "Animals",
+  "q": "What color is the tongue of a giraffe?",
+  "a": "Dark bluish purple"
+ },
+ {
+  "date": "2026-11-07",
+  "topic": "Animals",
+  "q": "How many hearts does an octopus have?",
+  "a": "Three"
+ },
+ {
+  "date": "2026-11-07",
+  "topic": "Animals",
+  "q": "Which animal has fingerprints that are very similar to human ones?",
+  "a": "Koala"
  }
 ]
