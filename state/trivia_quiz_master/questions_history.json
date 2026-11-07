@@ -310,5 +310,59 @@
   "topic": "Sports",
   "q": "Which sport uses a shuttlecock?",
   "a": "Badminton"
+ },
+ {
+  "date": "2026-11-07",
+  "topic": "Space",
+  "q": "What is the name of the star at the center of our solar system?",
+  "a": "The Sun"
+ },
+ {
+  "date": "2026-11-07",
+  "topic": "Space",
+  "q": "Which planet in our solar system is the hottest?",
+  "a": "Venus"
+ },
+ {
+  "date": "2026-11-07",
+  "topic": "Space",
+  "q": "What is the name of Earth's only natural satellite?",
+  "a": "The Moon"
+ },
+ {
+  "date": "2026-11-07",
+  "topic": "Space",
+  "q": "What force keeps the planets orbiting around the Sun?",
+  "a": "Gravity"
+ },
+ {
+  "date": "2026-11-07",
+  "topic": "Space",
+  "q": "What is a huge group of stars, gas, and dust held together by gravity called?",
+  "a": "Galaxy"
+ },
+ {
+  "date": "2026-11-07",
+  "topic": "Space",
+  "q": "Which planet is the farthest from the Sun in our solar system?",
+  "a": "Neptune"
+ },
+ {
+  "date": "2026-11-07",
+  "topic": "Space",
+  "q": "What is the name of Jupiter's huge, long-lasting storm?",
+  "a": "Great Red Spot"
+ },
+ {
+  "date": "2026-11-07",
+  "topic": "Space",
+  "q": "What is the name of the telescope launched in 1990 that orbits Earth?",
+  "a": "Hubble"
+ },
+ {
+  "date": "2026-11-07",
+  "topic": "Space",
+  "q": "Which spacecraft carried the first Apollo astronauts to land on the Moon's surface?",
+  "a": "Eagle"
  }
 ]
