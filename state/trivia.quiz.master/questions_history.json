@@ -112,5 +112,59 @@
   "topic": "Animals",
   "q": "Which animal has fingerprints that are very similar to human ones?",
   "a": "Koala"
+ },
+ {
+  "date": "2026-11-07",
+  "topic": "Technology",
+  "q": "What does a computer mouse mainly control on a screen?",
+  "a": "The cursor"
+ },
+ {
+  "date": "2026-11-07",
+  "topic": "Technology",
+  "q": "Which company created the iPhone?",
+  "a": "Apple"
+ },
+ {
+  "date": "2026-11-07",
+  "topic": "Technology",
+  "q": "What do we call the global network that connects computers around the world?",
+  "a": "The Internet"
+ },
+ {
+  "date": "2026-11-07",
+  "topic": "Technology",
+  "q": "What is the name of the tiny dots that make up digital pictures on a screen?",
+  "a": "Pixels"
+ },
+ {
+  "date": "2026-11-07",
+  "topic": "Technology",
+  "q": "Which inventor is credited with creating the first practical telephone?",
+  "a": "Alexander Graham Bell"
+ },
+ {
+  "date": "2026-11-07",
+  "topic": "Technology",
+  "q": "In a web address, what does the first W in www stand for?",
+  "a": "World"
+ },
+ {
+  "date": "2026-11-07",
+  "topic": "Technology",
+  "q": "What material is most computer chips made from?",
+  "a": "Silicon"
+ },
+ {
+  "date": "2026-11-07",
+  "topic": "Technology",
+  "q": "What was the first artificial satellite sent into orbit called?",
+  "a": "Sputnik"
+ },
+ {
+  "date": "2026-11-07",
+  "topic": "Technology",
+  "q": "In computing, what is the smallest unit of data, which is either zero or one?",
+  "a": "Bit"
  }
 ]
