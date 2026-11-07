@@ -17,21 +17,38 @@ on:
         description: "Skip edge-tts and use the Piper fallback (to test it)"
         type: boolean
         default: false
+      account:
+        description: "Instagram handle to run, or all. Scheduled wakes always run every account."
+        type: string
+        default: all
 
 permissions:
   contents: write
   issues: write
 
-concurrency:
-  group: reels
-  cancel-in-progress: false
-
 jobs:
   reel:
+    name: reel (${{ matrix.handle }})
     runs-on: ubuntu-24.04
     timeout-minutes: 30
+    # One job per Instagram account, in parallel, each with its own state/<handle>/, secrets and media branch.
+    # Keep in sync with `accounts` in config.yaml (tests/test_accounts.py checks).
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - {handle: trivia_quiz_master, suffix: ""}
+          - {handle: triviaquizmaster, suffix: "_2"}
+          - {handle: trivia.quiz.master, suffix: "_3"}
+    concurrency:
+      group: reels-${{ matrix.handle }}
+      cancel-in-progress: false
     env:
       MODE: ${{ github.event_name == 'schedule' && 'schedule' || inputs.mode }}
+      TRIVIA_ACCOUNT: ${{ matrix.handle }}
+      SELECTED: ${{ inputs.account == '' || inputs.account == 'all' || inputs.account == matrix.handle }}
+      IG_USER_ID: ${{ secrets[format('IG_USER_ID{0}', matrix.suffix)] }}
+      IG_ACCESS_TOKEN: ${{ secrets[format('IG_ACCESS_TOKEN{0}', matrix.suffix)] || secrets.IG_ACCESS_TOKEN }}
       GH_TOKEN: ${{ github.token }}
       PIPER_VOICE_DIR: /home/runner/.cache/piper
       PYTHONUNBUFFERED: "1"
@@ -48,7 +65,6 @@ jobs:
       - name: Secret scan (all tracked files)
         env:
           CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
-          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
         run: python3 scripts/secret_scan.py --all
 
       - uses: actions/setup-python@v7
@@ -66,8 +82,8 @@ jobs:
       - name: Continue?
         id: go
         run: |
-          echo "go=${{ env.MODE != 'check_ig' && (env.MODE != 'schedule' || steps.gate.outputs.work == 'true') }}" >> "$GITHUB_OUTPUT"
-          echo "setup=${{ env.MODE == 'check_ig' || env.MODE != 'schedule' || steps.gate.outputs.work == 'true' }}" >> "$GITHUB_OUTPUT"
+          echo "go=${{ env.SELECTED == 'true' && env.MODE != 'check_ig' && (env.MODE != 'schedule' || steps.gate.outputs.work == 'true') }}" >> "$GITHUB_OUTPUT"
+          echo "setup=${{ env.SELECTED == 'true' && (env.MODE == 'check_ig' || env.MODE != 'schedule' || steps.gate.outputs.work == 'true') }}" >> "$GITHUB_OUTPUT"
 
       # ffmpeg/ffprobe: pinned, checksum-verified static build (FFmpeg 8.1, GitHub Releases) kept in the Actions cache,
       # so runs don't depend on Ubuntu mirrors. apt is only a fallback.
@@ -98,10 +114,7 @@ jobs:
           if [ -x "$D/ffmpeg" ]; then echo "$D" >> "$GITHUB_PATH"; fi
 
       - name: Check Instagram token + account ID
-        if: env.MODE == 'check_ig'
-        env:
-          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
-          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+        if: env.MODE == 'check_ig' && env.SELECTED == 'true'
         run: |
           pip install -q "$(grep -i '^pyyaml' requirements.txt)"
           python -m trivia.instagram --upload-probe
@@ -162,15 +175,13 @@ jobs:
         if: steps.go.outputs.go == 'true'
         env:
           CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
-          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
-          IG_USER_ID: ${{ secrets.IG_USER_ID }}
         run: python -m trivia run --mode "$MODE" ${{ inputs.force_piper && '--force-piper' || '' }}
 
       - name: Upload dry-run reel
         if: always() && env.MODE == 'dry_run' && steps.go.outputs.go == 'true'
         uses: actions/upload-artifact@v7
         with:
-          name: dry-run-reel
+          name: dry-run-reel-${{ matrix.handle }}
           path: out/*.mp4
           retention-days: 7
           if-no-files-found: ignore

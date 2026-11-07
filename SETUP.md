@@ -34,10 +34,17 @@ gh workflow run reels.yml -f mode=dry_run        # renders on GitHub, uploads th
 gh workflow run reels.yml -f mode=publish_test   # posts one real reel
 ```
 
-After the test reel is live, set `start_date` in `config.yaml` to the next day and push. From then on everything is automatic:
+After the test reel is live, set that account's `start_date` under `accounts` in `config.yaml` to the next day and push. From then on everything is automatic:
 
 - Days 1-14: 2 reels/day.
 - From day 15: 4 reels/day.
+
+## Adding an Instagram account
+
+1. Make it a Professional account, add it to the business portfolio, and assign it to the app's token (see section 2).
+2. Add it under `accounts` in `config.yaml` (next free `secret_suffix`, slot times on :17/:47 not used by another account, a different `topic_shift`, `start_date: null`) and to the matrix in `.github/workflows/reels.yml`.
+3. `scripts/set_secrets.sh <handle>` (or `scripts/set_secrets.sh <handle> IG_USER_ID` when the existing token already covers it).
+4. `gh workflow run reels.yml -f mode=check_ig -f account=<handle>`, then `-f mode=dry_run`, then `-f mode=publish_test`; then set `start_date`.
 
 ## 5. Wake-up trigger (Cloudflare Worker)
 
@@ -64,5 +71,5 @@ When the trigger's GitHub token expires (GitHub emails you a week before), creat
 ## Good to know
 
 - Failures open GitHub Issues, which GitHub emails you. Make sure notifications are on for this repo (Watch > Participating).
-- To pause posting, set `start_date: null` and push. To stop the workflow entirely: `gh workflow disable reels.yml`.
+- To pause posting, set the account's `start_date: null` and push. To stop the workflow entirely: `gh workflow disable reels.yml`.
 - Royalty-free music dropped into `assets/music/` is used automatically, at -25 dB and ducked under speech.
