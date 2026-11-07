@@ -364,5 +364,59 @@
   "topic": "Space",
   "q": "Which spacecraft carried the first Apollo astronauts to land on the Moon's surface?",
   "a": "Eagle"
+ },
+ {
+  "date": "2026-11-07",
+  "topic": "Animals",
+  "q": "What is a baby frog called?",
+  "a": "Tadpole"
+ },
+ {
+  "date": "2026-11-07",
+  "topic": "Animals",
+  "q": "Which animal is the fastest on land?",
+  "a": "Cheetah"
+ },
+ {
+  "date": "2026-11-07",
+  "topic": "Animals",
+  "q": "What kind of animal is a Komodo dragon?",
+  "a": "Lizard"
+ },
+ {
+  "date": "2026-11-07",
+  "topic": "Animals",
+  "q": "What is a group of fish swimming together called?",
+  "a": "A school"
+ },
+ {
+  "date": "2026-11-07",
+  "topic": "Animals",
+  "q": "What gives flamingos their pink color?",
+  "a": "Their food"
+ },
+ {
+  "date": "2026-11-07",
+  "topic": "Animals",
+  "q": "Which bird can fly backward?",
+  "a": "Hummingbird"
+ },
+ {
+  "date": "2026-11-07",
+  "topic": "Animals",
+  "q": "Which animal lays eggs even though it is a mammal?",
+  "a": "Platypus"
+ },
+ {
+  "date": "2026-11-07",
+  "topic": "Animals",
+  "q": "What do you call animals that eat only plants?",
+  "a": "Herbivores"
+ },
+ {
+  "date": "2026-11-07",
+  "topic": "Animals",
+  "q": "Which sea mammal's babies are called calves and are born underwater?",
+  "a": "Dolphin"
  }
 ]
