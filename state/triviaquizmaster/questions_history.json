@@ -154,5 +154,59 @@
   "topic": "Sports",
   "q": "In which sport might you perform a pommel horse routine?",
   "a": "Gymnastics"
+ },
+ {
+  "date": "2026-11-07",
+  "topic": "Space",
+  "q": "What do we call the path a planet takes around the Sun?",
+  "a": "Orbit"
+ },
+ {
+  "date": "2026-11-07",
+  "topic": "Space",
+  "q": "Which planet is the second from the Sun?",
+  "a": "Venus"
+ },
+ {
+  "date": "2026-11-07",
+  "topic": "Space",
+  "q": "What is the name of the belt of rocky objects between Mars and Jupiter?",
+  "a": "Asteroid Belt"
+ },
+ {
+  "date": "2026-11-07",
+  "topic": "Space",
+  "q": "What is the name of the first artificial satellite launched into orbit?",
+  "a": "Sputnik"
+ },
+ {
+  "date": "2026-11-07",
+  "topic": "Space",
+  "q": "Which planet has a moon named Titan?",
+  "a": "Saturn"
+ },
+ {
+  "date": "2026-11-07",
+  "topic": "Space",
+  "q": "What do we call a shooting star that actually reaches the ground?",
+  "a": "Meteorite"
+ },
+ {
+  "date": "2026-11-07",
+  "topic": "Space",
+  "q": "What is the name of the dwarf planet visited by the New Horizons spacecraft in 2015?",
+  "a": "Pluto"
+ },
+ {
+  "date": "2026-11-07",
+  "topic": "Space",
+  "q": "Which planet has the shortest day, spinning around in about ten hours?",
+  "a": "Jupiter"
+ },
+ {
+  "date": "2026-11-07",
+  "topic": "Space",
+  "q": "What is the name of the largest moon of Jupiter?",
+  "a": "Ganymede"
  }
 ]
