@@ -166,5 +166,59 @@
   "topic": "Technology",
   "q": "In computing, what is the smallest unit of data, which is either zero or one?",
   "a": "Bit"
+ },
+ {
+  "date": "2026-11-07",
+  "topic": "Music",
+  "q": "How many strings does a standard violin have?",
+  "a": "Four"
+ },
+ {
+  "date": "2026-11-07",
+  "topic": "Music",
+  "q": "Which instrument has black and white keys?",
+  "a": "Piano"
+ },
+ {
+  "date": "2026-11-07",
+  "topic": "Music",
+  "q": "Which band recorded the album Abbey Road?",
+  "a": "The Beatles"
+ },
+ {
+  "date": "2026-11-07",
+  "topic": "Music",
+  "q": "Which composer wrote The Four Seasons?",
+  "a": "Antonio Vivaldi"
+ },
+ {
+  "date": "2026-11-07",
+  "topic": "Music",
+  "q": "In music, what does the term forte mean?",
+  "a": "Loudly"
+ },
+ {
+  "date": "2026-11-07",
+  "topic": "Music",
+  "q": "Which instrument family does the saxophone belong to?",
+  "a": "Woodwind"
+ },
+ {
+  "date": "2026-11-07",
+  "topic": "Music",
+  "q": "Which composer wrote the Ninth Symphony that includes the Ode to Joy?",
+  "a": "Beethoven"
+ },
+ {
+  "date": "2026-11-07",
+  "topic": "Music",
+  "q": "What is the Italian term for a gradual increase in loudness?",
+  "a": "Crescendo"
+ },
+ {
+  "date": "2026-11-07",
+  "topic": "Music",
+  "q": "Which country is the birthplace of the musical style called reggae?",
+  "a": "Jamaica"
  }
 ]
