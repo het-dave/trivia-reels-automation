@@ -100,5 +100,59 @@
   "topic": "Food",
   "q": "Which spice is often called red gold because it is so costly?",
   "a": "Saffron"
+ },
+ {
+  "date": "2026-11-07",
+  "topic": "Sports",
+  "q": "In baseball, how many strikes make an out for a batter?",
+  "a": "Three"
+ },
+ {
+  "date": "2026-11-07",
+  "topic": "Sports",
+  "q": "Which country is the birthplace of the martial art judo?",
+  "a": "Japan"
+ },
+ {
+  "date": "2026-11-07",
+  "topic": "Sports",
+  "q": "How many interlocking rings are in the Olympic symbol?",
+  "a": "Five"
+ },
+ {
+  "date": "2026-11-07",
+  "topic": "Sports",
+  "q": "In golf, what is it called when you finish a hole one stroke under par?",
+  "a": "Birdie"
+ },
+ {
+  "date": "2026-11-07",
+  "topic": "Sports",
+  "q": "Which tennis tournament is played on grass courts in England?",
+  "a": "Wimbledon"
+ },
+ {
+  "date": "2026-11-07",
+  "topic": "Sports",
+  "q": "How many players are on the court for one basketball team during play?",
+  "a": "Five"
+ },
+ {
+  "date": "2026-11-07",
+  "topic": "Sports",
+  "q": "In which sport do teams compete for the Stanley Cup?",
+  "a": "Ice hockey"
+ },
+ {
+  "date": "2026-11-07",
+  "topic": "Sports",
+  "q": "What is the name of the ancient Greek city where the original Olympic Games were held?",
+  "a": "Olympia"
+ },
+ {
+  "date": "2026-11-07",
+  "topic": "Sports",
+  "q": "In which sport might you perform a pommel horse routine?",
+  "a": "Gymnastics"
  }
 ]
