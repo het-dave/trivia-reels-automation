@@ -256,5 +256,59 @@
   "topic": "Food",
   "q": "Which vitamin do oranges and lemons famously provide?",
   "a": "Vitamin C"
+ },
+ {
+  "date": "2026-11-07",
+  "topic": "Sports",
+  "q": "How many players from one team are on the field in a standard soccer match?",
+  "a": "Eleven"
+ },
+ {
+  "date": "2026-11-07",
+  "topic": "Sports",
+  "q": "In which sport do players score a slam dunk?",
+  "a": "Basketball"
+ },
+ {
+  "date": "2026-11-07",
+  "topic": "Sports",
+  "q": "What color is the center circle of an Olympic archery target?",
+  "a": "Gold"
+ },
+ {
+  "date": "2026-11-07",
+  "topic": "Sports",
+  "q": "Which country hosted the first modern Olympic Games in 1896?",
+  "a": "Greece"
+ },
+ {
+  "date": "2026-11-07",
+  "topic": "Sports",
+  "q": "In tennis, what is the term for a score of zero?",
+  "a": "Love"
+ },
+ {
+  "date": "2026-11-07",
+  "topic": "Sports",
+  "q": "In which sport would you perform a slalom on snow?",
+  "a": "Skiing"
+ },
+ {
+  "date": "2026-11-07",
+  "topic": "Sports",
+  "q": "What is the length of a marathon, in miles, rounded to the nearest whole number?",
+  "a": "Twenty six"
+ },
+ {
+  "date": "2026-11-07",
+  "topic": "Sports",
+  "q": "What is the name of the cup awarded to the winner of the National Hockey League playoffs?",
+  "a": "Stanley Cup"
+ },
+ {
+  "date": "2026-11-07",
+  "topic": "Sports",
+  "q": "Which sport uses a shuttlecock?",
+  "a": "Badminton"
  }
 ]
