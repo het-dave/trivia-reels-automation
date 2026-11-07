@@ -13,7 +13,7 @@ timezone: Asia/Kolkata
 accounts:
   - {handle: trivia_quiz_master, secret_suffix: "", start_date: 2026-11-06, slot_times_ist: ["08:47", "12:47", "16:47", "20:47"], topic_shift: 0}
   - {handle: triviaquizmaster, secret_suffix: "_2", start_date: 2026-11-07, slot_times_ist: ["09:47", "13:47", "17:47", "21:47"], topic_shift: 3}
-  - {handle: trivia.quiz.master, secret_suffix: "_3", start_date: null, slot_times_ist: ["10:47", "14:47", "18:47", "22:47"], topic_shift: 6}
+  - {handle: trivia.quiz.master, secret_suffix: "_3", start_date: 2026-11-07, slot_times_ist: ["10:47", "14:47", "18:47", "22:47"], topic_shift: 6}
 
 # Add steps to ramp up gradually, e.g. [{from_day: 1, slots: [2, 4]}, {from_day: 15, slots: [1, 2, 3, 4]}].
 ramp:
