@@ -220,5 +220,53 @@
   "topic": "Music",
   "q": "Which country is the birthplace of the musical style called reggae?",
   "a": "Jamaica"
+ },
+ {
+  "date": "2026-11-08",
+  "topic": "Geography",
+  "q": "Which is the longest mountain range on land, stretching along the western edge of South America?",
+  "a": "The Andes"
+ },
+ {
+  "date": "2026-11-08",
+  "topic": "Geography",
+  "q": "Which continent is home to the Amazon rainforest?",
+  "a": "South America"
+ },
+ {
+  "date": "2026-11-08",
+  "topic": "Geography",
+  "q": "Which desert covers much of Mongolia and northern China?",
+  "a": "Gobi Desert"
+ },
+ {
+  "date": "2026-11-08",
+  "topic": "Geography",
+  "q": "Which African lake is the largest by area on the continent?",
+  "a": "Lake Victoria"
+ },
+ {
+  "date": "2026-11-08",
+  "topic": "Geography",
+  "q": "Which strait separates Spain from Morocco?",
+  "a": "Strait of Gibraltar"
+ },
+ {
+  "date": "2026-11-08",
+  "topic": "Geography",
+  "q": "Which country is shaped a bit like a boot and sticks out into the Mediterranean Sea?",
+  "a": "Italy"
+ },
+ {
+  "date": "2026-11-08",
+  "topic": "Geography",
+  "q": "Which island nation lies off the southeast coast of Africa and is home to lemurs?",
+  "a": "Madagascar"
+ },
+ {
+  "date": "2026-11-08",
+  "topic": "Geography",
+  "q": "Which river is the longest in Europe, flowing mostly through Russia into the Caspian Sea?",
+  "a": "Volga"
  }
 ]
