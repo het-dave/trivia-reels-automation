@@ -520,5 +520,53 @@
   "topic": "Music",
   "q": "What is the name for a piece of music written for eight performers?",
   "a": "Octet"
+ },
+ {
+  "date": "2026-11-08",
+  "topic": "Geography",
+  "q": "Which country is home to the famous Great Barrier Reef?",
+  "a": "Australia"
+ },
+ {
+  "date": "2026-11-08",
+  "topic": "Geography",
+  "q": "Which river runs through London, England?",
+  "a": "Thames"
+ },
+ {
+  "date": "2026-11-08",
+  "topic": "Geography",
+  "q": "Which continent is the coldest and has no permanent human residents?",
+  "a": "Antarctica"
+ },
+ {
+  "date": "2026-11-08",
+  "topic": "Geography",
+  "q": "Which country has the city of Marrakech?",
+  "a": "Morocco"
+ },
+ {
+  "date": "2026-11-08",
+  "topic": "Geography",
+  "q": "Which waterfall on the Zambia and Zimbabwe border is known locally as the Smoke that Thunders?",
+  "a": "Victoria Falls"
+ },
+ {
+  "date": "2026-11-08",
+  "topic": "Geography",
+  "q": "Which country has the city of Reykjavik as its capital?",
+  "a": "Iceland"
+ },
+ {
+  "date": "2026-11-08",
+  "topic": "Geography",
+  "q": "Which South American country is named after the equator?",
+  "a": "Ecuador"
+ },
+ {
+  "date": "2026-11-08",
+  "topic": "Geography",
+  "q": "What is the deepest lake in the world, located in Siberia?",
+  "a": "Lake Baikal"
  }
 ]
