@@ -568,5 +568,53 @@
   "topic": "Geography",
   "q": "What is the deepest lake in the world, located in Siberia?",
   "a": "Lake Baikal"
+ },
+ {
+  "date": "2026-11-08",
+  "topic": "Science",
+  "q": "What do we call water when it freezes into a solid?",
+  "a": "Ice"
+ },
+ {
+  "date": "2026-11-08",
+  "topic": "Science",
+  "q": "Which planet is the largest in our solar system?",
+  "a": "Jupiter"
+ },
+ {
+  "date": "2026-11-08",
+  "topic": "Science",
+  "q": "What is the name of the force that slows down a sliding object when surfaces rub together?",
+  "a": "Friction"
+ },
+ {
+  "date": "2026-11-08",
+  "topic": "Science",
+  "q": "Which part of the human body has the bones called the hammer, anvil, and stirrup?",
+  "a": "Ear"
+ },
+ {
+  "date": "2026-11-08",
+  "topic": "Science",
+  "q": "What is the chemical name for table salt?",
+  "a": "Sodium chloride"
+ },
+ {
+  "date": "2026-11-08",
+  "topic": "Science",
+  "q": "What is the name of the process by which a caterpillar becomes a butterfly?",
+  "a": "Metamorphosis"
+ },
+ {
+  "date": "2026-11-08",
+  "topic": "Science",
+  "q": "Which gas do humans breathe out that plants use for photosynthesis?",
+  "a": "Carbon dioxide"
+ },
+ {
+  "date": "2026-11-08",
+  "topic": "Science",
+  "q": "What is the unit used to measure the loudness of sound?",
+  "a": "Decibel"
  }
 ]
