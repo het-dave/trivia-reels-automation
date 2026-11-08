@@ -322,5 +322,59 @@
   "topic": "Science",
   "q": "What do bees collect from flowers to make honey?",
   "a": "Nectar"
+ },
+ {
+  "date": "2026-11-08",
+  "topic": "Movies",
+  "q": "What kind of animal is Simba's father in The Lion King?",
+  "a": "Lion"
+ },
+ {
+  "date": "2026-11-08",
+  "topic": "Movies",
+  "q": "In Finding Nemo, what type of fish is Dory?",
+  "a": "Blue tang"
+ },
+ {
+  "date": "2026-11-08",
+  "topic": "Movies",
+  "q": "Which movie features a giant ape climbing the Empire State Building?",
+  "a": "King Kong"
+ },
+ {
+  "date": "2026-11-08",
+  "topic": "Movies",
+  "q": "In Shrek, what kind of creature is Shrek?",
+  "a": "Ogre"
+ },
+ {
+  "date": "2026-11-08",
+  "topic": "Movies",
+  "q": "Which studio made Toy Story, the first fully computer-animated feature film?",
+  "a": "Pixar"
+ },
+ {
+  "date": "2026-11-08",
+  "topic": "Movies",
+  "q": "What is the name of the snowman in Disney's Frozen?",
+  "a": "Olaf"
+ },
+ {
+  "date": "2026-11-08",
+  "topic": "Movies",
+  "q": "Which actor played Jack Sparrow in Pirates of the Caribbean?",
+  "a": "Johnny Depp"
+ },
+ {
+  "date": "2026-11-08",
+  "topic": "Movies",
+  "q": "Which film won the first ever Academy Award for Best Animated Feature?",
+  "a": "Shrek"
+ },
+ {
+  "date": "2026-11-08",
+  "topic": "Movies",
+  "q": "Which Japanese studio made My Neighbor Totoro and Spirited Away?",
+  "a": "Studio Ghibli"
  }
 ]
