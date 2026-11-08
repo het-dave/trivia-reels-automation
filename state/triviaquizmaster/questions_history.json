@@ -262,5 +262,53 @@
   "topic": "Animals",
   "q": "Which ocean animal has eight arms and can squirt ink?",
   "a": "Octopus"
+ },
+ {
+  "date": "2026-11-08",
+  "topic": "Technology",
+  "q": "Which key on a keyboard do you hold down to type a capital letter?",
+  "a": "Shift"
+ },
+ {
+  "date": "2026-11-08",
+  "topic": "Technology",
+  "q": "What kind of energy do solar panels turn into electricity?",
+  "a": "Sunlight"
+ },
+ {
+  "date": "2026-11-08",
+  "topic": "Technology",
+  "q": "Which brothers built and flew the first successful powered airplane?",
+  "a": "Wright brothers"
+ },
+ {
+  "date": "2026-11-08",
+  "topic": "Technology",
+  "q": "Which American inventor is famous for making the electric light bulb practical?",
+  "a": "Thomas Edison"
+ },
+ {
+  "date": "2026-11-08",
+  "topic": "Technology",
+  "q": "What is the code of dots and dashes once used to send telegraph messages called?",
+  "a": "Morse code"
+ },
+ {
+  "date": "2026-11-08",
+  "topic": "Technology",
+  "q": "What do satellite navigation systems in phones and cars help you find?",
+  "a": "Your location"
+ },
+ {
+  "date": "2026-11-08",
+  "topic": "Technology",
+  "q": "What is it called when data is scrambled into secret code to keep it private?",
+  "a": "Encryption"
+ },
+ {
+  "date": "2026-11-08",
+  "topic": "Technology",
+  "q": "What tiny electronic switch replaced bulky vacuum tubes inside computers?",
+  "a": "Transistor"
  }
 ]
