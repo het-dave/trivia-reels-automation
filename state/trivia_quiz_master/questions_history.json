@@ -418,5 +418,53 @@
   "topic": "Animals",
   "q": "Which sea mammal's babies are called calves and are born underwater?",
   "a": "Dolphin"
+ },
+ {
+  "date": "2026-11-08",
+  "topic": "Technology",
+  "q": "Which company makes the search engine whose name became a common verb for looking things up?",
+  "a": "Google"
+ },
+ {
+  "date": "2026-11-08",
+  "topic": "Technology",
+  "q": "What do you call the device that shares an internet connection wirelessly around your home?",
+  "a": "Router"
+ },
+ {
+  "date": "2026-11-08",
+  "topic": "Technology",
+  "q": "What does the word robot most often describe?",
+  "a": "A programmable machine"
+ },
+ {
+  "date": "2026-11-08",
+  "topic": "Technology",
+  "q": "Which English mathematician is often called the first computer programmer?",
+  "a": "Ada Lovelace"
+ },
+ {
+  "date": "2026-11-08",
+  "topic": "Technology",
+  "q": "Which invention did Tim Berners-Lee create in 1989 while working at a Swiss physics lab?",
+  "a": "World Wide Web"
+ },
+ {
+  "date": "2026-11-08",
+  "topic": "Technology",
+  "q": "What material was the outer shell of the very first computer mouse made from?",
+  "a": "Wood"
+ },
+ {
+  "date": "2026-11-08",
+  "topic": "Technology",
+  "q": "In 1947, what real insect found in a computer helped popularize the word debugging?",
+  "a": "A moth"
+ },
+ {
+  "date": "2026-11-08",
+  "topic": "Technology",
+  "q": "Which company first sold the Walkman portable cassette player?",
+  "a": "Sony"
  }
 ]
