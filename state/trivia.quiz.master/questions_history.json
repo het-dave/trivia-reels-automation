@@ -268,5 +268,59 @@
   "topic": "Geography",
   "q": "Which river is the longest in Europe, flowing mostly through Russia into the Caspian Sea?",
   "a": "Volga"
+ },
+ {
+  "date": "2026-11-08",
+  "topic": "Science",
+  "q": "What is the closest star to Earth?",
+  "a": "The Sun"
+ },
+ {
+  "date": "2026-11-08",
+  "topic": "Science",
+  "q": "Which planet has the most prominent rings?",
+  "a": "Saturn"
+ },
+ {
+  "date": "2026-11-08",
+  "topic": "Science",
+  "q": "What is the largest organ of the human body?",
+  "a": "Skin"
+ },
+ {
+  "date": "2026-11-08",
+  "topic": "Science",
+  "q": "What is the main gas in Earth's atmosphere?",
+  "a": "Nitrogen"
+ },
+ {
+  "date": "2026-11-08",
+  "topic": "Science",
+  "q": "What type of rock is formed from cooled lava or magma?",
+  "a": "Igneous"
+ },
+ {
+  "date": "2026-11-08",
+  "topic": "Science",
+  "q": "Which scientist developed the theory of general relativity?",
+  "a": "Albert Einstein"
+ },
+ {
+  "date": "2026-11-08",
+  "topic": "Science",
+  "q": "Which vitamin does your skin make when exposed to sunlight?",
+  "a": "Vitamin D"
+ },
+ {
+  "date": "2026-11-08",
+  "topic": "Science",
+  "q": "What is the name for a scientist who studies fossils?",
+  "a": "Paleontologist"
+ },
+ {
+  "date": "2026-11-08",
+  "topic": "Science",
+  "q": "What do bees collect from flowers to make honey?",
+  "a": "Nectar"
  }
 ]
