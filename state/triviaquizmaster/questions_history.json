@@ -364,5 +364,59 @@
   "topic": "Music",
   "q": "Which composer wrote the Brandenburg Concertos?",
   "a": "Johann Sebastian Bach"
+ },
+ {
+  "date": "2026-11-08",
+  "topic": "Geography",
+  "q": "Which is the largest country in the world by land area?",
+  "a": "Russia"
+ },
+ {
+  "date": "2026-11-08",
+  "topic": "Geography",
+  "q": "Which river is famous for flowing through the Grand Canyon?",
+  "a": "Colorado River"
+ },
+ {
+  "date": "2026-11-08",
+  "topic": "Geography",
+  "q": "Which African country is home to the ancient pyramids of Giza?",
+  "a": "Egypt"
+ },
+ {
+  "date": "2026-11-08",
+  "topic": "Geography",
+  "q": "Which is the largest hot desert in the world?",
+  "a": "Sahara"
+ },
+ {
+  "date": "2026-11-08",
+  "topic": "Geography",
+  "q": "Which country has the city of Timbuktu?",
+  "a": "Mali"
+ },
+ {
+  "date": "2026-11-08",
+  "topic": "Geography",
+  "q": "Which island is the largest in the world, not counting continents?",
+  "a": "Greenland"
+ },
+ {
+  "date": "2026-11-08",
+  "topic": "Geography",
+  "q": "Which two countries share the world's longest border between two nations?",
+  "a": "Canada and United States"
+ },
+ {
+  "date": "2026-11-08",
+  "topic": "Geography",
+  "q": "Which country has the most islands in the world?",
+  "a": "Sweden"
+ },
+ {
+  "date": "2026-11-08",
+  "topic": "Geography",
+  "q": "Which country is home to the ancient Inca city of Machu Picchu?",
+  "a": "Peru"
  }
 ]
