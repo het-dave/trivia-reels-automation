@@ -376,5 +376,53 @@
   "topic": "Movies",
   "q": "Which Japanese studio made My Neighbor Totoro and Spirited Away?",
   "a": "Studio Ghibli"
+ },
+ {
+  "date": "2026-11-08",
+  "topic": "History",
+  "q": "Which ancient empire was ruled from the city of Rome and later had emperors like Augustus?",
+  "a": "Roman Empire"
+ },
+ {
+  "date": "2026-11-08",
+  "topic": "History",
+  "q": "Which ancient Greek poem tells of a ten-year siege of the city of Troy?",
+  "a": "The Iliad"
+ },
+ {
+  "date": "2026-11-08",
+  "topic": "History",
+  "q": "Which Chinese structure was built over many centuries to protect northern borders?",
+  "a": "Great Wall"
+ },
+ {
+  "date": "2026-11-08",
+  "topic": "History",
+  "q": "Which Italian city was the birthplace of the Renaissance?",
+  "a": "Florence"
+ },
+ {
+  "date": "2026-11-08",
+  "topic": "History",
+  "q": "Which Egyptian boy king is famous for his tomb found nearly intact in 1922?",
+  "a": "Tutankhamun"
+ },
+ {
+  "date": "2026-11-08",
+  "topic": "History",
+  "q": "What trade network linked China with the Mediterranean world across Asia?",
+  "a": "Silk Road"
+ },
+ {
+  "date": "2026-11-08",
+  "topic": "History",
+  "q": "Which ancient Roman city was buried by ash when Mount Vesuvius erupted in the year 79?",
+  "a": "Pompeii"
+ },
+ {
+  "date": "2026-11-08",
+  "topic": "History",
+  "q": "Which Greek thinker taught Alexander the Great when he was a boy?",
+  "a": "Aristotle"
  }
 ]
