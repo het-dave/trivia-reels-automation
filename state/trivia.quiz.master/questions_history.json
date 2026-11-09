@@ -586,5 +586,59 @@
   "topic": "Space",
   "q": "What was the name of the first space station, launched in 1971?",
   "a": "Salyut 1"
+ },
+ {
+  "date": "2026-11-09",
+  "topic": "Animals",
+  "q": "Which animal is the largest living species of cat?",
+  "a": "Tiger"
+ },
+ {
+  "date": "2026-11-09",
+  "topic": "Animals",
+  "q": "What do we call animals that are active mostly at night?",
+  "a": "Nocturnal"
+ },
+ {
+  "date": "2026-11-09",
+  "topic": "Animals",
+  "q": "What is the name for a baby swan?",
+  "a": "Cygnet"
+ },
+ {
+  "date": "2026-11-09",
+  "topic": "Animals",
+  "q": "Which insect is known for the glowing light on its tail?",
+  "a": "Firefly"
+ },
+ {
+  "date": "2026-11-09",
+  "topic": "Animals",
+  "q": "Which animal can regrow a lost tail and often drops it to escape predators?",
+  "a": "Lizard"
+ },
+ {
+  "date": "2026-11-09",
+  "topic": "Animals",
+  "q": "Which animal's pouch is used by the male to carry babies?",
+  "a": "Seahorse"
+ },
+ {
+  "date": "2026-11-09",
+  "topic": "Animals",
+  "q": "Which large animal is the closest living relative of the whale?",
+  "a": "Hippopotamus"
+ },
+ {
+  "date": "2026-11-09",
+  "topic": "Animals",
+  "q": "What do cows eat to make milk?",
+  "a": "Grass and hay"
+ },
+ {
+  "date": "2026-11-09",
+  "topic": "Animals",
+  "q": "Which animal is known for building dams in rivers?",
+  "a": "Beaver"
  }
 ]
