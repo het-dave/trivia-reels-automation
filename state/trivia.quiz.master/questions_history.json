@@ -478,5 +478,59 @@
   "topic": "Food",
   "q": "Tofu is made from curdling the milk of which bean?",
   "a": "Soybean"
+ },
+ {
+  "date": "2026-11-09",
+  "topic": "Sports",
+  "q": "In which sport do players try to hit a ball over a net using a racket on a court with a baseline?",
+  "a": "Tennis"
+ },
+ {
+  "date": "2026-11-09",
+  "topic": "Sports",
+  "q": "What shape is the ball used in rugby?",
+  "a": "Oval"
+ },
+ {
+  "date": "2026-11-09",
+  "topic": "Sports",
+  "q": "What is the name of the famous cycling race held across France each summer?",
+  "a": "Tour de France"
+ },
+ {
+  "date": "2026-11-09",
+  "topic": "Sports",
+  "q": "In bowling, what is it called when you knock down all ten pins with your first ball?",
+  "a": "Strike"
+ },
+ {
+  "date": "2026-11-09",
+  "topic": "Sports",
+  "q": "Which country is credited with organizing the first modern indoor ice hockey game?",
+  "a": "Canada"
+ },
+ {
+  "date": "2026-11-09",
+  "topic": "Sports",
+  "q": "What is the maximum score possible from one frame in ten-pin bowling, counting bonuses?",
+  "a": "Thirty"
+ },
+ {
+  "date": "2026-11-09",
+  "topic": "Sports",
+  "q": "In cricket, what are the two small wooden pieces balanced on top of the stumps called?",
+  "a": "Bails"
+ },
+ {
+  "date": "2026-11-09",
+  "topic": "Sports",
+  "q": "Which sport is played at Wimbledon, Roland Garros, and Flushing Meadows?",
+  "a": "Tennis"
+ },
+ {
+  "date": "2026-11-09",
+  "topic": "Sports",
+  "q": "In which sport is the Ryder Cup contested between teams from Europe and the United States?",
+  "a": "Golf"
  }
 ]
