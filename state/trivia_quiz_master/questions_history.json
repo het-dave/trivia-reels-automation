@@ -670,5 +670,53 @@
   "topic": "Movies",
   "q": "In The Incredibles, what is the last name of the superhero family?",
   "a": "Parr"
+ },
+ {
+  "date": "2026-11-09",
+  "topic": "History",
+  "q": "Which ancient wonder was a huge lighthouse in the Egyptian city of Alexandria?",
+  "a": "Pharos"
+ },
+ {
+  "date": "2026-11-09",
+  "topic": "History",
+  "q": "Which Italian explorer wrote a famous book about his travels to China in the thirteenth century?",
+  "a": "Marco Polo"
+ },
+ {
+  "date": "2026-11-09",
+  "topic": "History",
+  "q": "Which people sailed in longships from Scandinavia and reached North America around the year 1000?",
+  "a": "Vikings"
+ },
+ {
+  "date": "2026-11-09",
+  "topic": "History",
+  "q": "Which ruler of the Mongol Empire was born with the name Temujin?",
+  "a": "Genghis Khan"
+ },
+ {
+  "date": "2026-11-09",
+  "topic": "History",
+  "q": "Which inventor is credited with creating the first practical telephone in 1876?",
+  "a": "Alexander Graham Bell"
+ },
+ {
+  "date": "2026-11-09",
+  "topic": "History",
+  "q": "Which empire, led by Montezuma, had its capital at Tenochtitlan?",
+  "a": "Aztec"
+ },
+ {
+  "date": "2026-11-09",
+  "topic": "History",
+  "q": "Which Chinese dynasty is famous for the clay soldier army buried with its first emperor?",
+  "a": "Qin"
+ },
+ {
+  "date": "2026-11-09",
+  "topic": "History",
+  "q": "Which ancient Greek mathematician is linked with a famous bath story and the cry of Eureka?",
+  "a": "Archimedes"
  }
 ]
