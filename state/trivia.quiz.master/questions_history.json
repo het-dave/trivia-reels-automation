@@ -532,5 +532,59 @@
   "topic": "Sports",
   "q": "In which sport is the Ryder Cup contested between teams from Europe and the United States?",
   "a": "Golf"
+ },
+ {
+  "date": "2026-11-09",
+  "topic": "Space",
+  "q": "What is the floating feeling astronauts experience in orbit called?",
+  "a": "Weightlessness"
+ },
+ {
+  "date": "2026-11-09",
+  "topic": "Space",
+  "q": "About how long does sunlight take to reach Earth?",
+  "a": "Eight minutes"
+ },
+ {
+  "date": "2026-11-09",
+  "topic": "Space",
+  "q": "What is the name of the spacecraft pair launched in 1977 that carried golden records?",
+  "a": "Voyager"
+ },
+ {
+  "date": "2026-11-09",
+  "topic": "Space",
+  "q": "Which planet has a moon called Triton that orbits backward?",
+  "a": "Neptune"
+ },
+ {
+  "date": "2026-11-09",
+  "topic": "Space",
+  "q": "What is a frozen space object with a glowing tail called?",
+  "a": "Comet"
+ },
+ {
+  "date": "2026-11-09",
+  "topic": "Space",
+  "q": "What do we call the colorful lights seen near Earth's poles?",
+  "a": "Aurora"
+ },
+ {
+  "date": "2026-11-09",
+  "topic": "Space",
+  "q": "Which planet has a day longer than its year?",
+  "a": "Venus"
+ },
+ {
+  "date": "2026-11-09",
+  "topic": "Space",
+  "q": "What event happens when the Moon passes between the Sun and Earth?",
+  "a": "Solar eclipse"
+ },
+ {
+  "date": "2026-11-09",
+  "topic": "Space",
+  "q": "What was the name of the first space station, launched in 1971?",
+  "a": "Salyut 1"
  }
 ]
