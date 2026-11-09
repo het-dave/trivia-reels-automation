@@ -772,5 +772,53 @@
   "topic": "Food",
   "q": "Which country is the origin of the pasta dish spaghetti carbonara?",
   "a": "Italy"
+ },
+ {
+  "date": "2026-11-09",
+  "topic": "Sports",
+  "q": "In which sport do athletes compete in the 100 meter dash and the long jump?",
+  "a": "Track and field"
+ },
+ {
+  "date": "2026-11-09",
+  "topic": "Sports",
+  "q": "What color jersey is worn by the overall race leader in the Tour de France?",
+  "a": "Yellow"
+ },
+ {
+  "date": "2026-11-09",
+  "topic": "Sports",
+  "q": "How many holes are played in a standard full round of golf?",
+  "a": "Eighteen"
+ },
+ {
+  "date": "2026-11-09",
+  "topic": "Sports",
+  "q": "In which sport do players use a puck and a stick on ice, with a goalie defending a net?",
+  "a": "Ice hockey"
+ },
+ {
+  "date": "2026-11-09",
+  "topic": "Sports",
+  "q": "Which country's national rugby team is nicknamed the All Blacks?",
+  "a": "New Zealand"
+ },
+ {
+  "date": "2026-11-09",
+  "topic": "Sports",
+  "q": "What type of stone is used for the stones slid across the ice in curling?",
+  "a": "Granite"
+ },
+ {
+  "date": "2026-11-09",
+  "topic": "Sports",
+  "q": "Which sport is nicknamed the beautiful game?",
+  "a": "Soccer"
+ },
+ {
+  "date": "2026-11-09",
+  "topic": "Sports",
+  "q": "In basketball, how many points is a shot from behind the three-point line worth?",
+  "a": "Three"
  }
 ]
