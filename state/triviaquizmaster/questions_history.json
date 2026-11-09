@@ -520,5 +520,53 @@
   "topic": "Movies",
   "q": "Which 1941 film follows a newspaper tycoon and the mystery of the word Rosebud?",
   "a": "Citizen Kane"
+ },
+ {
+  "date": "2026-11-09",
+  "topic": "History",
+  "q": "Which explorer sailed across the Atlantic in 1492 on behalf of Spain?",
+  "a": "Christopher Columbus"
+ },
+ {
+  "date": "2026-11-09",
+  "topic": "History",
+  "q": "Which tall iron tower in Paris was built for the 1889 World's Fair?",
+  "a": "Eiffel Tower"
+ },
+ {
+  "date": "2026-11-09",
+  "topic": "History",
+  "q": "Which nurse, nicknamed the Lady with the Lamp, improved hospitals in the 1850s?",
+  "a": "Florence Nightingale"
+ },
+ {
+  "date": "2026-11-09",
+  "topic": "History",
+  "q": "Which general from Carthage famously crossed the Alps with war elephants?",
+  "a": "Hannibal"
+ },
+ {
+  "date": "2026-11-09",
+  "topic": "History",
+  "q": "Which English king sealed the Magna Carta in 1215?",
+  "a": "King John"
+ },
+ {
+  "date": "2026-11-09",
+  "topic": "History",
+  "q": "Which pharaoh is credited with building the Great Pyramid of Giza?",
+  "a": "Khufu"
+ },
+ {
+  "date": "2026-11-09",
+  "topic": "History",
+  "q": "Which scientist is famous for the law of gravity and a story about a falling apple?",
+  "a": "Isaac Newton"
+ },
+ {
+  "date": "2026-11-09",
+  "topic": "History",
+  "q": "Which Greek city hosted the first modern Olympic Games in 1896?",
+  "a": "Athens"
  }
 ]
