@@ -418,5 +418,53 @@
   "topic": "Geography",
   "q": "Which country is home to the ancient Inca city of Machu Picchu?",
   "a": "Peru"
+ },
+ {
+  "date": "2026-11-09",
+  "topic": "Science",
+  "q": "What do we call an animal that eats only plants?",
+  "a": "Herbivore"
+ },
+ {
+  "date": "2026-11-09",
+  "topic": "Science",
+  "q": "What is the boiling point of water at sea level in degrees Celsius?",
+  "a": "100"
+ },
+ {
+  "date": "2026-11-09",
+  "topic": "Science",
+  "q": "What is the name of the huge ball of ice and dust with a glowing tail that orbits the sun?",
+  "a": "Comet"
+ },
+ {
+  "date": "2026-11-09",
+  "topic": "Science",
+  "q": "Which gas do we need to breathe in to stay alive?",
+  "a": "Oxygen"
+ },
+ {
+  "date": "2026-11-09",
+  "topic": "Science",
+  "q": "What is the name of the tiny green parts inside plant cells that capture sunlight?",
+  "a": "Chloroplasts"
+ },
+ {
+  "date": "2026-11-09",
+  "topic": "Science",
+  "q": "Which type of animal is a dolphin?",
+  "a": "Mammal"
+ },
+ {
+  "date": "2026-11-09",
+  "topic": "Science",
+  "q": "What is the only metal that is liquid at normal room temperature?",
+  "a": "Mercury"
+ },
+ {
+  "date": "2026-11-09",
+  "topic": "Science",
+  "q": "What is the name of the bending of light as it passes from air into water?",
+  "a": "Refraction"
  }
 ]
