@@ -616,5 +616,53 @@
   "topic": "Food",
   "q": "Which Middle Eastern sweet is made of thin pastry layers, nuts and syrup or honey?",
   "a": "Baklava"
+ },
+ {
+  "date": "2026-11-10",
+  "topic": "Sports",
+  "q": "How many points is a touchdown worth in American football, before any extra point?",
+  "a": "Six"
+ },
+ {
+  "date": "2026-11-10",
+  "topic": "Sports",
+  "q": "Which sport was originally called mintonette when it was invented in 1895?",
+  "a": "Volleyball"
+ },
+ {
+  "date": "2026-11-10",
+  "topic": "Sports",
+  "q": "In swimming, which stroke is the only one swum on your back?",
+  "a": "Backstroke"
+ },
+ {
+  "date": "2026-11-10",
+  "topic": "Sports",
+  "q": "In which sport do players score a try by touching the ball down over the goal line?",
+  "a": "Rugby"
+ },
+ {
+  "date": "2026-11-10",
+  "topic": "Sports",
+  "q": "What is the highest score possible with three darts in one turn?",
+  "a": "One hundred eighty"
+ },
+ {
+  "date": "2026-11-10",
+  "topic": "Sports",
+  "q": "In which lawn game do players hit balls through hoops using a mallet?",
+  "a": "Croquet"
+ },
+ {
+  "date": "2026-11-10",
+  "topic": "Sports",
+  "q": "In soccer, what color card does a referee show to send a player off the field?",
+  "a": "Red"
+ },
+ {
+  "date": "2026-11-10",
+  "topic": "Sports",
+  "q": "Which track and field event did Dick Fosbury change with his back-first style?",
+  "a": "High jump"
  }
 ]
