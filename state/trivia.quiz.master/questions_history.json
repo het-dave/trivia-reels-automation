@@ -640,5 +640,53 @@
   "topic": "Animals",
   "q": "Which animal is known for building dams in rivers?",
   "a": "Beaver"
+ },
+ {
+  "date": "2026-11-10",
+  "topic": "Technology",
+  "q": "What do you call the small picture symbols people add to text messages to show feelings?",
+  "a": "Emoji"
+ },
+ {
+  "date": "2026-11-10",
+  "topic": "Technology",
+  "q": "What kind of device lets a computer print a page onto paper?",
+  "a": "Printer"
+ },
+ {
+  "date": "2026-11-10",
+  "topic": "Technology",
+  "q": "What is the name of the program that lets you browse websites, like Firefox or Safari?",
+  "a": "Web browser"
+ },
+ {
+  "date": "2026-11-10",
+  "topic": "Technology",
+  "q": "What does the letter A stand for in the technology term AI?",
+  "a": "Artificial"
+ },
+ {
+  "date": "2026-11-10",
+  "topic": "Technology",
+  "q": "What is the name of the first widely used graphical web browser from 1993?",
+  "a": "Mosaic"
+ },
+ {
+  "date": "2026-11-10",
+  "topic": "Technology",
+  "q": "Which company started as a paper mill in Finland before making phones?",
+  "a": "Nokia"
+ },
+ {
+  "date": "2026-11-10",
+  "topic": "Technology",
+  "q": "Which early video game had two paddles and a bouncing ball?",
+  "a": "Pong"
+ },
+ {
+  "date": "2026-11-10",
+  "topic": "Technology",
+  "q": "What does the Roomba, a popular home robot, do?",
+  "a": "Vacuums floors"
  }
 ]
