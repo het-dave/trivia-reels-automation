@@ -772,5 +772,53 @@
   "topic": "Animals",
   "q": "Which small spiny European animal rolls into a ball when scared?",
   "a": "Hedgehog"
+ },
+ {
+  "date": "2026-11-10",
+  "topic": "Technology",
+  "q": "What do you call the brain of a computer that carries out instructions?",
+  "a": "Processor"
+ },
+ {
+  "date": "2026-11-10",
+  "topic": "Technology",
+  "q": "What does a USB flash drive mainly do?",
+  "a": "Stores files"
+ },
+ {
+  "date": "2026-11-10",
+  "topic": "Technology",
+  "q": "Which planet did the Opportunity and Spirit robotic rovers explore?",
+  "a": "Mars"
+ },
+ {
+  "date": "2026-11-10",
+  "topic": "Technology",
+  "q": "Which language is used to build the basic structure of web pages?",
+  "a": "HTML"
+ },
+ {
+  "date": "2026-11-10",
+  "topic": "Technology",
+  "q": "Which company released the video game console called the Wii?",
+  "a": "Nintendo"
+ },
+ {
+  "date": "2026-11-10",
+  "topic": "Technology",
+  "q": "What does a 3D printer usually build objects from?",
+  "a": "Layers of material"
+ },
+ {
+  "date": "2026-11-10",
+  "topic": "Technology",
+  "q": "Who invented the printing press with movable metal type in Europe around 1450?",
+  "a": "Johannes Gutenberg"
+ },
+ {
+  "date": "2026-11-10",
+  "topic": "Technology",
+  "q": "What is the name of the Apple voice assistant that answers spoken questions?",
+  "a": "Siri"
  }
 ]
