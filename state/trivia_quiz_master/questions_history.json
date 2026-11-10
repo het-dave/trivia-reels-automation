@@ -820,5 +820,59 @@
   "topic": "Sports",
   "q": "In basketball, how many points is a shot from behind the three-point line worth?",
   "a": "Three"
+ },
+ {
+  "date": "2026-11-10",
+  "topic": "Space",
+  "q": "Which planet has the fastest winds, which can blow faster than the speed of sound?",
+  "a": "Neptune"
+ },
+ {
+  "date": "2026-11-10",
+  "topic": "Space",
+  "q": "What is the name of the Moon's large dark plains that early observers thought were seas?",
+  "a": "Maria"
+ },
+ {
+  "date": "2026-11-10",
+  "topic": "Space",
+  "q": "Which planet is the closest in size to Earth, often called Earth's twin?",
+  "a": "Venus"
+ },
+ {
+  "date": "2026-11-10",
+  "topic": "Space",
+  "q": "How many planets are in our solar system?",
+  "a": "Eight"
+ },
+ {
+  "date": "2026-11-10",
+  "topic": "Space",
+  "q": "What is the solid center of a comet called?",
+  "a": "Nucleus"
+ },
+ {
+  "date": "2026-11-10",
+  "topic": "Space",
+  "q": "Which moon of Saturn shoots giant jets of icy water into space?",
+  "a": "Enceladus"
+ },
+ {
+  "date": "2026-11-10",
+  "topic": "Space",
+  "q": "Which moon of Jupiter is covered in hundreds of active volcanoes?",
+  "a": "Io"
+ },
+ {
+  "date": "2026-11-10",
+  "topic": "Space",
+  "q": "What are the two small moons of Mars called?",
+  "a": "Phobos and Deimos"
+ },
+ {
+  "date": "2026-11-10",
+  "topic": "Space",
+  "q": "What is the glowing outer atmosphere of the Sun, visible during a total eclipse, called?",
+  "a": "Corona"
  }
 ]
