@@ -796,5 +796,59 @@
   "topic": "Geography",
   "q": "Which landlocked country is entirely surrounded by South Africa?",
   "a": "Lesotho"
+ },
+ {
+  "date": "2026-11-10",
+  "topic": "Science",
+  "q": "What is the closest planet to the sun?",
+  "a": "Mercury"
+ },
+ {
+  "date": "2026-11-10",
+  "topic": "Science",
+  "q": "Which animal group do frogs belong to?",
+  "a": "Amphibians"
+ },
+ {
+  "date": "2026-11-10",
+  "topic": "Science",
+  "q": "Which part of a plant usually soaks up water from the soil?",
+  "a": "Roots"
+ },
+ {
+  "date": "2026-11-10",
+  "topic": "Science",
+  "q": "What is the name of the force that pulls a compass needle toward the north?",
+  "a": "Magnetism"
+ },
+ {
+  "date": "2026-11-10",
+  "topic": "Science",
+  "q": "What is the process called when a liquid turns into a gas?",
+  "a": "Evaporation"
+ },
+ {
+  "date": "2026-11-10",
+  "topic": "Science",
+  "q": "Which planet spins on its side, tilted almost sideways as it orbits the sun?",
+  "a": "Uranus"
+ },
+ {
+  "date": "2026-11-10",
+  "topic": "Science",
+  "q": "What is the name of the smallest unit of life?",
+  "a": "Cell"
+ },
+ {
+  "date": "2026-11-10",
+  "topic": "Science",
+  "q": "Which scientist is famous for the three laws of motion and the apple story?",
+  "a": "Isaac Newton"
+ },
+ {
+  "date": "2026-11-10",
+  "topic": "Science",
+  "q": "What is the name of the molecule that carries genetic instructions in living things?",
+  "a": "DNA"
  }
 ]
