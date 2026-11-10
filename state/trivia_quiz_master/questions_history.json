@@ -982,5 +982,53 @@
   "topic": "Geography",
   "q": "Which sea lies between Italy and the Balkan Peninsula?",
   "a": "Adriatic Sea"
+ },
+ {
+  "date": "2026-11-10",
+  "topic": "Science",
+  "q": "What do we call a scientist who studies the weather?",
+  "a": "Meteorologist"
+ },
+ {
+  "date": "2026-11-10",
+  "topic": "Science",
+  "q": "How many bones does a typical adult human have?",
+  "a": "206"
+ },
+ {
+  "date": "2026-11-10",
+  "topic": "Science",
+  "q": "What is the name of the layer of gas high above Earth that absorbs much of the sun's harmful rays?",
+  "a": "Ozone layer"
+ },
+ {
+  "date": "2026-11-10",
+  "topic": "Science",
+  "q": "Which animal has the longest neck of any land animal?",
+  "a": "Giraffe"
+ },
+ {
+  "date": "2026-11-10",
+  "topic": "Science",
+  "q": "What is the name for a rock that has fallen from space and landed on Earth?",
+  "a": "Meteorite"
+ },
+ {
+  "date": "2026-11-10",
+  "topic": "Science",
+  "q": "Which scientist is famous for discovering penicillin?",
+  "a": "Alexander Fleming"
+ },
+ {
+  "date": "2026-11-10",
+  "topic": "Science",
+  "q": "What is the name for animals that eat both plants and meat?",
+  "a": "Omnivores"
+ },
+ {
+  "date": "2026-11-10",
+  "topic": "Science",
+  "q": "Which type of energy is stored in a stretched rubber band?",
+  "a": "Elastic potential"
  }
 ]
