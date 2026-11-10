@@ -664,5 +664,59 @@
   "topic": "Sports",
   "q": "Which track and field event did Dick Fosbury change with his back-first style?",
   "a": "High jump"
+ },
+ {
+  "date": "2026-11-10",
+  "topic": "Space",
+  "q": "What do we call a person who travels into space?",
+  "a": "Astronaut"
+ },
+ {
+  "date": "2026-11-10",
+  "topic": "Space",
+  "q": "Which planet is the seventh from the Sun and has faint rings?",
+  "a": "Uranus"
+ },
+ {
+  "date": "2026-11-10",
+  "topic": "Space",
+  "q": "What is the name of the layer of gas surrounding Earth that we breathe?",
+  "a": "Atmosphere"
+ },
+ {
+  "date": "2026-11-10",
+  "topic": "Space",
+  "q": "Which star system is the closest to our Sun and includes a star named Proxima?",
+  "a": "Alpha Centauri"
+ },
+ {
+  "date": "2026-11-10",
+  "topic": "Space",
+  "q": "What shape are the orbits of the planets around the Sun?",
+  "a": "Ellipse"
+ },
+ {
+  "date": "2026-11-10",
+  "topic": "Space",
+  "q": "Which gas makes up most of the Sun?",
+  "a": "Hydrogen"
+ },
+ {
+  "date": "2026-11-10",
+  "topic": "Space",
+  "q": "What do we call the Moon's changing shapes as seen from Earth?",
+  "a": "Phases"
+ },
+ {
+  "date": "2026-11-10",
+  "topic": "Space",
+  "q": "Who became the first human to travel into space in 1961?",
+  "a": "Yuri Gagarin"
+ },
+ {
+  "date": "2026-11-10",
+  "topic": "Space",
+  "q": "What is the name for the loose dusty soil covering the Moon's surface?",
+  "a": "Regolith"
  }
 ]
