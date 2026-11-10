@@ -742,5 +742,59 @@
   "topic": "Music",
   "q": "Which instrument is the highest-pitched in the standard string family?",
   "a": "Violin"
+ },
+ {
+  "date": "2026-11-10",
+  "topic": "Geography",
+  "q": "Which river flows through Paris, France?",
+  "a": "Seine"
+ },
+ {
+  "date": "2026-11-10",
+  "topic": "Geography",
+  "q": "Which is the tallest mountain in Africa?",
+  "a": "Mount Kilimanjaro"
+ },
+ {
+  "date": "2026-11-10",
+  "topic": "Geography",
+  "q": "Which country has the city of Istanbul, which spans two continents?",
+  "a": "Turkey"
+ },
+ {
+  "date": "2026-11-10",
+  "topic": "Geography",
+  "q": "Which U.S. state is made up entirely of islands?",
+  "a": "Hawaii"
+ },
+ {
+  "date": "2026-11-10",
+  "topic": "Geography",
+  "q": "Which sea is the lowest point on land, lying below sea level?",
+  "a": "Dead Sea"
+ },
+ {
+  "date": "2026-11-10",
+  "topic": "Geography",
+  "q": "Which ocean lies between Africa and Australia?",
+  "a": "Indian Ocean"
+ },
+ {
+  "date": "2026-11-10",
+  "topic": "Geography",
+  "q": "Which country is home to the city of Cape Town?",
+  "a": "South Africa"
+ },
+ {
+  "date": "2026-11-10",
+  "topic": "Geography",
+  "q": "Which African country has the city of Nairobi as its capital?",
+  "a": "Kenya"
+ },
+ {
+  "date": "2026-11-10",
+  "topic": "Geography",
+  "q": "Which landlocked country is entirely surrounded by South Africa?",
+  "a": "Lesotho"
  }
 ]
