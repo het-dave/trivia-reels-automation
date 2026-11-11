@@ -1126,5 +1126,53 @@
   "topic": "Music",
   "q": "Which American composer wrote Rhapsody in Blue, mixing jazz with classical music?",
   "a": "George Gershwin"
+ },
+ {
+  "date": "2026-11-11",
+  "topic": "Movies",
+  "q": "In Finding Nemo, what is the name of the shark who says fish are friends, not food?",
+  "a": "Bruce"
+ },
+ {
+  "date": "2026-11-11",
+  "topic": "Movies",
+  "q": "What is the name of the villain in Disney's Sleeping Beauty who turns into a dragon?",
+  "a": "Maleficent"
+ },
+ {
+  "date": "2026-11-11",
+  "topic": "Movies",
+  "q": "In The Wizard of Oz, what is the name of Dorothy's dog?",
+  "a": "Toto"
+ },
+ {
+  "date": "2026-11-11",
+  "topic": "Movies",
+  "q": "Which animated film features a robot named WALL-E falling for a robot named EVE?",
+  "a": "WALL-E"
+ },
+ {
+  "date": "2026-11-11",
+  "topic": "Movies",
+  "q": "Which actor played the Tin Man's friend the Cowardly Lion in the 1939 Wizard of Oz?",
+  "a": "Bert Lahr"
+ },
+ {
+  "date": "2026-11-11",
+  "topic": "Movies",
+  "q": "Which 1975 film about a great white shark is often called the first summer blockbuster?",
+  "a": "Jaws"
+ },
+ {
+  "date": "2026-11-11",
+  "topic": "Movies",
+  "q": "In The Jungle Book, what kind of animal is Baloo?",
+  "a": "Bear"
+ },
+ {
+  "date": "2026-11-11",
+  "topic": "Movies",
+  "q": "Which director made the movies Psycho and The Birds?",
+  "a": "Alfred Hitchcock"
  }
 ]
