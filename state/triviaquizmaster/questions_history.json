@@ -868,5 +868,59 @@
   "topic": "Music",
   "q": "Which instrument is the main melody instrument in a Scottish pipe band?",
   "a": "Bagpipes"
+ },
+ {
+  "date": "2026-11-11",
+  "topic": "Geography",
+  "q": "Which country is the home of the city of Venice, famous for its canals?",
+  "a": "Italy"
+ },
+ {
+  "date": "2026-11-11",
+  "topic": "Geography",
+  "q": "Which river flows through the city of Baghdad?",
+  "a": "Tigris"
+ },
+ {
+  "date": "2026-11-11",
+  "topic": "Geography",
+  "q": "Which country is both a country and a continent?",
+  "a": "Australia"
+ },
+ {
+  "date": "2026-11-11",
+  "topic": "Geography",
+  "q": "Which country has a maple leaf on its flag?",
+  "a": "Canada"
+ },
+ {
+  "date": "2026-11-11",
+  "topic": "Geography",
+  "q": "Which Greek city is home to the ancient Parthenon?",
+  "a": "Athens"
+ },
+ {
+  "date": "2026-11-11",
+  "topic": "Geography",
+  "q": "Which city is the capital of Turkey?",
+  "a": "Ankara"
+ },
+ {
+  "date": "2026-11-11",
+  "topic": "Geography",
+  "q": "Which strait separates Alaska from Russia?",
+  "a": "Bering Strait"
+ },
+ {
+  "date": "2026-11-11",
+  "topic": "Geography",
+  "q": "Which tiny European country sits between France and Spain in the Pyrenees?",
+  "a": "Andorra"
+ },
+ {
+  "date": "2026-11-11",
+  "topic": "Geography",
+  "q": "Which is the longest river in the United States, flowing into the Mississippi?",
+  "a": "Missouri River"
  }
 ]
