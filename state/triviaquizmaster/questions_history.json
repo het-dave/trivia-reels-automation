@@ -820,5 +820,53 @@
   "topic": "Technology",
   "q": "What is the name of the Apple voice assistant that answers spoken questions?",
   "a": "Siri"
+ },
+ {
+  "date": "2026-11-11",
+  "topic": "Music",
+  "q": "What do we call the speed of a piece of music?",
+  "a": "Tempo"
+ },
+ {
+  "date": "2026-11-11",
+  "topic": "Music",
+  "q": "Which composer wrote the opera The Barber of Seville?",
+  "a": "Rossini"
+ },
+ {
+  "date": "2026-11-11",
+  "topic": "Music",
+  "q": "Which instrument did the jazz musician Louis Armstrong famously play?",
+  "a": "Trumpet"
+ },
+ {
+  "date": "2026-11-11",
+  "topic": "Music",
+  "q": "Which German composer wrote the opera Der Ring des Nibelungen, a cycle of four operas?",
+  "a": "Richard Wagner"
+ },
+ {
+  "date": "2026-11-11",
+  "topic": "Music",
+  "q": "What is the name of the stick used to play a violin?",
+  "a": "Bow"
+ },
+ {
+  "date": "2026-11-11",
+  "topic": "Music",
+  "q": "Which Polish composer was famous for writing mostly piano music, including nocturnes and polonaises?",
+  "a": "Frédéric Chopin"
+ },
+ {
+  "date": "2026-11-11",
+  "topic": "Music",
+  "q": "What is the name of the Italian term for a gradual slowing of tempo?",
+  "a": "Ritardando"
+ },
+ {
+  "date": "2026-11-11",
+  "topic": "Music",
+  "q": "Which instrument is the main melody instrument in a Scottish pipe band?",
+  "a": "Bagpipes"
  }
 ]
