@@ -922,5 +922,53 @@
   "topic": "Geography",
   "q": "Which is the longest river in the United States, flowing into the Mississippi?",
   "a": "Missouri River"
+ },
+ {
+  "date": "2026-11-11",
+  "topic": "History",
+  "q": "Which seafaring people created the alphabet that the Greeks later adapted?",
+  "a": "Phoenicians"
+ },
+ {
+  "date": "2026-11-11",
+  "topic": "History",
+  "q": "Which British queen gave her name to the Victorian Age?",
+  "a": "Queen Victoria"
+ },
+ {
+  "date": "2026-11-11",
+  "topic": "History",
+  "q": "Which Italian scientist improved the telescope and discovered four moons of Jupiter in 1610?",
+  "a": "Galileo Galilei"
+ },
+ {
+  "date": "2026-11-11",
+  "topic": "History",
+  "q": "Which Portuguese explorer led the first sea voyage from Europe to India around Africa?",
+  "a": "Vasco da Gama"
+ },
+ {
+  "date": "2026-11-11",
+  "topic": "History",
+  "q": "Which ancient land is credited with inventing paper?",
+  "a": "China"
+ },
+ {
+  "date": "2026-11-11",
+  "topic": "History",
+  "q": "Which Greek city-state is known as the birthplace of democracy?",
+  "a": "Athens"
+ },
+ {
+  "date": "2026-11-11",
+  "topic": "History",
+  "q": "Which British scientist wrote the 1859 book On the Origin of Species?",
+  "a": "Charles Darwin"
+ },
+ {
+  "date": "2026-11-11",
+  "topic": "History",
+  "q": "Which Roman leader gave his name to the month of July?",
+  "a": "Julius Caesar"
  }
 ]
