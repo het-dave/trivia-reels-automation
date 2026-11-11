@@ -1174,5 +1174,53 @@
   "topic": "Movies",
   "q": "Which director made the movies Psycho and The Birds?",
   "a": "Alfred Hitchcock"
+ },
+ {
+  "date": "2026-11-11",
+  "topic": "History",
+  "q": "Which ancient civilization built the city of Babylon with its famous Hanging Gardens?",
+  "a": "Babylonians"
+ },
+ {
+  "date": "2026-11-11",
+  "topic": "History",
+  "q": "Which famous ship carried Ferdinand Magellan's expedition that first sailed around the world?",
+  "a": "Victoria"
+ },
+ {
+  "date": "2026-11-11",
+  "topic": "History",
+  "q": "Which Roman emperor is said to have played music while ignoring a big fire in Rome in 64?",
+  "a": "Nero"
+ },
+ {
+  "date": "2026-11-11",
+  "topic": "History",
+  "q": "Which city was the capital of the Inca Empire?",
+  "a": "Cusco"
+ },
+ {
+  "date": "2026-11-11",
+  "topic": "History",
+  "q": "Which ancient people of Peru etched giant animal drawings into the desert known as the Nazca Lines?",
+  "a": "Nazca"
+ },
+ {
+  "date": "2026-11-11",
+  "topic": "History",
+  "q": "Which Greek historian is often called the Father of History?",
+  "a": "Herodotus"
+ },
+ {
+  "date": "2026-11-11",
+  "topic": "History",
+  "q": "Which Mali ruler, famed for his gold, made a grand trip to Mecca in the fourteenth century?",
+  "a": "Mansa Musa"
+ },
+ {
+  "date": "2026-11-11",
+  "topic": "History",
+  "q": "Which ancient civilization lived in the Indus Valley and built planned cities like Mohenjo-daro?",
+  "a": "Harappan"
  }
 ]
