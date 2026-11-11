@@ -1030,5 +1030,53 @@
   "topic": "Science",
   "q": "Which type of energy is stored in a stretched rubber band?",
   "a": "Elastic potential"
+ },
+ {
+  "date": "2026-11-11",
+  "topic": "Technology",
+  "q": "What do you call the screen you touch to control a tablet or smartphone?",
+  "a": "Touchscreen"
+ },
+ {
+  "date": "2026-11-11",
+  "topic": "Technology",
+  "q": "What part stores energy to power an electric car?",
+  "a": "Battery"
+ },
+ {
+  "date": "2026-11-11",
+  "topic": "Technology",
+  "q": "What part of a digital camera captures light to make a picture?",
+  "a": "Image sensor"
+ },
+ {
+  "date": "2026-11-11",
+  "topic": "Technology",
+  "q": "What was the name of the IBM computer that beat chess champion Garry Kasparov in 1997?",
+  "a": "Deep Blue"
+ },
+ {
+  "date": "2026-11-11",
+  "topic": "Technology",
+  "q": "What animal is the mascot of the Linux operating system?",
+  "a": "Penguin"
+ },
+ {
+  "date": "2026-11-11",
+  "topic": "Technology",
+  "q": "What type of wave do microwave ovens use to heat food?",
+  "a": "Microwaves"
+ },
+ {
+  "date": "2026-11-11",
+  "topic": "Technology",
+  "q": "Which Japanese company created the game character Mario?",
+  "a": "Nintendo"
+ },
+ {
+  "date": "2026-11-11",
+  "topic": "Technology",
+  "q": "What does the C stand for in the term CD, used for music discs?",
+  "a": "Compact"
  }
 ]
