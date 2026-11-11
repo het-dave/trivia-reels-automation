@@ -850,5 +850,53 @@
   "topic": "Science",
   "q": "What is the name of the molecule that carries genetic instructions in living things?",
   "a": "DNA"
+ },
+ {
+  "date": "2026-11-11",
+  "topic": "Movies",
+  "q": "In The Lion King, what is the name of the warthog who sings about having no worries?",
+  "a": "Pumbaa"
+ },
+ {
+  "date": "2026-11-11",
+  "topic": "Movies",
+  "q": "What is the name of the main robot character in the Pixar movie about a trash-collecting robot?",
+  "a": "WALL-E"
+ },
+ {
+  "date": "2026-11-11",
+  "topic": "Movies",
+  "q": "In Disney's Cinderella, what does the fairy godmother turn into a carriage?",
+  "a": "A pumpkin"
+ },
+ {
+  "date": "2026-11-11",
+  "topic": "Movies",
+  "q": "In Snow White and the Seven Dwarfs, what is the name of the dwarf who is always sleepy?",
+  "a": "Sleepy"
+ },
+ {
+  "date": "2026-11-11",
+  "topic": "Movies",
+  "q": "Which Pixar film is set inside the mind of a young girl named Riley?",
+  "a": "Inside Out"
+ },
+ {
+  "date": "2026-11-11",
+  "topic": "Movies",
+  "q": "Which composer wrote the music for the Star Wars movies?",
+  "a": "John Williams"
+ },
+ {
+  "date": "2026-11-11",
+  "topic": "Movies",
+  "q": "In Mary Poppins, what does Mary Poppins use to fly through the sky?",
+  "a": "An umbrella"
+ },
+ {
+  "date": "2026-11-11",
+  "topic": "Movies",
+  "q": "What is the name of the Japanese director who made Spirited Away?",
+  "a": "Hayao Miyazaki"
  }
 ]
