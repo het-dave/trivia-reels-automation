@@ -1108,5 +1108,53 @@
   "topic": "Food",
   "q": "Which sweet food do bees make from flower nectar?",
   "a": "Honey"
+ },
+ {
+  "date": "2026-11-12",
+  "topic": "Sports",
+  "q": "How many bases are there on a standard baseball diamond, including home plate?",
+  "a": "Four"
+ },
+ {
+  "date": "2026-11-12",
+  "topic": "Sports",
+  "q": "In which sport do athletes use a balance beam and uneven bars?",
+  "a": "Gymnastics"
+ },
+ {
+  "date": "2026-11-12",
+  "topic": "Sports",
+  "q": "What is it called in golf when you hit the ball into the hole with your very first stroke?",
+  "a": "Hole in one"
+ },
+ {
+  "date": "2026-11-12",
+  "topic": "Sports",
+  "q": "In soccer, who is the only player allowed to use their hands inside the penalty area?",
+  "a": "Goalkeeper"
+ },
+ {
+  "date": "2026-11-12",
+  "topic": "Sports",
+  "q": "Which grand slam tennis tournament is held in Melbourne, Australia?",
+  "a": "Australian Open"
+ },
+ {
+  "date": "2026-11-12",
+  "topic": "Sports",
+  "q": "At which golf tournament is a green jacket awarded to the winner?",
+  "a": "The Masters"
+ },
+ {
+  "date": "2026-11-12",
+  "topic": "Sports",
+  "q": "Which Japanese martial art's name means the way of the empty hand?",
+  "a": "Karate"
+ },
+ {
+  "date": "2026-11-12",
+  "topic": "Sports",
+  "q": "In which sport do two teams pull opposite ends of a rope?",
+  "a": "Tug of war"
  }
 ]
