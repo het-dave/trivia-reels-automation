@@ -1054,5 +1054,59 @@
   "topic": "Animals",
   "q": "What sound does a cow make?",
   "a": "Moo"
+ },
+ {
+  "date": "2026-11-12",
+  "topic": "Food",
+  "q": "What is the main ingredient in the Middle Eastern dip baba ganoush?",
+  "a": "Eggplant"
+ },
+ {
+  "date": "2026-11-12",
+  "topic": "Food",
+  "q": "Which country is famous for the caramel-filled treat called stroopwafel?",
+  "a": "Netherlands"
+ },
+ {
+  "date": "2026-11-12",
+  "topic": "Food",
+  "q": "Which hard Italian cheese is often grated over pasta and aged a year or more?",
+  "a": "Parmesan"
+ },
+ {
+  "date": "2026-11-12",
+  "topic": "Food",
+  "q": "Which spice comes from tree bark and is sold rolled into sticks?",
+  "a": "Cinnamon"
+ },
+ {
+  "date": "2026-11-12",
+  "topic": "Food",
+  "q": "Which Italian city is famous for traditional balsamic vinegar?",
+  "a": "Modena"
+ },
+ {
+  "date": "2026-11-12",
+  "topic": "Food",
+  "q": "Which tiny salty fish is a key ingredient in Worcestershire sauce?",
+  "a": "Anchovy"
+ },
+ {
+  "date": "2026-11-12",
+  "topic": "Food",
+  "q": "Which grain is the base of the Middle Eastern parsley salad tabbouleh?",
+  "a": "Bulgur"
+ },
+ {
+  "date": "2026-11-12",
+  "topic": "Food",
+  "q": "What is the main ingredient in the Japanese treat called mochi?",
+  "a": "Sticky rice"
+ },
+ {
+  "date": "2026-11-12",
+  "topic": "Food",
+  "q": "Which sweet food do bees make from flower nectar?",
+  "a": "Honey"
  }
 ]
