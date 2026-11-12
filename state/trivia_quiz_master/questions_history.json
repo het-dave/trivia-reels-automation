@@ -1330,5 +1330,59 @@
   "topic": "Sports",
   "q": "In which water sport do you stand on a board and steer using a sail?",
   "a": "Windsurfing"
+ },
+ {
+  "date": "2026-11-12",
+  "topic": "Geography",
+  "q": "Which river flows through the city of Vienna, Austria?",
+  "a": "Danube"
+ },
+ {
+  "date": "2026-11-12",
+  "topic": "Geography",
+  "q": "Which is the largest island in the Mediterranean Sea?",
+  "a": "Sicily"
+ },
+ {
+  "date": "2026-11-12",
+  "topic": "Geography",
+  "q": "Which is the largest freshwater lake in North America by area?",
+  "a": "Lake Superior"
+ },
+ {
+  "date": "2026-11-12",
+  "topic": "Geography",
+  "q": "Which desert runs along the coast of Namibia in southern Africa?",
+  "a": "Namib Desert"
+ },
+ {
+  "date": "2026-11-12",
+  "topic": "Geography",
+  "q": "The Atlas Mountains stretch across northwest Africa. Which sea lies to their north?",
+  "a": "Mediterranean Sea"
+ },
+ {
+  "date": "2026-11-12",
+  "topic": "Geography",
+  "q": "Which country is home to the city of Ulaanbaatar?",
+  "a": "Mongolia"
+ },
+ {
+  "date": "2026-11-12",
+  "topic": "Geography",
+  "q": "Which ocean is the smallest of the world's five oceans?",
+  "a": "Arctic Ocean"
+ },
+ {
+  "date": "2026-11-12",
+  "topic": "Geography",
+  "q": "Which Italian volcano buried the Roman town of Pompeii?",
+  "a": "Mount Vesuvius"
+ },
+ {
+  "date": "2026-11-12",
+  "topic": "Geography",
+  "q": "Which river flows through the city of Budapest, Hungary?",
+  "a": "Danube"
  }
 ]
