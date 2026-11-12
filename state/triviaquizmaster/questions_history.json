@@ -1174,5 +1174,53 @@
   "topic": "Sports",
   "q": "How many players are on a standard volleyball team on the court at one time?",
   "a": "Six"
+ },
+ {
+  "date": "2026-11-12",
+  "topic": "Space",
+  "q": "What do we call a bright streak of light made by a space rock burning up in our atmosphere?",
+  "a": "Meteor"
+ },
+ {
+  "date": "2026-11-12",
+  "topic": "Space",
+  "q": "What do we call a star that explodes at the end of its life?",
+  "a": "Supernova"
+ },
+ {
+  "date": "2026-11-12",
+  "topic": "Space",
+  "q": "What is a region of space called where gravity is so strong that light cannot escape?",
+  "a": "Black hole"
+ },
+ {
+  "date": "2026-11-12",
+  "topic": "Space",
+  "q": "Which American astronaut was the first to orbit Earth, in 1962?",
+  "a": "John Glenn"
+ },
+ {
+  "date": "2026-11-12",
+  "topic": "Space",
+  "q": "Which planet has a giant canyon system called Valles Marineris?",
+  "a": "Mars"
+ },
+ {
+  "date": "2026-11-12",
+  "topic": "Space",
+  "q": "Which Italian scientist first used a telescope to spot Jupiter's four biggest moons?",
+  "a": "Galileo"
+ },
+ {
+  "date": "2026-11-12",
+  "topic": "Space",
+  "q": "What is the name of the gap in Saturn's rings that is visible from Earth with a small telescope?",
+  "a": "Cassini Division"
+ },
+ {
+  "date": "2026-11-12",
+  "topic": "Space",
+  "q": "About how many Earth years does Neptune take to orbit the Sun once?",
+  "a": "165"
  }
 ]
