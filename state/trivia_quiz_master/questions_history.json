@@ -1276,5 +1276,59 @@
   "topic": "Food",
   "q": "Which food is dal, a staple of Indian cooking, mainly made from?",
   "a": "Lentils and pulses"
+ },
+ {
+  "date": "2026-11-12",
+  "topic": "Sports",
+  "q": "In which sport do teams spike a ball over a net onto the other side's court using their hands?",
+  "a": "Volleyball"
+ },
+ {
+  "date": "2026-11-12",
+  "topic": "Sports",
+  "q": "What is the raised area called where a baseball pitcher stands to throw?",
+  "a": "Mound"
+ },
+ {
+  "date": "2026-11-12",
+  "topic": "Sports",
+  "q": "Which country is the home of sumo wrestling?",
+  "a": "Japan"
+ },
+ {
+  "date": "2026-11-12",
+  "topic": "Sports",
+  "q": "What is it called when a soccer player scores three goals in one game?",
+  "a": "Hat trick"
+ },
+ {
+  "date": "2026-11-12",
+  "topic": "Sports",
+  "q": "How many players per team are on the ice at once in ice hockey, including the goalie?",
+  "a": "Six"
+ },
+ {
+  "date": "2026-11-12",
+  "topic": "Sports",
+  "q": "In which sport do players hit a small rubber ball against walls inside an enclosed court?",
+  "a": "Squash"
+ },
+ {
+  "date": "2026-11-12",
+  "topic": "Sports",
+  "q": "Which Jamaican sprinter is famous for a lightning bolt pose after winning races?",
+  "a": "Usain Bolt"
+ },
+ {
+  "date": "2026-11-12",
+  "topic": "Sports",
+  "q": "In which sport might a skater attempt a triple axel jump?",
+  "a": "Figure skating"
+ },
+ {
+  "date": "2026-11-12",
+  "topic": "Sports",
+  "q": "In which water sport do you stand on a board and steer using a sail?",
+  "a": "Windsurfing"
  }
 ]
