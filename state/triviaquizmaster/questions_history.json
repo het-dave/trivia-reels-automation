@@ -1072,5 +1072,59 @@
   "topic": "Science",
   "q": "Which planet in our solar system has the hottest surface?",
   "a": "Venus"
+ },
+ {
+  "date": "2026-11-12",
+  "topic": "Movies",
+  "q": "Which movie features a marmalade-loving bear who travels from Peru to London?",
+  "a": "Paddington"
+ },
+ {
+  "date": "2026-11-12",
+  "topic": "Movies",
+  "q": "In Toy Story, what is the name of the boy who owns the toys?",
+  "a": "Andy"
+ },
+ {
+  "date": "2026-11-12",
+  "topic": "Movies",
+  "q": "Which 1971 film stars Gene Wilder as a mysterious chocolate factory owner?",
+  "a": "Willy Wonka"
+ },
+ {
+  "date": "2026-11-12",
+  "topic": "Movies",
+  "q": "Which US state is the setting for Disney's Lilo and Stitch?",
+  "a": "Hawaii"
+ },
+ {
+  "date": "2026-11-12",
+  "topic": "Movies",
+  "q": "Who directed The Lord of the Rings movie trilogy?",
+  "a": "Peter Jackson"
+ },
+ {
+  "date": "2026-11-12",
+  "topic": "Movies",
+  "q": "Which actor starred as Forrest Gump?",
+  "a": "Tom Hanks"
+ },
+ {
+  "date": "2026-11-12",
+  "topic": "Movies",
+  "q": "Which mountain country is the setting of The Sound of Music?",
+  "a": "Austria"
+ },
+ {
+  "date": "2026-11-12",
+  "topic": "Movies",
+  "q": "Which 1984 comedy follows a team that catches ghosts in New York City?",
+  "a": "Ghostbusters"
+ },
+ {
+  "date": "2026-11-12",
+  "topic": "Movies",
+  "q": "Which 1927 film is known as the first feature-length movie with synchronized talking?",
+  "a": "The Jazz Singer"
  }
 ]
