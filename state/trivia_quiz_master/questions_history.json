@@ -1384,5 +1384,59 @@
   "topic": "Geography",
   "q": "Which river flows through the city of Budapest, Hungary?",
   "a": "Danube"
+ },
+ {
+  "date": "2026-11-12",
+  "topic": "Science",
+  "q": "What is the name of the force that pulls objects toward the Earth's center?",
+  "a": "Gravity"
+ },
+ {
+  "date": "2026-11-12",
+  "topic": "Science",
+  "q": "What do we call the path of light bouncing off a smooth surface like a mirror?",
+  "a": "Reflection"
+ },
+ {
+  "date": "2026-11-12",
+  "topic": "Science",
+  "q": "What is the name of the sugar that plants make during photosynthesis?",
+  "a": "Glucose"
+ },
+ {
+  "date": "2026-11-12",
+  "topic": "Science",
+  "q": "What is the name for the study of how living things pass traits on through genes?",
+  "a": "Genetics"
+ },
+ {
+  "date": "2026-11-12",
+  "topic": "Science",
+  "q": "Which blood type is known as the universal donor for red blood cells?",
+  "a": "O negative"
+ },
+ {
+  "date": "2026-11-12",
+  "topic": "Science",
+  "q": "What is the name of the largest moon of Saturn?",
+  "a": "Titan"
+ },
+ {
+  "date": "2026-11-12",
+  "topic": "Science",
+  "q": "What type of animal is a spider?",
+  "a": "Arachnid"
+ },
+ {
+  "date": "2026-11-12",
+  "topic": "Science",
+  "q": "Which scientist discovered that planets move in ellipses, not circles?",
+  "a": "Johannes Kepler"
+ },
+ {
+  "date": "2026-11-12",
+  "topic": "Science",
+  "q": "What is the name of the process where cells divide to make two identical cells?",
+  "a": "Mitosis"
  }
 ]
