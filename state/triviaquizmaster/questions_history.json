@@ -1126,5 +1126,53 @@
   "topic": "Movies",
   "q": "Which 1927 film is known as the first feature-length movie with synchronized talking?",
   "a": "The Jazz Singer"
+ },
+ {
+  "date": "2026-11-12",
+  "topic": "Sports",
+  "q": "In cricket, how many players are on the fielding side at one time, including the bowler?",
+  "a": "Eleven"
+ },
+ {
+  "date": "2026-11-12",
+  "topic": "Sports",
+  "q": "In which sport do competitors perform a floor routine, vault, and rings?",
+  "a": "Gymnastics"
+ },
+ {
+  "date": "2026-11-12",
+  "topic": "Sports",
+  "q": "How many minutes long is a standard professional soccer match, not counting extra time?",
+  "a": "90"
+ },
+ {
+  "date": "2026-11-12",
+  "topic": "Sports",
+  "q": "In basketball, what is it called when a player takes too many steps without dribbling?",
+  "a": "Traveling"
+ },
+ {
+  "date": "2026-11-12",
+  "topic": "Sports",
+  "q": "Which Swiss tennis player won Wimbledon eight times in men's singles?",
+  "a": "Roger Federer"
+ },
+ {
+  "date": "2026-11-12",
+  "topic": "Sports",
+  "q": "Which Winter Olympic sport combines cross-country skiing with rifle shooting?",
+  "a": "Biathlon"
+ },
+ {
+  "date": "2026-11-12",
+  "topic": "Sports",
+  "q": "Which sport features a position called the quarterback?",
+  "a": "American football"
+ },
+ {
+  "date": "2026-11-12",
+  "topic": "Sports",
+  "q": "How many players are on a standard volleyball team on the court at one time?",
+  "a": "Six"
  }
 ]
