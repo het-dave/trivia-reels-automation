@@ -1156,5 +1156,53 @@
   "topic": "Sports",
   "q": "In which sport do two teams pull opposite ends of a rope?",
   "a": "Tug of war"
+ },
+ {
+  "date": "2026-11-12",
+  "topic": "Technology",
+  "q": "What does the R stand for in RAM, a computer's short-term memory?",
+  "a": "Random"
+ },
+ {
+  "date": "2026-11-12",
+  "topic": "Technology",
+  "q": "Before it was called Google, what was the search engine project nicknamed?",
+  "a": "BackRub"
+ },
+ {
+  "date": "2026-11-12",
+  "topic": "Technology",
+  "q": "Which Dutch company invented the compact cassette tape in the 1960s?",
+  "a": "Philips"
+ },
+ {
+  "date": "2026-11-12",
+  "topic": "Technology",
+  "q": "What was the first general-purpose electronic computer, built in 1945, called?",
+  "a": "ENIAC"
+ },
+ {
+  "date": "2026-11-12",
+  "topic": "Technology",
+  "q": "Which Hollywood actress co-invented an early form of frequency hopping used in wireless tech?",
+  "a": "Hedy Lamarr"
+ },
+ {
+  "date": "2026-11-12",
+  "topic": "Technology",
+  "q": "Which symbol did Ray Tomlinson pick to separate a name from a computer in email addresses?",
+  "a": "At sign"
+ },
+ {
+  "date": "2026-11-12",
+  "topic": "Technology",
+  "q": "What natural force do wind turbines use to make electricity?",
+  "a": "Moving air"
+ },
+ {
+  "date": "2026-11-12",
+  "topic": "Technology",
+  "q": "What does the P stand for in the file type PDF?",
+  "a": "Portable"
  }
 ]
