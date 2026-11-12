@@ -1018,5 +1018,59 @@
   "topic": "Food",
   "q": "Which meat is used to make traditional Italian prosciutto?",
   "a": "Pork"
+ },
+ {
+  "date": "2026-11-12",
+  "topic": "Science",
+  "q": "What is the name of our galaxy?",
+  "a": "Milky Way"
+ },
+ {
+  "date": "2026-11-12",
+  "topic": "Science",
+  "q": "Which animal is the only mammal that can truly fly?",
+  "a": "Bat"
+ },
+ {
+  "date": "2026-11-12",
+  "topic": "Science",
+  "q": "What is the name of the biggest bone in the human body?",
+  "a": "Femur"
+ },
+ {
+  "date": "2026-11-12",
+  "topic": "Science",
+  "q": "Which gas makes balloons float and gives a squeaky voice when breathed in?",
+  "a": "Helium"
+ },
+ {
+  "date": "2026-11-12",
+  "topic": "Science",
+  "q": "What is the name of the rocky belt between Mars and Jupiter?",
+  "a": "Asteroid Belt"
+ },
+ {
+  "date": "2026-11-12",
+  "topic": "Science",
+  "q": "What type of energy comes from the movement of an object?",
+  "a": "Kinetic"
+ },
+ {
+  "date": "2026-11-12",
+  "topic": "Science",
+  "q": "Which element is the lightest in the universe?",
+  "a": "Hydrogen"
+ },
+ {
+  "date": "2026-11-12",
+  "topic": "Science",
+  "q": "What is the name of the scale used to measure how hard minerals are?",
+  "a": "Mohs scale"
+ },
+ {
+  "date": "2026-11-12",
+  "topic": "Science",
+  "q": "Which planet in our solar system has the hottest surface?",
+  "a": "Venus"
  }
 ]
