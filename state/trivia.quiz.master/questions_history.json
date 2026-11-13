@@ -1348,5 +1348,53 @@
   "topic": "Science",
   "q": "What is the name of the pigment that gives human skin and hair their color?",
   "a": "Melanin"
+ },
+ {
+  "date": "2026-11-13",
+  "topic": "Space",
+  "q": "Which planet in our solar system has the most famous rings made of ice and rock?",
+  "a": "Saturn"
+ },
+ {
+  "date": "2026-11-13",
+  "topic": "Space",
+  "q": "Which planet is the only one known to have life on it?",
+  "a": "Earth"
+ },
+ {
+  "date": "2026-11-13",
+  "topic": "Space",
+  "q": "Which planet has a huge moon named Ganymede, bigger than Mercury?",
+  "a": "Jupiter"
+ },
+ {
+  "date": "2026-11-13",
+  "topic": "Space",
+  "q": "What is the name of the Moon's phase when we see none of its sunlit side?",
+  "a": "New moon"
+ },
+ {
+  "date": "2026-11-13",
+  "topic": "Space",
+  "q": "Which planet has a surface covered by thick clouds of acid and spins backward?",
+  "a": "Venus"
+ },
+ {
+  "date": "2026-11-13",
+  "topic": "Space",
+  "q": "Which planet's moon Europa is thought to hide a giant ocean under its icy shell?",
+  "a": "Jupiter"
+ },
+ {
+  "date": "2026-11-13",
+  "topic": "Space",
+  "q": "What do we call a pattern of stars that people have imagined as a picture, like Orion?",
+  "a": "Constellation"
+ },
+ {
+  "date": "2026-11-13",
+  "topic": "Space",
+  "q": "Why does the Sun appear to rise and set each day on Earth?",
+  "a": "Earth spins"
  }
 ]
