@@ -1276,5 +1276,53 @@
   "topic": "Animals",
   "q": "What do we call a baby duck?",
   "a": "Duckling"
+ },
+ {
+  "date": "2026-11-13",
+  "topic": "Technology",
+  "q": "What glass tube part inside old bulky televisions made the picture before flat screens took over?",
+  "a": "Cathode ray tube"
+ },
+ {
+  "date": "2026-11-13",
+  "topic": "Technology",
+  "q": "What do we call a small flat disc-shaped robot that cleans floors?",
+  "a": "Robot vacuum"
+ },
+ {
+  "date": "2026-11-13",
+  "topic": "Technology",
+  "q": "What is a flying machine with several spinning propellers, often flown by remote control, called?",
+  "a": "Drone"
+ },
+ {
+  "date": "2026-11-13",
+  "topic": "Technology",
+  "q": "Which company did Bill Gates start with Paul Allen?",
+  "a": "Microsoft"
+ },
+ {
+  "date": "2026-11-13",
+  "topic": "Technology",
+  "q": "Which Italian inventor is famous for early long-distance radio transmissions?",
+  "a": "Guglielmo Marconi"
+ },
+ {
+  "date": "2026-11-13",
+  "topic": "Technology",
+  "q": "What does the G stand for in GPS?",
+  "a": "Global"
+ },
+ {
+  "date": "2026-11-13",
+  "topic": "Technology",
+  "q": "Which Swedish company is known for a music streaming service with a green logo?",
+  "a": "Spotify"
+ },
+ {
+  "date": "2026-11-13",
+  "topic": "Technology",
+  "q": "Which early weaving machine used punched cards to create patterns?",
+  "a": "Jacquard loom"
  }
 ]
