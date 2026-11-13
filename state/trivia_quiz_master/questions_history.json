@@ -1588,5 +1588,53 @@
   "topic": "Movies",
   "q": "Which 1993 film brings dinosaurs back to life in an island theme park?",
   "a": "Jurassic Park"
+ },
+ {
+  "date": "2026-11-13",
+  "topic": "History",
+  "q": "Who was the first person to walk on the Moon in 1969?",
+  "a": "Neil Armstrong"
+ },
+ {
+  "date": "2026-11-13",
+  "topic": "History",
+  "q": "Which Norwegian explorer led the first team to reach the South Pole in 1911?",
+  "a": "Roald Amundsen"
+ },
+ {
+  "date": "2026-11-13",
+  "topic": "History",
+  "q": "Which Renaissance artist painted the ceiling of the Sistine Chapel?",
+  "a": "Michelangelo"
+ },
+ {
+  "date": "2026-11-13",
+  "topic": "History",
+  "q": "Which French king, nicknamed the Sun King, built the Palace of Versailles?",
+  "a": "Louis the Fourteenth"
+ },
+ {
+  "date": "2026-11-13",
+  "topic": "History",
+  "q": "Which Chinese admiral led giant treasure fleets across the Indian Ocean in the early 1400s?",
+  "a": "Zheng He"
+ },
+ {
+  "date": "2026-11-13",
+  "topic": "History",
+  "q": "Which ancient people carved the rose-red city of Petra out of rock in Jordan?",
+  "a": "Nabataeans"
+ },
+ {
+  "date": "2026-11-13",
+  "topic": "History",
+  "q": "Which woman was the first to win a Nobel Prize, in 1903?",
+  "a": "Marie Curie"
+ },
+ {
+  "date": "2026-11-13",
+  "topic": "History",
+  "q": "Which Cambodian temple complex is the largest religious monument in the world?",
+  "a": "Angkor Wat"
  }
 ]
