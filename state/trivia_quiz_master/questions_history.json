@@ -1540,5 +1540,53 @@
   "topic": "Animals",
   "q": "Which snake can spread a wide hood around its neck when threatened?",
   "a": "Cobra"
+ },
+ {
+  "date": "2026-11-13",
+  "topic": "Movies",
+  "q": "In The Wizard of Oz, what are Dorothy's magical shoes?",
+  "a": "Ruby slippers"
+ },
+ {
+  "date": "2026-11-13",
+  "topic": "Movies",
+  "q": "In Finding Nemo, what kind of animal is Crush, the laid-back surfer-style character?",
+  "a": "Sea turtle"
+ },
+ {
+  "date": "2026-11-13",
+  "topic": "Movies",
+  "q": "Which toy astronaut is Woody's best friend in Toy Story?",
+  "a": "Buzz Lightyear"
+ },
+ {
+  "date": "2026-11-13",
+  "topic": "Movies",
+  "q": "In Disney's Cinderella, what do the mice help make for her to wear to the ball?",
+  "a": "A dress"
+ },
+ {
+  "date": "2026-11-13",
+  "topic": "Movies",
+  "q": "Which 1982 movie features a boy who befriends a stranded alien who wants to phone home?",
+  "a": "E.T."
+ },
+ {
+  "date": "2026-11-13",
+  "topic": "Movies",
+  "q": "Which animated Disney movie features a blue genie voiced by Robin Williams?",
+  "a": "Aladdin"
+ },
+ {
+  "date": "2026-11-13",
+  "topic": "Movies",
+  "q": "In Indiana Jones movies, what weapon does Indy famously carry on his belt?",
+  "a": "A whip"
+ },
+ {
+  "date": "2026-11-13",
+  "topic": "Movies",
+  "q": "Which 1993 film brings dinosaurs back to life in an island theme park?",
+  "a": "Jurassic Park"
  }
 ]
