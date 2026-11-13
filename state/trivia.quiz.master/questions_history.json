@@ -1300,5 +1300,53 @@
   "topic": "Geography",
   "q": "Which South American country has the capital city Quito?",
   "a": "Ecuador"
+ },
+ {
+  "date": "2026-11-13",
+  "topic": "Science",
+  "q": "Which part of the human eye controls how much light enters the pupil?",
+  "a": "Iris"
+ },
+ {
+  "date": "2026-11-13",
+  "topic": "Science",
+  "q": "Which planet takes about 365 days to orbit the sun?",
+  "a": "Earth"
+ },
+ {
+  "date": "2026-11-13",
+  "topic": "Science",
+  "q": "What is the name of the tube that carries food from your mouth to your stomach?",
+  "a": "Esophagus"
+ },
+ {
+  "date": "2026-11-13",
+  "topic": "Science",
+  "q": "What do we call a living thing that makes its own food, like a plant?",
+  "a": "Producer"
+ },
+ {
+  "date": "2026-11-13",
+  "topic": "Science",
+  "q": "Which type of rock, like limestone, often contains fossils?",
+  "a": "Sedimentary"
+ },
+ {
+  "date": "2026-11-13",
+  "topic": "Science",
+  "q": "What is the name of the force that makes a boat float on water?",
+  "a": "Buoyancy"
+ },
+ {
+  "date": "2026-11-13",
+  "topic": "Science",
+  "q": "Which color of visible light bends the most when passing through a prism?",
+  "a": "Violet"
+ },
+ {
+  "date": "2026-11-13",
+  "topic": "Science",
+  "q": "What is the name of the pigment that gives human skin and hair their color?",
+  "a": "Melanin"
  }
 ]
