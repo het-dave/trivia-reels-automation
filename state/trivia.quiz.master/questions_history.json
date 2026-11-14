@@ -1450,5 +1450,59 @@
   "topic": "Animals",
   "q": "Which land animal has a pregnancy of almost two years?",
   "a": "Elephant"
+ },
+ {
+  "date": "2026-11-14",
+  "topic": "Movies",
+  "q": "In the movie Up, what kind of animal is Dug?",
+  "a": "Dog"
+ },
+ {
+  "date": "2026-11-14",
+  "topic": "Movies",
+  "q": "In Disney's Peter Pan, what is the name of Peter's tiny fairy friend?",
+  "a": "Tinker Bell"
+ },
+ {
+  "date": "2026-11-14",
+  "topic": "Movies",
+  "q": "In Disney's The Little Mermaid, what is the name of the mermaid princess?",
+  "a": "Ariel"
+ },
+ {
+  "date": "2026-11-14",
+  "topic": "Movies",
+  "q": "In Jurassic Park, what insect trapped in amber provides the dinosaur DNA?",
+  "a": "Mosquito"
+ },
+ {
+  "date": "2026-11-14",
+  "topic": "Movies",
+  "q": "In The Wizard of Oz, what does the Tin Man want from the Wizard?",
+  "a": "A heart"
+ },
+ {
+  "date": "2026-11-14",
+  "topic": "Movies",
+  "q": "In Disney's Mulan, what is the name of the small dragon who helps Mulan?",
+  "a": "Mushu"
+ },
+ {
+  "date": "2026-11-14",
+  "topic": "Movies",
+  "q": "Which Pixar movie features a race car named Lightning McQueen?",
+  "a": "Cars"
+ },
+ {
+  "date": "2026-11-14",
+  "topic": "Movies",
+  "q": "Which 1979 movie was the first feature film starring Kermit the Frog and the Muppets?",
+  "a": "The Muppet Movie"
+ },
+ {
+  "date": "2026-11-14",
+  "topic": "Movies",
+  "q": "In The Lord of the Rings, what is the name of the wizard played by Ian McKellen?",
+  "a": "Gandalf"
  }
 ]
