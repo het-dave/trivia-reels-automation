@@ -1504,5 +1504,53 @@
   "topic": "Movies",
   "q": "In The Lord of the Rings, what is the name of the wizard played by Ian McKellen?",
   "a": "Gandalf"
+ },
+ {
+  "date": "2026-11-14",
+  "topic": "History",
+  "q": "Which ancient empire built the Royal Road, where relay riders carried messages?",
+  "a": "Persians"
+ },
+ {
+  "date": "2026-11-14",
+  "topic": "History",
+  "q": "Which explorer's ships were the Niña, the Pinta and the Santa Maria?",
+  "a": "Columbus"
+ },
+ {
+  "date": "2026-11-14",
+  "topic": "History",
+  "q": "Which empire's capital was Constantinople, now called Istanbul?",
+  "a": "Byzantine"
+ },
+ {
+  "date": "2026-11-14",
+  "topic": "History",
+  "q": "In which country was the Renaissance genius Leonardo da Vinci born?",
+  "a": "Italy"
+ },
+ {
+  "date": "2026-11-14",
+  "topic": "History",
+  "q": "Which ancient Greek philosopher was the teacher of Aristotle?",
+  "a": "Plato"
+ },
+ {
+  "date": "2026-11-14",
+  "topic": "History",
+  "q": "What was the name of the Egyptian writing material made from reeds?",
+  "a": "Papyrus"
+ },
+ {
+  "date": "2026-11-14",
+  "topic": "History",
+  "q": "Which Greek battle site inspired the long race called the marathon?",
+  "a": "Marathon"
+ },
+ {
+  "date": "2026-11-14",
+  "topic": "History",
+  "q": "Which river's yearly flood made ancient Egyptian farmland so rich?",
+  "a": "Nile"
  }
 ]
