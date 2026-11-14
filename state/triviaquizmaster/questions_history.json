@@ -1426,5 +1426,59 @@
   "topic": "Food",
   "q": "What sweet, dark syrup is added to traditional Boston baked beans?",
   "a": "Molasses"
+ },
+ {
+  "date": "2026-11-14",
+  "topic": "Music",
+  "q": "Which brass instrument has three valves and a bright, piercing sound, often playing fanfares?",
+  "a": "Trumpet"
+ },
+ {
+  "date": "2026-11-14",
+  "topic": "Music",
+  "q": "What is a dramatic solo song in an opera called?",
+  "a": "Aria"
+ },
+ {
+  "date": "2026-11-14",
+  "topic": "Music",
+  "q": "How many strings does a standard acoustic guitar usually have?",
+  "a": "Six"
+ },
+ {
+  "date": "2026-11-14",
+  "topic": "Music",
+  "q": "Which woodwind instrument has a double reed and gives the note orchestras tune to?",
+  "a": "Oboe"
+ },
+ {
+  "date": "2026-11-14",
+  "topic": "Music",
+  "q": "Which German-born composer wrote Water Music for a royal boat party on the River Thames?",
+  "a": "George Handel"
+ },
+ {
+  "date": "2026-11-14",
+  "topic": "Music",
+  "q": "Which Italian violin maker is famous for instruments called Strads?",
+  "a": "Stradivari"
+ },
+ {
+  "date": "2026-11-14",
+  "topic": "Music",
+  "q": "Which Japanese instrument has thirteen strings and is played lying flat on the floor?",
+  "a": "Koto"
+ },
+ {
+  "date": "2026-11-14",
+  "topic": "Music",
+  "q": "Which composer wrote the Moonlight Sonata for piano?",
+  "a": "Beethoven"
+ },
+ {
+  "date": "2026-11-14",
+  "topic": "Music",
+  "q": "What is the Italian term for a note held longer, shown by a curved symbol with a dot?",
+  "a": "Fermata"
  }
 ]
