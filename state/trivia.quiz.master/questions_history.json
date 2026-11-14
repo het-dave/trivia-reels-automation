@@ -1600,5 +1600,59 @@
   "topic": "Technology",
   "q": "What device lets people talk to each other over wires from different places, invented in 1876?",
   "a": "Telephone"
+ },
+ {
+  "date": "2026-11-14",
+  "topic": "Music",
+  "q": "Which Beatles album has a cover showing the band with a colorful crowd of cutout faces?",
+  "a": "Sergeant Pepper"
+ },
+ {
+  "date": "2026-11-14",
+  "topic": "Music",
+  "q": "Which Italian composer wrote the opera La Traviata?",
+  "a": "Verdi"
+ },
+ {
+  "date": "2026-11-14",
+  "topic": "Music",
+  "q": "Which Austrian composer wrote the Unfinished Symphony?",
+  "a": "Schubert"
+ },
+ {
+  "date": "2026-11-14",
+  "topic": "Music",
+  "q": "Which Spanish music and dance style is known for clapping, stomping, and fiery guitar?",
+  "a": "Flamenco"
+ },
+ {
+  "date": "2026-11-14",
+  "topic": "Music",
+  "q": "Which French composer wrote Boléro, which repeats one melody while slowly growing louder?",
+  "a": "Ravel"
+ },
+ {
+  "date": "2026-11-14",
+  "topic": "Music",
+  "q": "What is a song for two singers called?",
+  "a": "Duet"
+ },
+ {
+  "date": "2026-11-14",
+  "topic": "Music",
+  "q": "What is the Australian didgeridoo traditionally made from?",
+  "a": "Hollow wood"
+ },
+ {
+  "date": "2026-11-14",
+  "topic": "Music",
+  "q": "Which Austrian composer wrote the opera Don Giovanni?",
+  "a": "Mozart"
+ },
+ {
+  "date": "2026-11-14",
+  "topic": "Music",
+  "q": "On a piano, which are the keys that sound a half step lower than the white key to their right?",
+  "a": "Black keys"
  }
 ]
