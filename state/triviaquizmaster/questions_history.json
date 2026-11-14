@@ -1534,5 +1534,53 @@
   "topic": "Geography",
   "q": "Which large body of water lies between Europe and North America?",
   "a": "Atlantic Ocean"
+ },
+ {
+  "date": "2026-11-14",
+  "topic": "Sports",
+  "q": "Which track and field event throws a metal ball attached to a wire and handle?",
+  "a": "Hammer throw"
+ },
+ {
+  "date": "2026-11-14",
+  "topic": "Sports",
+  "q": "Which sport is played on a table with a small net and a light hollow plastic ball?",
+  "a": "Table tennis"
+ },
+ {
+  "date": "2026-11-14",
+  "topic": "Sports",
+  "q": "What is the name of the raised clay ring used in sumo wrestling?",
+  "a": "Dohyo"
+ },
+ {
+  "date": "2026-11-14",
+  "topic": "Sports",
+  "q": "Which sport, developed by Native American peoples, uses a stick with a netted pocket?",
+  "a": "Lacrosse"
+ },
+ {
+  "date": "2026-11-14",
+  "topic": "Sports",
+  "q": "Which French town hosted the first Winter Olympic Games in 1924?",
+  "a": "Chamonix"
+ },
+ {
+  "date": "2026-11-14",
+  "topic": "Sports",
+  "q": "In basketball, how high is the hoop above the floor, in feet?",
+  "a": "Ten"
+ },
+ {
+  "date": "2026-11-14",
+  "topic": "Sports",
+  "q": "Which sport's championship game is called the Super Bowl?",
+  "a": "American football"
+ },
+ {
+  "date": "2026-11-14",
+  "topic": "Sports",
+  "q": "In baseball, what is it called when a batter gets four balls and takes first base?",
+  "a": "Walk"
  }
 ]
