@@ -1636,5 +1636,53 @@
   "topic": "History",
   "q": "Which Cambodian temple complex is the largest religious monument in the world?",
   "a": "Angkor Wat"
+ },
+ {
+  "date": "2026-11-14",
+  "topic": "Technology",
+  "q": "What do you call a small program that you download and run on a phone?",
+  "a": "App"
+ },
+ {
+  "date": "2026-11-14",
+  "topic": "Technology",
+  "q": "Which kind of battery is most common in modern phones and laptops?",
+  "a": "Lithium ion"
+ },
+ {
+  "date": "2026-11-14",
+  "topic": "Technology",
+  "q": "What does the E stand for in email?",
+  "a": "Electronic"
+ },
+ {
+  "date": "2026-11-14",
+  "topic": "Technology",
+  "q": "Which Apple co-founder introduced the first iPhone on stage?",
+  "a": "Steve Jobs"
+ },
+ {
+  "date": "2026-11-14",
+  "topic": "Technology",
+  "q": "What does the V stand for in VR, as in VR headsets?",
+  "a": "Virtual"
+ },
+ {
+  "date": "2026-11-14",
+  "topic": "Technology",
+  "q": "Which programming language shares its name with a famous comedy group and a snake?",
+  "a": "Python"
+ },
+ {
+  "date": "2026-11-14",
+  "topic": "Technology",
+  "q": "What is the name of the space telescope launched in 1990 and named for an astronomer?",
+  "a": "Hubble"
+ },
+ {
+  "date": "2026-11-14",
+  "topic": "Technology",
+  "q": "Which Hungarian inventor created the twisting puzzle cube with colored faces?",
+  "a": "Erno Rubik"
  }
 ]
