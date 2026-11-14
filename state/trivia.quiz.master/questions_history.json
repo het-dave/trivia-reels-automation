@@ -1552,5 +1552,53 @@
   "topic": "History",
   "q": "Which river's yearly flood made ancient Egyptian farmland so rich?",
   "a": "Nile"
+ },
+ {
+  "date": "2026-11-14",
+  "topic": "Technology",
+  "q": "What do you call a set of step-by-step instructions that a computer follows to solve a problem?",
+  "a": "Algorithm"
+ },
+ {
+  "date": "2026-11-14",
+  "topic": "Technology",
+  "q": "What do you call a small device that stores photos and is inserted into a camera?",
+  "a": "Memory card"
+ },
+ {
+  "date": "2026-11-14",
+  "topic": "Technology",
+  "q": "What wireless technology connects headphones to a phone over short distances?",
+  "a": "Bluetooth"
+ },
+ {
+  "date": "2026-11-14",
+  "topic": "Technology",
+  "q": "What does a thermometer measure?",
+  "a": "Temperature"
+ },
+ {
+  "date": "2026-11-14",
+  "topic": "Technology",
+  "q": "Which famous scientist is credited with inventing the lightning rod?",
+  "a": "Benjamin Franklin"
+ },
+ {
+  "date": "2026-11-14",
+  "topic": "Technology",
+  "q": "Which pioneer, nicknamed Amazing Grace, helped create early programming languages?",
+  "a": "Grace Hopper"
+ },
+ {
+  "date": "2026-11-14",
+  "topic": "Technology",
+  "q": "What does the letter D stand for in DVD?",
+  "a": "Digital"
+ },
+ {
+  "date": "2026-11-14",
+  "topic": "Technology",
+  "q": "What device lets people talk to each other over wires from different places, invented in 1876?",
+  "a": "Telephone"
  }
 ]
