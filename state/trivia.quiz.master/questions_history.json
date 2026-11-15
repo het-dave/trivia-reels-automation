@@ -1708,5 +1708,59 @@
   "topic": "Food",
   "q": "Which root vegetable gives borscht soup its deep red color?",
   "a": "Beet"
+ },
+ {
+  "date": "2026-11-15",
+  "topic": "Sports",
+  "q": "In tennis, what word is used for a score of zero?",
+  "a": "Love"
+ },
+ {
+  "date": "2026-11-15",
+  "topic": "Sports",
+  "q": "Which sport awards its winner the Claret Jug at the Open Championship?",
+  "a": "Golf"
+ },
+ {
+  "date": "2026-11-15",
+  "topic": "Sports",
+  "q": "Which sport did James Naismith invent in 1891 using a peach basket?",
+  "a": "Basketball"
+ },
+ {
+  "date": "2026-11-15",
+  "topic": "Sports",
+  "q": "How many events are contested in the decathlon?",
+  "a": "Ten"
+ },
+ {
+  "date": "2026-11-15",
+  "topic": "Sports",
+  "q": "In a triathlon, which activity comes first?",
+  "a": "Swimming"
+ },
+ {
+  "date": "2026-11-15",
+  "topic": "Sports",
+  "q": "How often is the men's soccer World Cup held?",
+  "a": "Every four years"
+ },
+ {
+  "date": "2026-11-15",
+  "topic": "Sports",
+  "q": "In snooker, which color ball is worth the most points?",
+  "a": "Black"
+ },
+ {
+  "date": "2026-11-15",
+  "topic": "Sports",
+  "q": "How many stumps make up one wicket in cricket?",
+  "a": "Three"
+ },
+ {
+  "date": "2026-11-15",
+  "topic": "Sports",
+  "q": "In which country was the sport of rugby first played at a school?",
+  "a": "England"
  }
 ]
