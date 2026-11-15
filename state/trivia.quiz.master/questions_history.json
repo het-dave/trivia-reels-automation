@@ -1762,5 +1762,53 @@
   "topic": "Sports",
   "q": "In which country was the sport of rugby first played at a school?",
   "a": "England"
+ },
+ {
+  "date": "2026-11-15",
+  "topic": "Space",
+  "q": "Which Apollo mission first landed humans on the Moon?",
+  "a": "Apollo Eleven"
+ },
+ {
+  "date": "2026-11-15",
+  "topic": "Space",
+  "q": "What is the name for the Moon's large dark flat plains formed by ancient lava?",
+  "a": "Maria"
+ },
+ {
+  "date": "2026-11-15",
+  "topic": "Space",
+  "q": "In which layer of Earth's atmosphere does most weather happen?",
+  "a": "Troposphere"
+ },
+ {
+  "date": "2026-11-15",
+  "topic": "Space",
+  "q": "Which space shuttle carried the Hubble telescope into orbit?",
+  "a": "Discovery"
+ },
+ {
+  "date": "2026-11-15",
+  "topic": "Space",
+  "q": "What is the name of the NASA rover that landed on Mars in 2021?",
+  "a": "Perseverance"
+ },
+ {
+  "date": "2026-11-15",
+  "topic": "Space",
+  "q": "What causes the seasons on Earth?",
+  "a": "Tilt of its axis"
+ },
+ {
+  "date": "2026-11-15",
+  "topic": "Space",
+  "q": "Which is the largest of the four rocky planets in our solar system?",
+  "a": "Earth"
+ },
+ {
+  "date": "2026-11-15",
+  "topic": "Space",
+  "q": "What unit is the average distance from Earth to the Sun called?",
+  "a": "Astronomical unit"
  }
 ]
