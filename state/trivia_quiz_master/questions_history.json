@@ -1894,5 +1894,59 @@
   "topic": "Food",
   "q": "Which gas is dissolved in water to make soda fizzy?",
   "a": "Carbon dioxide"
+ },
+ {
+  "date": "2026-11-15",
+  "topic": "Sports",
+  "q": "In which sport would you see a player perform a slap shot?",
+  "a": "Ice hockey"
+ },
+ {
+  "date": "2026-11-15",
+  "topic": "Sports",
+  "q": "What is the name of the area at the end of a football field where touchdowns are scored?",
+  "a": "End zone"
+ },
+ {
+  "date": "2026-11-15",
+  "topic": "Sports",
+  "q": "Which animal is the mascot of the Chicago Bulls basketball team?",
+  "a": "Bull"
+ },
+ {
+  "date": "2026-11-15",
+  "topic": "Sports",
+  "q": "In which sport do players hit a soft ball against a front wall with a small racket?",
+  "a": "Squash"
+ },
+ {
+  "date": "2026-11-15",
+  "topic": "Sports",
+  "q": "Which sport uses the terms scrum, lineout, and try?",
+  "a": "Rugby"
+ },
+ {
+  "date": "2026-11-15",
+  "topic": "Sports",
+  "q": "In which sport do athletes compete in the pole vault?",
+  "a": "Track and field"
+ },
+ {
+  "date": "2026-11-15",
+  "topic": "Sports",
+  "q": "What is the name of the sword-fighting sport that uses foil, epee, and sabre?",
+  "a": "Fencing"
+ },
+ {
+  "date": "2026-11-15",
+  "topic": "Sports",
+  "q": "How many points is the inner bullseye worth on a standard dartboard?",
+  "a": "Fifty"
+ },
+ {
+  "date": "2026-11-15",
+  "topic": "Sports",
+  "q": "Which sport is played on a diamond with a pitcher and a catcher?",
+  "a": "Baseball"
  }
 ]
