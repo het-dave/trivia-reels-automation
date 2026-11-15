@@ -1636,5 +1636,59 @@
   "topic": "Space",
   "q": "What event happens when Earth's shadow falls across the Moon?",
   "a": "Lunar eclipse"
+ },
+ {
+  "date": "2026-11-15",
+  "topic": "Science",
+  "q": "What is the name of the star pattern that includes the Big Dipper?",
+  "a": "Ursa Major"
+ },
+ {
+  "date": "2026-11-15",
+  "topic": "Science",
+  "q": "Which organ in the human body pumps blood?",
+  "a": "Heart"
+ },
+ {
+  "date": "2026-11-15",
+  "topic": "Science",
+  "q": "What is the name for a group of stars, gas, and dust held together by gravity?",
+  "a": "Galaxy"
+ },
+ {
+  "date": "2026-11-15",
+  "topic": "Science",
+  "q": "Which element has the chemical symbol Fe?",
+  "a": "Iron"
+ },
+ {
+  "date": "2026-11-15",
+  "topic": "Science",
+  "q": "What is the name of the process that turns water vapor into liquid droplets?",
+  "a": "Condensation"
+ },
+ {
+  "date": "2026-11-15",
+  "topic": "Science",
+  "q": "Which planet has a giant storm called the Great Red Spot?",
+  "a": "Jupiter"
+ },
+ {
+  "date": "2026-11-15",
+  "topic": "Science",
+  "q": "Which part of the cell contains its genetic material in animals and plants?",
+  "a": "Nucleus"
+ },
+ {
+  "date": "2026-11-15",
+  "topic": "Science",
+  "q": "What is the most abundant element in the universe?",
+  "a": "Hydrogen"
+ },
+ {
+  "date": "2026-11-15",
+  "topic": "Science",
+  "q": "Which scientist is known for discovering radioactivity in uranium in 1896?",
+  "a": "Henri Becquerel"
  }
 ]
