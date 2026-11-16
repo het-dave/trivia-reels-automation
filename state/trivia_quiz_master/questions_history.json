@@ -2200,5 +2200,53 @@
   "topic": "Geography",
   "q": "Which continent is the country of Egypt mostly located in?",
   "a": "Africa"
+ },
+ {
+  "date": "2026-11-16",
+  "topic": "Science",
+  "q": "What is the name of the layer of gas that protects Earth from most harmful sun rays?",
+  "a": "Ozone layer"
+ },
+ {
+  "date": "2026-11-16",
+  "topic": "Science",
+  "q": "What is the chemical name for the compound we call table salt?",
+  "a": "Sodium chloride"
+ },
+ {
+  "date": "2026-11-16",
+  "topic": "Science",
+  "q": "What kind of scientist studies weather and the atmosphere?",
+  "a": "Meteorologist"
+ },
+ {
+  "date": "2026-11-16",
+  "topic": "Science",
+  "q": "What is the term for animals that are active mostly at night?",
+  "a": "Nocturnal"
+ },
+ {
+  "date": "2026-11-16",
+  "topic": "Science",
+  "q": "Which Greek scientist is said to have shouted Eureka in a bath?",
+  "a": "Archimedes"
+ },
+ {
+  "date": "2026-11-16",
+  "topic": "Science",
+  "q": "What is the name for the dark, central part of a shadow?",
+  "a": "Umbra"
+ },
+ {
+  "date": "2026-11-16",
+  "topic": "Science",
+  "q": "Which tiny structures in cells are often called the powerhouses of the cell?",
+  "a": "Mitochondria"
+ },
+ {
+  "date": "2026-11-16",
+  "topic": "Science",
+  "q": "What type of animal is a Komodo dragon?",
+  "a": "Lizard"
  }
 ]
