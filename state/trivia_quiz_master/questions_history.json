@@ -2044,5 +2044,53 @@
   "topic": "History",
   "q": "Which empire built the Appian Way and thousands of miles of paved roads?",
   "a": "Roman Empire"
+ },
+ {
+  "date": "2026-11-16",
+  "topic": "Space",
+  "q": "What was the name of the lunar module that landed the first humans on the Moon?",
+  "a": "Eagle"
+ },
+ {
+  "date": "2026-11-16",
+  "topic": "Space",
+  "q": "What is the Sun's outer atmosphere, visible during a total solar eclipse, called?",
+  "a": "Corona"
+ },
+ {
+  "date": "2026-11-16",
+  "topic": "Space",
+  "q": "Which moon of Jupiter has hundreds of volcanoes and is the most volcanic world known?",
+  "a": "Io"
+ },
+ {
+  "date": "2026-11-16",
+  "topic": "Space",
+  "q": "Which space telescope, launched in 2021, mainly observes infrared light?",
+  "a": "James Webb"
+ },
+ {
+  "date": "2026-11-16",
+  "topic": "Space",
+  "q": "Which moon of Saturn sprays geysers of water ice into space?",
+  "a": "Enceladus"
+ },
+ {
+  "date": "2026-11-16",
+  "topic": "Space",
+  "q": "What is the huge, icy region of comets far beyond Neptune, shaped like a shell, called?",
+  "a": "Oort Cloud"
+ },
+ {
+  "date": "2026-11-16",
+  "topic": "Space",
+  "q": "What was the name of the Apollo 11 command module that stayed in orbit around the Moon?",
+  "a": "Columbia"
+ },
+ {
+  "date": "2026-11-16",
+  "topic": "Space",
+  "q": "What is the name of the force that keeps planets orbiting the Sun?",
+  "a": "Gravity"
  }
 ]
