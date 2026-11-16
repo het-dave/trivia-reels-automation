@@ -1864,5 +1864,59 @@
   "topic": "Animals",
   "q": "Which animal's horn is made of keratin, the same material as your fingernails?",
   "a": "Rhinoceros"
+ },
+ {
+  "date": "2026-11-16",
+  "topic": "Geography",
+  "q": "Which river flows through the city of London, England?",
+  "a": "Thames"
+ },
+ {
+  "date": "2026-11-16",
+  "topic": "Geography",
+  "q": "Which continent is the coldest and is almost entirely covered in ice?",
+  "a": "Antarctica"
+ },
+ {
+  "date": "2026-11-16",
+  "topic": "Geography",
+  "q": "Which African country has the capital Addis Ababa?",
+  "a": "Ethiopia"
+ },
+ {
+  "date": "2026-11-16",
+  "topic": "Geography",
+  "q": "Which country is home to the city of Marrakesh?",
+  "a": "Morocco"
+ },
+ {
+  "date": "2026-11-16",
+  "topic": "Geography",
+  "q": "Which Pacific island country is known for the kiwi bird?",
+  "a": "New Zealand"
+ },
+ {
+  "date": "2026-11-16",
+  "topic": "Geography",
+  "q": "Mont Blanc, the Alps' highest peak, sits on the border of Italy and which country?",
+  "a": "France"
+ },
+ {
+  "date": "2026-11-16",
+  "topic": "Geography",
+  "q": "Which is the largest of the five Great Lakes by area?",
+  "a": "Lake Superior"
+ },
+ {
+  "date": "2026-11-16",
+  "topic": "Geography",
+  "q": "Which country is home to the Galápagos Islands, which inspired Charles Darwin?",
+  "a": "Ecuador"
+ },
+ {
+  "date": "2026-11-16",
+  "topic": "Geography",
+  "q": "Which Scandinavian country has the capital Stockholm?",
+  "a": "Sweden"
  }
 ]
