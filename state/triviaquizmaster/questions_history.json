@@ -1936,5 +1936,59 @@
   "topic": "Technology",
   "q": "What name is given to a computer program designed to chat with people by text?",
   "a": "Chatbot"
+ },
+ {
+  "date": "2026-11-16",
+  "topic": "Sports",
+  "q": "In which sport do players hit a shuttlecock over a high net?",
+  "a": "Badminton"
+ },
+ {
+  "date": "2026-11-16",
+  "topic": "Sports",
+  "q": "In ice hockey, what is the flat rubber disc that players hit called?",
+  "a": "Puck"
+ },
+ {
+  "date": "2026-11-16",
+  "topic": "Sports",
+  "q": "In tennis, what is a serve called when the opponent cannot touch it?",
+  "a": "Ace"
+ },
+ {
+  "date": "2026-11-16",
+  "topic": "Sports",
+  "q": "In golf, which club is used on the green to roll the ball into the hole?",
+  "a": "Putter"
+ },
+ {
+  "date": "2026-11-16",
+  "topic": "Sports",
+  "q": "In rowing, who sits facing the rowers and steers the boat?",
+  "a": "Coxswain"
+ },
+ {
+  "date": "2026-11-16",
+  "topic": "Sports",
+  "q": "In baseball, what is a hit over the outfield fence that scores the batter called?",
+  "a": "Home run"
+ },
+ {
+  "date": "2026-11-16",
+  "topic": "Sports",
+  "q": "Which Olympic sport has events called slalom and downhill?",
+  "a": "Alpine skiing"
+ },
+ {
+  "date": "2026-11-16",
+  "topic": "Sports",
+  "q": "Which city hosted the 2016 Summer Olympic Games?",
+  "a": "Rio de Janeiro"
+ },
+ {
+  "date": "2026-11-16",
+  "topic": "Sports",
+  "q": "On what surface is the French Open tennis tournament played?",
+  "a": "Clay"
  }
 ]
