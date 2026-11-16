@@ -1990,5 +1990,59 @@
   "topic": "Sports",
   "q": "On what surface is the French Open tennis tournament played?",
   "a": "Clay"
+ },
+ {
+  "date": "2026-11-16",
+  "topic": "Space",
+  "q": "What are the names of the two small moons that orbit Mars?",
+  "a": "Phobos and Deimos"
+ },
+ {
+  "date": "2026-11-16",
+  "topic": "Space",
+  "q": "Which moon of Saturn shoots icy geysers into space from its south pole?",
+  "a": "Enceladus"
+ },
+ {
+  "date": "2026-11-16",
+  "topic": "Space",
+  "q": "About how many Earth days is one year on Mercury?",
+  "a": "88"
+ },
+ {
+  "date": "2026-11-16",
+  "topic": "Space",
+  "q": "What was the name of the small rover that rode with Pathfinder to Mars in 1997?",
+  "a": "Sojourner"
+ },
+ {
+  "date": "2026-11-16",
+  "topic": "Space",
+  "q": "What is a space traveler from Russia traditionally called?",
+  "a": "Cosmonaut"
+ },
+ {
+  "date": "2026-11-16",
+  "topic": "Space",
+  "q": "What is the name of Pluto's largest moon?",
+  "a": "Charon"
+ },
+ {
+  "date": "2026-11-16",
+  "topic": "Space",
+  "q": "About how much of the solar system's total mass is in the Sun?",
+  "a": "Ninety-nine percent"
+ },
+ {
+  "date": "2026-11-16",
+  "topic": "Space",
+  "q": "Which planet takes about twelve Earth years to orbit the Sun once?",
+  "a": "Jupiter"
+ },
+ {
+  "date": "2026-11-16",
+  "topic": "Space",
+  "q": "Who was the second person to walk on the Moon?",
+  "a": "Buzz Aldrin"
  }
 ]
