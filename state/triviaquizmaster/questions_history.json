@@ -1888,5 +1888,53 @@
   "topic": "Animals",
   "q": "Which sea mammal breathes through a blowhole on top of its head?",
   "a": "Dolphin"
+ },
+ {
+  "date": "2026-11-16",
+  "topic": "Technology",
+  "q": "What do you call the part of a computer that you type on with letters and numbers?",
+  "a": "Keyboard"
+ },
+ {
+  "date": "2026-11-16",
+  "topic": "Technology",
+  "q": "What do you call a harmful program that can spread between computers and cause damage?",
+  "a": "Virus"
+ },
+ {
+  "date": "2026-11-16",
+  "topic": "Technology",
+  "q": "What does the S stand for in SSD, a type of computer storage drive?",
+  "a": "Solid"
+ },
+ {
+  "date": "2026-11-16",
+  "topic": "Technology",
+  "q": "Which Russian-born engineer built the iconoscope, an early television camera tube?",
+  "a": "Vladimir Zworykin"
+ },
+ {
+  "date": "2026-11-16",
+  "topic": "Technology",
+  "q": "What did the first Sony PlayStation use to store its games?",
+  "a": "CDs"
+ },
+ {
+  "date": "2026-11-16",
+  "topic": "Technology",
+  "q": "What type of cable made of thin glass strands carries internet data as pulses of light?",
+  "a": "Fiber optic"
+ },
+ {
+  "date": "2026-11-16",
+  "topic": "Technology",
+  "q": "Which German physicist discovered X-rays in 1895?",
+  "a": "Wilhelm Röntgen"
+ },
+ {
+  "date": "2026-11-16",
+  "topic": "Technology",
+  "q": "What name is given to a computer program designed to chat with people by text?",
+  "a": "Chatbot"
  }
 ]
