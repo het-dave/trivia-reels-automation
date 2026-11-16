@@ -1972,5 +1972,53 @@
   "topic": "Science",
   "q": "What is the name for a baby frog that lives in water and has a tail?",
   "a": "Tadpole"
+ },
+ {
+  "date": "2026-11-16",
+  "topic": "Technology",
+  "q": "What handheld device lets you change channels on a television from across the room?",
+  "a": "Remote control"
+ },
+ {
+  "date": "2026-11-16",
+  "topic": "Technology",
+  "q": "Which Englishman is credited with inventing the World Wide Web?",
+  "a": "Tim Berners-Lee"
+ },
+ {
+  "date": "2026-11-16",
+  "topic": "Technology",
+  "q": "What was the name of the early computer network that was a forerunner of the internet?",
+  "a": "ARPANET"
+ },
+ {
+  "date": "2026-11-16",
+  "topic": "Technology",
+  "q": "Which mathematician is called the first computer programmer for her notes on an early engine?",
+  "a": "Ada Lovelace"
+ },
+ {
+  "date": "2026-11-16",
+  "topic": "Technology",
+  "q": "Which British mathematician helped crack the Enigma code and shaped early computer science?",
+  "a": "Alan Turing"
+ },
+ {
+  "date": "2026-11-16",
+  "topic": "Technology",
+  "q": "What are the small files that websites save on your device to remember your visit called?",
+  "a": "Cookies"
+ },
+ {
+  "date": "2026-11-16",
+  "topic": "Technology",
+  "q": "Which Nintendo handheld console from 1989 came packaged with the game Tetris?",
+  "a": "Game Boy"
+ },
+ {
+  "date": "2026-11-16",
+  "topic": "Technology",
+  "q": "What do we call a robot built to have a body shaped like a person's?",
+  "a": "Humanoid"
  }
 ]
