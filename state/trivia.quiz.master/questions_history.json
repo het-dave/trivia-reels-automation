@@ -2164,5 +2164,53 @@
   "topic": "History",
   "q": "What was the original name of the city later renamed Constantinople?",
   "a": "Byzantium"
+ },
+ {
+  "date": "2026-11-17",
+  "topic": "Space",
+  "q": "Which planet in our solar system is not named after a Greek or Roman god?",
+  "a": "Earth"
+ },
+ {
+  "date": "2026-11-17",
+  "topic": "Space",
+  "q": "Which two planets in our solar system have no moons at all?",
+  "a": "Mercury and Venus"
+ },
+ {
+  "date": "2026-11-17",
+  "topic": "Space",
+  "q": "What is the name of the telescope launched in 1990 that orbits Earth and takes sharp pictures?",
+  "a": "Hubble"
+ },
+ {
+  "date": "2026-11-17",
+  "topic": "Space",
+  "q": "What is the name of the icy region of small bodies beyond Neptune that holds Pluto?",
+  "a": "Kuiper Belt"
+ },
+ {
+  "date": "2026-11-17",
+  "topic": "Space",
+  "q": "What are the rings of Saturn mostly made of?",
+  "a": "Pieces of ice"
+ },
+ {
+  "date": "2026-11-17",
+  "topic": "Space",
+  "q": "Which Saturn moon has a thick atmosphere and lakes of liquid methane?",
+  "a": "Titan"
+ },
+ {
+  "date": "2026-11-17",
+  "topic": "Space",
+  "q": "What was the name of the NASA program that sent twelve people to walk on the Moon?",
+  "a": "Apollo"
+ },
+ {
+  "date": "2026-11-17",
+  "topic": "Space",
+  "q": "Which planet has the strongest winds, reaching over a thousand miles per hour?",
+  "a": "Neptune"
  }
 ]
