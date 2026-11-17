@@ -2248,5 +2248,53 @@
   "topic": "Science",
   "q": "What type of animal is a Komodo dragon?",
   "a": "Lizard"
+ },
+ {
+  "date": "2026-11-17",
+  "topic": "Technology",
+  "q": "How many bits are in one byte of computer data?",
+  "a": "Eight"
+ },
+ {
+  "date": "2026-11-17",
+  "topic": "Technology",
+  "q": "Which tiny credit-card-sized British computer was made to help people learn to code?",
+  "a": "Raspberry Pi"
+ },
+ {
+  "date": "2026-11-17",
+  "topic": "Technology",
+  "q": "Which company launched the Walkman portable cassette player in 1979?",
+  "a": "Sony"
+ },
+ {
+  "date": "2026-11-17",
+  "topic": "Technology",
+  "q": "Which word describes a computer error, famously linked to a real moth found in 1947?",
+  "a": "Bug"
+ },
+ {
+  "date": "2026-11-17",
+  "topic": "Technology",
+  "q": "What does the L stand for in LED lights?",
+  "a": "Light"
+ },
+ {
+  "date": "2026-11-17",
+  "topic": "Technology",
+  "q": "What is the name of Japan's famous high-speed bullet train network?",
+  "a": "Shinkansen"
+ },
+ {
+  "date": "2026-11-17",
+  "topic": "Technology",
+  "q": "Which unit measures the power of a light bulb?",
+  "a": "Watt"
+ },
+ {
+  "date": "2026-11-17",
+  "topic": "Technology",
+  "q": "Which Nintendo character is a plumber who wears a red cap?",
+  "a": "Mario"
  }
 ]
