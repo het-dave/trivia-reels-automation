@@ -2392,5 +2392,53 @@
   "topic": "Movies",
   "q": "In which city would you find the famous Hollywood Sign on a hillside?",
   "a": "Los Angeles"
+ },
+ {
+  "date": "2026-11-17",
+  "topic": "History",
+  "q": "Which ancient empire built the royal capital city of Persepolis?",
+  "a": "Persian"
+ },
+ {
+  "date": "2026-11-17",
+  "topic": "History",
+  "q": "What was the first lasting English colony in America, founded in 1607?",
+  "a": "Jamestown"
+ },
+ {
+  "date": "2026-11-17",
+  "topic": "History",
+  "q": "Which Chinese dynasty's first emperor is buried near a famous terracotta army?",
+  "a": "Qin"
+ },
+ {
+  "date": "2026-11-17",
+  "topic": "History",
+  "q": "Which Cornish engineer ran the first steam railway locomotive in Wales in 1804?",
+  "a": "Richard Trevithick"
+ },
+ {
+  "date": "2026-11-17",
+  "topic": "History",
+  "q": "Which Greek island was home to the Minoan palace of Knossos and the legend of the Minotaur?",
+  "a": "Crete"
+ },
+ {
+  "date": "2026-11-17",
+  "topic": "History",
+  "q": "Which ancient civilization built planned cities like Mohenjo-daro in the Indus Valley?",
+  "a": "Harappan"
+ },
+ {
+  "date": "2026-11-17",
+  "topic": "History",
+  "q": "Which Spanish conqueror reached the Aztec capital Tenochtitlan in 1519?",
+  "a": "Hernan Cortes"
+ },
+ {
+  "date": "2026-11-17",
+  "topic": "History",
+  "q": "Which Italian inventor sent the first radio signal across the Atlantic Ocean in 1901?",
+  "a": "Guglielmo Marconi"
  }
 ]
