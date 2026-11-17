@@ -2146,5 +2146,53 @@
   "topic": "Geography",
   "q": "Which Spanish-speaking country has the capital city Lima?",
   "a": "Peru"
+ },
+ {
+  "date": "2026-11-17",
+  "topic": "History",
+  "q": "Which explorer led the first voyage to sail around the world, though he did not survive it?",
+  "a": "Ferdinand Magellan"
+ },
+ {
+  "date": "2026-11-17",
+  "topic": "History",
+  "q": "Which Roman emperor, who ruled from 54 AD, loved performing music on a lyre?",
+  "a": "Nero"
+ },
+ {
+  "date": "2026-11-17",
+  "topic": "History",
+  "q": "Which inventor made the first successful telephone call in 1876?",
+  "a": "Alexander Graham Bell"
+ },
+ {
+  "date": "2026-11-17",
+  "topic": "History",
+  "q": "Which young Macedonian king conquered lands from Greece to India and founded many cities?",
+  "a": "Alexander the Great"
+ },
+ {
+  "date": "2026-11-17",
+  "topic": "History",
+  "q": "Which scientist was the first person to win Nobel Prizes in two different sciences?",
+  "a": "Marie Curie"
+ },
+ {
+  "date": "2026-11-17",
+  "topic": "History",
+  "q": "Which ship carried the Pilgrims from England to America in 1620?",
+  "a": "Mayflower"
+ },
+ {
+  "date": "2026-11-17",
+  "topic": "History",
+  "q": "Which Dutch painter created the huge artwork called The Night Watch?",
+  "a": "Rembrandt"
+ },
+ {
+  "date": "2026-11-17",
+  "topic": "History",
+  "q": "Which country is home to Lascaux cave, famous for prehistoric animal paintings?",
+  "a": "France"
  }
 ]
