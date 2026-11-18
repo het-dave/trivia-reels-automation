@@ -2596,5 +2596,53 @@
   "topic": "Geography",
   "q": "Which river divides the two halves of Budapest, Buda and Pest?",
   "a": "Danube"
+ },
+ {
+  "date": "2026-11-18",
+  "topic": "Science",
+  "q": "What is the name for the supercontinent that existed about 300 million years ago?",
+  "a": "Pangaea"
+ },
+ {
+  "date": "2026-11-18",
+  "topic": "Science",
+  "q": "Which planet in our solar system has the shortest day, spinning around in under ten hours?",
+  "a": "Jupiter"
+ },
+ {
+  "date": "2026-11-18",
+  "topic": "Science",
+  "q": "What is the name of the process plants use to turn sunlight, water, and carbon dioxide into sugar?",
+  "a": "Photosynthesis"
+ },
+ {
+  "date": "2026-11-18",
+  "topic": "Science",
+  "q": "What is the chemical name for the gas people breathe out that plants use?",
+  "a": "Carbon dioxide"
+ },
+ {
+  "date": "2026-11-18",
+  "topic": "Science",
+  "q": "Which scientist is known for discovering penicillin from mold?",
+  "a": "Alexander Fleming"
+ },
+ {
+  "date": "2026-11-18",
+  "topic": "Science",
+  "q": "What is the name of the unit of sound loudness?",
+  "a": "Decibel"
+ },
+ {
+  "date": "2026-11-18",
+  "topic": "Science",
+  "q": "Which type of tiny organism, found in yogurt, is often called good bacteria?",
+  "a": "Probiotics"
+ },
+ {
+  "date": "2026-11-18",
+  "topic": "Science",
+  "q": "What causes the tides in Earth's oceans?",
+  "a": "The Moon's gravity"
  }
 ]
