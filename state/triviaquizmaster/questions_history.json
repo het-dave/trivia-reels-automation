@@ -2242,5 +2242,59 @@
   "topic": "Food",
   "q": "Which type of wheat is used to make most dried Italian pasta?",
   "a": "Durum wheat"
+ },
+ {
+  "date": "2026-11-18",
+  "topic": "Science",
+  "q": "What is the name of the force that slows down objects sliding against each other?",
+  "a": "Friction"
+ },
+ {
+  "date": "2026-11-18",
+  "topic": "Science",
+  "q": "Which planet in our solar system is the largest?",
+  "a": "Jupiter"
+ },
+ {
+  "date": "2026-11-18",
+  "topic": "Science",
+  "q": "What do we call the path of a planet around the sun?",
+  "a": "Orbit"
+ },
+ {
+  "date": "2026-11-18",
+  "topic": "Science",
+  "q": "What is the name for rock that has been changed by heat and pressure, like marble?",
+  "a": "Metamorphic"
+ },
+ {
+  "date": "2026-11-18",
+  "topic": "Science",
+  "q": "What is the name of the very first element on the periodic table?",
+  "a": "Hydrogen"
+ },
+ {
+  "date": "2026-11-18",
+  "topic": "Science",
+  "q": "What is the unit used to measure electric current?",
+  "a": "Ampere"
+ },
+ {
+  "date": "2026-11-18",
+  "topic": "Science",
+  "q": "What kind of animal is an octopus, in terms of its body type?",
+  "a": "Mollusk"
+ },
+ {
+  "date": "2026-11-18",
+  "topic": "Science",
+  "q": "What is the name for a rock from space that lands on Earth's surface?",
+  "a": "Meteorite"
+ },
+ {
+  "date": "2026-11-18",
+  "topic": "Science",
+  "q": "Which type of tiny living thing is used to make bread rise?",
+  "a": "Yeast"
  }
 ]
