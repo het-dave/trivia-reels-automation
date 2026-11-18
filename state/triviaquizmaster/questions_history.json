@@ -2344,5 +2344,59 @@
   "topic": "Movies",
   "q": "In The Wizard of Oz, which animal companion does Dorothy carry in a basket?",
   "a": "Toto the dog"
+ },
+ {
+  "date": "2026-11-18",
+  "topic": "Sports",
+  "q": "In which sport would you use a sand wedge to hit out of a bunker?",
+  "a": "Golf"
+ },
+ {
+  "date": "2026-11-18",
+  "topic": "Sports",
+  "q": "In which winter sport do athletes slide feet first, lying on their backs, on a small sled?",
+  "a": "Luge"
+ },
+ {
+  "date": "2026-11-18",
+  "topic": "Sports",
+  "q": "How many points is a free throw worth in basketball?",
+  "a": "One"
+ },
+ {
+  "date": "2026-11-18",
+  "topic": "Sports",
+  "q": "In baseball, what is the raised area where the pitcher stands called?",
+  "a": "Mound"
+ },
+ {
+  "date": "2026-11-18",
+  "topic": "Sports",
+  "q": "In tennis, what is the term for a score of forty points each?",
+  "a": "Deuce"
+ },
+ {
+  "date": "2026-11-18",
+  "topic": "Sports",
+  "q": "Which Olympic sport has events called butterfly, breaststroke, and freestyle?",
+  "a": "Swimming"
+ },
+ {
+  "date": "2026-11-18",
+  "topic": "Sports",
+  "q": "Which paddle sport was invented in 1965 on Bainbridge Island, Washington?",
+  "a": "Pickleball"
+ },
+ {
+  "date": "2026-11-18",
+  "topic": "Sports",
+  "q": "In auto racing, what pattern is on the flag that signals the end of a race?",
+  "a": "Checkered"
+ },
+ {
+  "date": "2026-11-18",
+  "topic": "Sports",
+  "q": "In fencing, which weapon scores only by hitting the torso and has a flexible blade?",
+  "a": "Foil"
  }
 ]
