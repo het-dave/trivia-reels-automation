@@ -2542,5 +2542,59 @@
   "topic": "Sports",
   "q": "In which sport are the Boston Red Sox and the New York Yankees rivals?",
   "a": "Baseball"
+ },
+ {
+  "date": "2026-11-18",
+  "topic": "Geography",
+  "q": "Which lake is the deepest in the world?",
+  "a": "Lake Baikal"
+ },
+ {
+  "date": "2026-11-18",
+  "topic": "Geography",
+  "q": "Which country has the city of Buenos Aires as its capital?",
+  "a": "Argentina"
+ },
+ {
+  "date": "2026-11-18",
+  "topic": "Geography",
+  "q": "What is the capital city of Switzerland?",
+  "a": "Bern"
+ },
+ {
+  "date": "2026-11-18",
+  "topic": "Geography",
+  "q": "Which river flows through Vienna, Budapest, and Belgrade?",
+  "a": "Danube"
+ },
+ {
+  "date": "2026-11-18",
+  "topic": "Geography",
+  "q": "Which city is the capital of Argentina's neighbor Uruguay?",
+  "a": "Montevideo"
+ },
+ {
+  "date": "2026-11-18",
+  "topic": "Geography",
+  "q": "Which mountain range includes Mount Everest?",
+  "a": "Himalayas"
+ },
+ {
+  "date": "2026-11-18",
+  "topic": "Geography",
+  "q": "Which island nation's capital is Havana?",
+  "a": "Cuba"
+ },
+ {
+  "date": "2026-11-18",
+  "topic": "Geography",
+  "q": "Which Asian country has the capital city Hanoi?",
+  "a": "Vietnam"
+ },
+ {
+  "date": "2026-11-18",
+  "topic": "Geography",
+  "q": "Which river divides the two halves of Budapest, Buda and Pest?",
+  "a": "Danube"
  }
 ]
