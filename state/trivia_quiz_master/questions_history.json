@@ -2494,5 +2494,53 @@
   "topic": "Food",
   "q": "Which bird lays the eggs most commonly eaten around the world?",
   "a": "Chicken"
+ },
+ {
+  "date": "2026-11-18",
+  "topic": "Sports",
+  "q": "Which winter sport has players slide heavy granite stones toward a target?",
+  "a": "Curling"
+ },
+ {
+  "date": "2026-11-18",
+  "topic": "Sports",
+  "q": "In which sport do riders on horses swing a mallet to hit a small ball?",
+  "a": "Polo"
+ },
+ {
+  "date": "2026-11-18",
+  "topic": "Sports",
+  "q": "Which famous horse race is held each year at Churchill Downs?",
+  "a": "Kentucky Derby"
+ },
+ {
+  "date": "2026-11-18",
+  "topic": "Sports",
+  "q": "In soccer, what is it called when one player scores three goals in a single game?",
+  "a": "Hat trick"
+ },
+ {
+  "date": "2026-11-18",
+  "topic": "Sports",
+  "q": "In which sport would you use a bow to shoot arrows at a target with colored rings?",
+  "a": "Archery"
+ },
+ {
+  "date": "2026-11-18",
+  "topic": "Sports",
+  "q": "In cricket, what do you call a score of zero by a batter who is out?",
+  "a": "A duck"
+ },
+ {
+  "date": "2026-11-18",
+  "topic": "Sports",
+  "q": "What is the name of the gymnastics apparatus with two bars set at different heights?",
+  "a": "Uneven bars"
+ },
+ {
+  "date": "2026-11-18",
+  "topic": "Sports",
+  "q": "In which sport are the Boston Red Sox and the New York Yankees rivals?",
+  "a": "Baseball"
  }
 ]
