@@ -2398,5 +2398,53 @@
   "topic": "Sports",
   "q": "In fencing, which weapon scores only by hitting the torso and has a flexible blade?",
   "a": "Foil"
+ },
+ {
+  "date": "2026-11-18",
+  "topic": "Space",
+  "q": "Which star is the closest to Earth after the Sun?",
+  "a": "Proxima Centauri"
+ },
+ {
+  "date": "2026-11-18",
+  "topic": "Space",
+  "q": "What is the region of rocky bodies between Mars and Jupiter called?",
+  "a": "Asteroid Belt"
+ },
+ {
+  "date": "2026-11-18",
+  "topic": "Space",
+  "q": "Which of Jupiter's moons is the most volcanically active place in the solar system?",
+  "a": "Io"
+ },
+ {
+  "date": "2026-11-18",
+  "topic": "Space",
+  "q": "Which planet is often called Earth's twin because it is almost the same size?",
+  "a": "Venus"
+ },
+ {
+  "date": "2026-11-18",
+  "topic": "Space",
+  "q": "Which astronomer discovered that planets travel around the Sun in ovals called ellipses?",
+  "a": "Johannes Kepler"
+ },
+ {
+  "date": "2026-11-18",
+  "topic": "Space",
+  "q": "Which planet has moons named after characters from stories by Shakespeare?",
+  "a": "Uranus"
+ },
+ {
+  "date": "2026-11-18",
+  "topic": "Space",
+  "q": "What was the name of the Apollo 11 lunar landing craft?",
+  "a": "Eagle"
+ },
+ {
+  "date": "2026-11-18",
+  "topic": "Space",
+  "q": "What is the name of the small group of galaxies that includes the Milky Way?",
+  "a": "Local Group"
  }
 ]
