@@ -2422,5 +2422,53 @@
   "topic": "Technology",
   "q": "Which company makes the Xbox video game console?",
   "a": "Microsoft"
+ },
+ {
+  "date": "2026-11-18",
+  "topic": "Music",
+  "q": "Which instrument family includes the xylophone, snare drum, and timpani?",
+  "a": "Percussion"
+ },
+ {
+  "date": "2026-11-18",
+  "topic": "Music",
+  "q": "Which instrument has 47 strings and seven pedals and is played by plucking?",
+  "a": "Harp"
+ },
+ {
+  "date": "2026-11-18",
+  "topic": "Music",
+  "q": "Which band sang the songs Hey Jude and Let It Be?",
+  "a": "The Beatles"
+ },
+ {
+  "date": "2026-11-18",
+  "topic": "Music",
+  "q": "Which Italian composer wrote the opera Madama Butterfly?",
+  "a": "Puccini"
+ },
+ {
+  "date": "2026-11-18",
+  "topic": "Music",
+  "q": "Which Russian composer wrote the opera Boris Godunov and the piece Pictures at an Exhibition?",
+  "a": "Mussorgsky"
+ },
+ {
+  "date": "2026-11-18",
+  "topic": "Music",
+  "q": "What is the term for a musical piece sung or played by eight performers?",
+  "a": "Octet"
+ },
+ {
+  "date": "2026-11-18",
+  "topic": "Music",
+  "q": "Which English composer wrote The Planets, a suite about the solar system?",
+  "a": "Gustav Holst"
+ },
+ {
+  "date": "2026-11-18",
+  "topic": "Music",
+  "q": "Which wind instrument is the smallest and highest-pitched in a standard orchestra?",
+  "a": "Piccolo"
  }
 ]
