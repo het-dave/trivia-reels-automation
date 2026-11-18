@@ -2320,5 +2320,59 @@
   "topic": "Food",
   "q": "What is the main ingredient of traditional Japanese natto?",
   "a": "Fermented soybeans"
+ },
+ {
+  "date": "2026-11-18",
+  "topic": "Sports",
+  "q": "Which sport uses a net, a racket, and a court, and is played at the US Open in New York?",
+  "a": "Tennis"
+ },
+ {
+  "date": "2026-11-18",
+  "topic": "Sports",
+  "q": "How many players from one team are on the ice in hockey, including the goalie, during normal play?",
+  "a": "Six"
+ },
+ {
+  "date": "2026-11-18",
+  "topic": "Sports",
+  "q": "What is the name of the long pole-like object athletes throw in a track and field event?",
+  "a": "Javelin"
+ },
+ {
+  "date": "2026-11-18",
+  "topic": "Sports",
+  "q": "In the sport of curling, what is the target area at the end of the ice called?",
+  "a": "The house"
+ },
+ {
+  "date": "2026-11-18",
+  "topic": "Sports",
+  "q": "In which sport would you do a slam dunk?",
+  "a": "Basketball"
+ },
+ {
+  "date": "2026-11-18",
+  "topic": "Sports",
+  "q": "Which ocean sport involves riding waves while standing on a board?",
+  "a": "Surfing"
+ },
+ {
+  "date": "2026-11-18",
+  "topic": "Sports",
+  "q": "In ten-pin bowling, what is it called when you score three strikes in a row?",
+  "a": "Turkey"
+ },
+ {
+  "date": "2026-11-18",
+  "topic": "Sports",
+  "q": "In what sport is a shuttlecock sometimes called a birdie?",
+  "a": "Badminton"
+ },
+ {
+  "date": "2026-11-18",
+  "topic": "Sports",
+  "q": "In golf, what is the name for two strokes under par on a hole?",
+  "a": "Eagle"
  }
 ]
