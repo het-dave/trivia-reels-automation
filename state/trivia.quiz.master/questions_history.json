@@ -2374,5 +2374,53 @@
   "topic": "Sports",
   "q": "In golf, what is the name for two strokes under par on a hole?",
   "a": "Eagle"
+ },
+ {
+  "date": "2026-11-18",
+  "topic": "Technology",
+  "q": "What do you call the screen you touch with your fingers on a tablet?",
+  "a": "Touchscreen"
+ },
+ {
+  "date": "2026-11-18",
+  "topic": "Technology",
+  "q": "Which gas-free vehicle type runs on a battery and an electric motor?",
+  "a": "Electric car"
+ },
+ {
+  "date": "2026-11-18",
+  "topic": "Technology",
+  "q": "Which tiny memory unit is bigger: a byte or a bit?",
+  "a": "Byte"
+ },
+ {
+  "date": "2026-11-18",
+  "topic": "Technology",
+  "q": "Which Hungarian inventor created the Rubik's Cube?",
+  "a": "Erno Rubik"
+ },
+ {
+  "date": "2026-11-18",
+  "topic": "Technology",
+  "q": "What does a barcode scanner read to identify a product?",
+  "a": "Black and white lines"
+ },
+ {
+  "date": "2026-11-18",
+  "topic": "Technology",
+  "q": "What is the name of the Czech writer who first used the word robot in a 1920 play?",
+  "a": "Karel Capek"
+ },
+ {
+  "date": "2026-11-18",
+  "topic": "Technology",
+  "q": "Which small device did Douglas Engelbart invent in the 1960s to point on a screen?",
+  "a": "Computer mouse"
+ },
+ {
+  "date": "2026-11-18",
+  "topic": "Technology",
+  "q": "Which company makes the Xbox video game console?",
+  "a": "Microsoft"
  }
 ]
