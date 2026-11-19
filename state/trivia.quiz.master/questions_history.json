@@ -2620,5 +2620,59 @@
   "topic": "Space",
   "q": "Which astronaut was the first American to orbit Earth?",
   "a": "John Glenn"
+ },
+ {
+  "date": "2026-11-19",
+  "topic": "Animals",
+  "q": "How many bones are in a giraffe's long neck?",
+  "a": "Seven"
+ },
+ {
+  "date": "2026-11-19",
+  "topic": "Animals",
+  "q": "Which tiny bird is able to fly backward?",
+  "a": "Hummingbird"
+ },
+ {
+  "date": "2026-11-19",
+  "topic": "Animals",
+  "q": "Which large African animal spends its days in water and makes an oily, reddish sweat?",
+  "a": "Hippopotamus"
+ },
+ {
+  "date": "2026-11-19",
+  "topic": "Animals",
+  "q": "Which bird has a big throat pouch for scooping up fish?",
+  "a": "Pelican"
+ },
+ {
+  "date": "2026-11-19",
+  "topic": "Animals",
+  "q": "On which island do wild lemurs naturally live?",
+  "a": "Madagascar"
+ },
+ {
+  "date": "2026-11-19",
+  "topic": "Animals",
+  "q": "Which leaves do koalas mainly eat?",
+  "a": "Eucalyptus"
+ },
+ {
+  "date": "2026-11-19",
+  "topic": "Animals",
+  "q": "Which sea mammal sometimes uses a rock as a tool to crack open shellfish?",
+  "a": "Sea otter"
+ },
+ {
+  "date": "2026-11-19",
+  "topic": "Animals",
+  "q": "Which Mexican salamander keeps feathery gills even as an adult?",
+  "a": "Axolotl"
+ },
+ {
+  "date": "2026-11-19",
+  "topic": "Animals",
+  "q": "What do we call a group of fish swimming together?",
+  "a": "School"
  }
 ]
