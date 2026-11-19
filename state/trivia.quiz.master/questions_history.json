@@ -2524,5 +2524,53 @@
   "topic": "Geography",
   "q": "Which continent does the Suez Canal's western side belong to?",
   "a": "Africa"
+ },
+ {
+  "date": "2026-11-19",
+  "topic": "Science",
+  "q": "Which blood cells help your body fight germs?",
+  "a": "White cells"
+ },
+ {
+  "date": "2026-11-19",
+  "topic": "Science",
+  "q": "What is the name of the layer of gas high above Earth that absorbs harmful ultraviolet rays?",
+  "a": "Ozone layer"
+ },
+ {
+  "date": "2026-11-19",
+  "topic": "Science",
+  "q": "What do we call the hot liquid rock beneath Earth's surface?",
+  "a": "Magma"
+ },
+ {
+  "date": "2026-11-19",
+  "topic": "Science",
+  "q": "Which scientist is known for the theory of evolution by natural selection?",
+  "a": "Charles Darwin"
+ },
+ {
+  "date": "2026-11-19",
+  "topic": "Science",
+  "q": "Which blood type is known as the universal red cell donor?",
+  "a": "Type O negative"
+ },
+ {
+  "date": "2026-11-19",
+  "topic": "Science",
+  "q": "What is the common name for the substance made of two hydrogen atoms and one oxygen atom?",
+  "a": "Water"
+ },
+ {
+  "date": "2026-11-19",
+  "topic": "Science",
+  "q": "What is the name of the yellow dust made by flowers for reproduction?",
+  "a": "Pollen"
+ },
+ {
+  "date": "2026-11-19",
+  "topic": "Science",
+  "q": "Which part of the brain is mainly responsible for balance and coordination?",
+  "a": "Cerebellum"
  }
 ]
