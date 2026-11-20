@@ -2842,5 +2842,53 @@
   "topic": "History",
   "q": "Which Spanish word names soldier-explorers like Cortes who conquered lands in the Americas?",
   "a": "Conquistadors"
+ },
+ {
+  "date": "2026-11-20",
+  "topic": "Technology",
+  "q": "Which tech company is known for its search engine and a colorful logo spelling its name?",
+  "a": "Google"
+ },
+ {
+  "date": "2026-11-20",
+  "topic": "Technology",
+  "q": "What do the letters USB stand for in a USB cable?",
+  "a": "Universal Serial Bus"
+ },
+ {
+  "date": "2026-11-20",
+  "topic": "Technology",
+  "q": "What kind of tool did Alexander Graham Bell patent in 1876?",
+  "a": "Telephone"
+ },
+ {
+  "date": "2026-11-20",
+  "topic": "Technology",
+  "q": "Which Wright brothers invention made its first powered flight in 1903?",
+  "a": "Airplane"
+ },
+ {
+  "date": "2026-11-20",
+  "topic": "Technology",
+  "q": "What is the name of the brain of a computer that carries out instructions?",
+  "a": "Processor"
+ },
+ {
+  "date": "2026-11-20",
+  "topic": "Technology",
+  "q": "Which American inventor is credited with developing a long-lasting practical electric light bulb?",
+  "a": "Thomas Edison"
+ },
+ {
+  "date": "2026-11-20",
+  "topic": "Technology",
+  "q": "What dot-and-dash code did Samuel Morse help develop for telegraph messages?",
+  "a": "Morse code"
+ },
+ {
+  "date": "2026-11-20",
+  "topic": "Technology",
+  "q": "Which tiny electronic switch, invented in 1947, replaced bulky vacuum tubes?",
+  "a": "Transistor"
  }
 ]
