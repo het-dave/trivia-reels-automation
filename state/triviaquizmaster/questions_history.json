@@ -2752,5 +2752,53 @@
   "topic": "Geography",
   "q": "Which river runs through the city of Cairo, Egypt?",
   "a": "Nile"
+ },
+ {
+  "date": "2026-11-20",
+  "topic": "Sports",
+  "q": "Which country invented the sport of judo?",
+  "a": "Japan"
+ },
+ {
+  "date": "2026-11-20",
+  "topic": "Sports",
+  "q": "How many rings are on the Olympic flag?",
+  "a": "Five"
+ },
+ {
+  "date": "2026-11-20",
+  "topic": "Sports",
+  "q": "In golf, what is it called when you score one stroke under par on a hole?",
+  "a": "Birdie"
+ },
+ {
+  "date": "2026-11-20",
+  "topic": "Sports",
+  "q": "In the Olympic sport of pole vault, what do athletes use to clear a high bar?",
+  "a": "A flexible pole"
+ },
+ {
+  "date": "2026-11-20",
+  "topic": "Sports",
+  "q": "In tennis, what do the four major tournaments make up together?",
+  "a": "The Grand Slam"
+ },
+ {
+  "date": "2026-11-20",
+  "topic": "Sports",
+  "q": "What piece of equipment is used in the sport of archery to shoot arrows?",
+  "a": "Bow"
+ },
+ {
+  "date": "2026-11-20",
+  "topic": "Sports",
+  "q": "In which sport do athletes compete for the Lombardi Trophy?",
+  "a": "American football"
+ },
+ {
+  "date": "2026-11-20",
+  "topic": "Sports",
+  "q": "In tennis, what is it called when a player wins a set six games to zero?",
+  "a": "Bagel"
  }
 ]
