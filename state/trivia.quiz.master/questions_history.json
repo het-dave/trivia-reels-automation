@@ -2722,5 +2722,53 @@
   "topic": "Movies",
   "q": "Which 1995 film stars Robin Williams and a board game that brings jungle dangers to life?",
   "a": "Jumanji"
+ },
+ {
+  "date": "2026-11-20",
+  "topic": "History",
+  "q": "Which ancient stone monument in England is a famous circle of giant standing stones?",
+  "a": "Stonehenge"
+ },
+ {
+  "date": "2026-11-20",
+  "topic": "History",
+  "q": "Which ancient Greek mathematician is linked with a famous theorem about right triangles?",
+  "a": "Pythagoras"
+ },
+ {
+  "date": "2026-11-20",
+  "topic": "History",
+  "q": "Which French scientist developed a process to make milk safer, now called pasteurization?",
+  "a": "Louis Pasteur"
+ },
+ {
+  "date": "2026-11-20",
+  "topic": "History",
+  "q": "Which German-born scientist developed the theory of relativity in the early 1900s?",
+  "a": "Albert Einstein"
+ },
+ {
+  "date": "2026-11-20",
+  "topic": "History",
+  "q": "Which Roman road, begun in 312 BC, was one of the first great highways of ancient Rome?",
+  "a": "Appian Way"
+ },
+ {
+  "date": "2026-11-20",
+  "topic": "History",
+  "q": "Which empire, ruled by sultans, made Istanbul its capital after 1453?",
+  "a": "Ottoman Empire"
+ },
+ {
+  "date": "2026-11-20",
+  "topic": "History",
+  "q": "Which Mughal emperor built the Taj Mahal in India?",
+  "a": "Shah Jahan"
+ },
+ {
+  "date": "2026-11-20",
+  "topic": "History",
+  "q": "Which ancient Greek storyteller is credited with fables like The Tortoise and the Hare?",
+  "a": "Aesop"
  }
 ]
