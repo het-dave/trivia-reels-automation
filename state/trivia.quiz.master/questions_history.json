@@ -2872,5 +2872,53 @@
   "topic": "Music",
   "q": "Which Beatles member wrote and sang the song Yesterday?",
   "a": "Paul McCartney"
+ },
+ {
+  "date": "2026-11-21",
+  "topic": "Food",
+  "q": "Which spice, made from crocus flower threads, is among the priciest in the world?",
+  "a": "Saffron"
+ },
+ {
+  "date": "2026-11-21",
+  "topic": "Food",
+  "q": "Which citrus fruit is the main flavor of Italian limoncello liqueur?",
+  "a": "Lemon"
+ },
+ {
+  "date": "2026-11-21",
+  "topic": "Food",
+  "q": "Which dried legume is the main ingredient in split pea soup?",
+  "a": "Peas"
+ },
+ {
+  "date": "2026-11-21",
+  "topic": "Food",
+  "q": "What are the main ingredients of the frozen dessert called sorbet?",
+  "a": "Fruit and sugar"
+ },
+ {
+  "date": "2026-11-21",
+  "topic": "Food",
+  "q": "Which fruit is mixed with cream and meringue in the British dessert Eton mess?",
+  "a": "Strawberry"
+ },
+ {
+  "date": "2026-11-21",
+  "topic": "Food",
+  "q": "Which grain is used to make traditional Scottish porridge?",
+  "a": "Oats"
+ },
+ {
+  "date": "2026-11-21",
+  "topic": "Food",
+  "q": "Which plant's root is grated to make the green paste served with sushi?",
+  "a": "Wasabi"
+ },
+ {
+  "date": "2026-11-21",
+  "topic": "Food",
+  "q": "Which seed paste is the main ingredient of the Middle Eastern sweet called halva?",
+  "a": "Sesame"
  }
 ]
