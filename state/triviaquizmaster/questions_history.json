@@ -2956,5 +2956,53 @@
   "topic": "Movies",
   "q": "Which 1993 romance stars Tom Hanks and Meg Ryan and ends atop the Empire State Building?",
   "a": "Sleepless in Seattle"
+ },
+ {
+  "date": "2026-11-21",
+  "topic": "History",
+  "q": "Which ancient people built the pyramids of Giza?",
+  "a": "Egyptians"
+ },
+ {
+  "date": "2026-11-21",
+  "topic": "History",
+  "q": "Which famous ship's maiden voyage in 1912 ended after it struck an iceberg?",
+  "a": "Titanic"
+ },
+ {
+  "date": "2026-11-21",
+  "topic": "History",
+  "q": "Which French queen is wrongly said to have told people to eat cake?",
+  "a": "Marie Antoinette"
+ },
+ {
+  "date": "2026-11-21",
+  "topic": "History",
+  "q": "Which Aztec capital city was built on an island in a lake?",
+  "a": "Tenochtitlan"
+ },
+ {
+  "date": "2026-11-21",
+  "topic": "History",
+  "q": "Which ancient city did Hannibal come from, famous for crossing the Alps with elephants?",
+  "a": "Carthage"
+ },
+ {
+  "date": "2026-11-21",
+  "topic": "History",
+  "q": "Which English king lost the Battle of Hastings in 1066?",
+  "a": "Harold"
+ },
+ {
+  "date": "2026-11-21",
+  "topic": "History",
+  "q": "Which Greek inventor is said to have shouted Eureka in his bath?",
+  "a": "Archimedes"
+ },
+ {
+  "date": "2026-11-21",
+  "topic": "History",
+  "q": "Which ancient civilization held the original Olympic Games?",
+  "a": "Greeks"
  }
 ]
