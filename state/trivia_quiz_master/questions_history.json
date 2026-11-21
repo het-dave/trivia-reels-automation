@@ -3184,5 +3184,53 @@
   "topic": "Movies",
   "q": "Which director made the 1968 space film 2001: A Space Odyssey?",
   "a": "Stanley Kubrick"
+ },
+ {
+  "date": "2026-11-21",
+  "topic": "History",
+  "q": "In which US state did the Wright brothers make their first powered airplane flight in 1903?",
+  "a": "North Carolina"
+ },
+ {
+  "date": "2026-11-21",
+  "topic": "History",
+  "q": "Which ancient wonder was a giant lighthouse on the island of Pharos in Egypt?",
+  "a": "Lighthouse of Alexandria"
+ },
+ {
+  "date": "2026-11-21",
+  "topic": "History",
+  "q": "Which English scientist is said to have been inspired about gravity by a falling apple?",
+  "a": "Isaac Newton"
+ },
+ {
+  "date": "2026-11-21",
+  "topic": "History",
+  "q": "Which Greek city-state was famous for training its soldiers from childhood?",
+  "a": "Sparta"
+ },
+ {
+  "date": "2026-11-21",
+  "topic": "History",
+  "q": "Which ancient people of Peru drew giant animal figures in the desert called the Nazca Lines?",
+  "a": "Nazca"
+ },
+ {
+  "date": "2026-11-21",
+  "topic": "History",
+  "q": "Which Frenchman invented a reading system of raised dots for blind people?",
+  "a": "Louis Braille"
+ },
+ {
+  "date": "2026-11-21",
+  "topic": "History",
+  "q": "Which English city is home to famous ancient Roman baths that still exist today?",
+  "a": "Bath"
+ },
+ {
+  "date": "2026-11-21",
+  "topic": "History",
+  "q": "Which German engineer built an early gasoline-powered car called the Motorwagen in 1885?",
+  "a": "Karl Benz"
  }
 ]
