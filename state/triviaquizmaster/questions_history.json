@@ -3004,5 +3004,59 @@
   "topic": "History",
   "q": "Which ancient civilization held the original Olympic Games?",
   "a": "Greeks"
+ },
+ {
+  "date": "2026-11-21",
+  "topic": "Food",
+  "q": "Which vegetable do people carve into jack-o'-lanterns at Halloween and also bake into pies?",
+  "a": "Pumpkin"
+ },
+ {
+  "date": "2026-11-21",
+  "topic": "Food",
+  "q": "Which Italian city is the birthplace of pizza?",
+  "a": "Naples"
+ },
+ {
+  "date": "2026-11-21",
+  "topic": "Food",
+  "q": "Beans from which tree are used to make chocolate?",
+  "a": "Cacao"
+ },
+ {
+  "date": "2026-11-21",
+  "topic": "Food",
+  "q": "Which country is the home of the long, crusty bread called the baguette?",
+  "a": "France"
+ },
+ {
+  "date": "2026-11-21",
+  "topic": "Food",
+  "q": "Which Italian dessert's name means pick me up and uses coffee and mascarpone?",
+  "a": "Tiramisu"
+ },
+ {
+  "date": "2026-11-21",
+  "topic": "Food",
+  "q": "Which compound makes chili peppers taste hot?",
+  "a": "Capsaicin"
+ },
+ {
+  "date": "2026-11-21",
+  "topic": "Food",
+  "q": "Which sea plant wraps the rice and fillings in a sushi roll?",
+  "a": "Nori"
+ },
+ {
+  "date": "2026-11-21",
+  "topic": "Food",
+  "q": "Which Ethiopian flatbread, made from teff flour, has a spongy, sour texture?",
+  "a": "Injera"
+ },
+ {
+  "date": "2026-11-21",
+  "topic": "Food",
+  "q": "Which Indian cheese, often cubed in curries, is made by curdling milk with acid?",
+  "a": "Paneer"
  }
 ]
