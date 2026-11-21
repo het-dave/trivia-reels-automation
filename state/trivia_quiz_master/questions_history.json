@@ -3088,5 +3088,53 @@
   "topic": "Food",
   "q": "Which vegetable is dried and ground to make paprika?",
   "a": "Red peppers"
+ },
+ {
+  "date": "2026-11-21",
+  "topic": "Sports",
+  "q": "In American football, how many points is a touchdown worth before any extra kick?",
+  "a": "Six"
+ },
+ {
+  "date": "2026-11-21",
+  "topic": "Sports",
+  "q": "In baseball, how many strikes make a strikeout?",
+  "a": "Three"
+ },
+ {
+  "date": "2026-11-21",
+  "topic": "Sports",
+  "q": "About how many miles long is an Olympic marathon?",
+  "a": "Twenty-six"
+ },
+ {
+  "date": "2026-11-21",
+  "topic": "Sports",
+  "q": "Which sport uses the scoring words love, deuce, and advantage?",
+  "a": "Tennis"
+ },
+ {
+  "date": "2026-11-21",
+  "topic": "Sports",
+  "q": "In which country did the sport of sumo wrestling originate?",
+  "a": "Japan"
+ },
+ {
+  "date": "2026-11-21",
+  "topic": "Sports",
+  "q": "Which gymnastics apparatus has two handles that gymnasts swing their legs around?",
+  "a": "Pommel horse"
+ },
+ {
+  "date": "2026-11-21",
+  "topic": "Sports",
+  "q": "In what sport might you perform a triple axel or a camel spin?",
+  "a": "Figure skating"
+ },
+ {
+  "date": "2026-11-21",
+  "topic": "Sports",
+  "q": "In which sport do players throw small darts at a round board with a bullseye?",
+  "a": "Darts"
  }
 ]
