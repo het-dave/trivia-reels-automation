@@ -3178,5 +3178,53 @@
   "topic": "Science",
   "q": "Which color of light is at the outer edge of a rainbow's top arc?",
   "a": "Red"
+ },
+ {
+  "date": "2026-11-22",
+  "topic": "Technology",
+  "q": "What kind of machine did the Wright brothers fly in 1903?",
+  "a": "Airplane"
+ },
+ {
+  "date": "2026-11-22",
+  "topic": "Technology",
+  "q": "What does GPS help a device figure out?",
+  "a": "Its location"
+ },
+ {
+  "date": "2026-11-22",
+  "topic": "Technology",
+  "q": "Which tech company is named after a fruit and makes the Mac?",
+  "a": "Apple"
+ },
+ {
+  "date": "2026-11-22",
+  "topic": "Technology",
+  "q": "Which Swedish chemist invented dynamite and later founded a famous prize?",
+  "a": "Alfred Nobel"
+ },
+ {
+  "date": "2026-11-22",
+  "topic": "Technology",
+  "q": "Which brothers in France showed an early movie projector in 1895?",
+  "a": "Lumière brothers"
+ },
+ {
+  "date": "2026-11-22",
+  "topic": "Technology",
+  "q": "Which Italian inventor sent the first transatlantic radio signal in 1901?",
+  "a": "Guglielmo Marconi"
+ },
+ {
+  "date": "2026-11-22",
+  "topic": "Technology",
+  "q": "Which French inventor created a reading system of raised dots for blind people?",
+  "a": "Louis Braille"
+ },
+ {
+  "date": "2026-11-22",
+  "topic": "Technology",
+  "q": "Which Japanese company created the Game Boy and the Super Mario games?",
+  "a": "Nintendo"
  }
 ]
