@@ -3208,5 +3208,53 @@
   "topic": "Sports",
   "q": "In basketball, what is it called when a player dribbles, stops, then dribbles again?",
   "a": "Double dribble"
+ },
+ {
+  "date": "2026-11-22",
+  "topic": "Space",
+  "q": "Which Soviet cosmonaut became the first human to travel into space?",
+  "a": "Yuri Gagarin"
+ },
+ {
+  "date": "2026-11-22",
+  "topic": "Space",
+  "q": "What is the name of the closest star to our solar system after the Sun?",
+  "a": "Proxima Centauri"
+ },
+ {
+  "date": "2026-11-22",
+  "topic": "Space",
+  "q": "Which Mars moon's name means fear, and is one of the planet's two tiny moons?",
+  "a": "Phobos"
+ },
+ {
+  "date": "2026-11-22",
+  "topic": "Space",
+  "q": "What is the name of the hot, glowing ball of gas at the center of a solar system?",
+  "a": "Star"
+ },
+ {
+  "date": "2026-11-22",
+  "topic": "Space",
+  "q": "How many planets orbit our Sun?",
+  "a": "Eight"
+ },
+ {
+  "date": "2026-11-22",
+  "topic": "Space",
+  "q": "The main asteroid belt lies between the orbits of which two planets?",
+  "a": "Mars and Jupiter"
+ },
+ {
+  "date": "2026-11-22",
+  "topic": "Space",
+  "q": "About how many years does Halley's Comet take to return near Earth?",
+  "a": "About 76"
+ },
+ {
+  "date": "2026-11-22",
+  "topic": "Space",
+  "q": "Why do we always see the same side of the Moon from Earth?",
+  "a": "It is tidally locked"
  }
 ]
