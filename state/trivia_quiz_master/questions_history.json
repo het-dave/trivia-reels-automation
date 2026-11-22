@@ -3232,5 +3232,53 @@
   "topic": "History",
   "q": "Which German engineer built an early gasoline-powered car called the Motorwagen in 1885?",
   "a": "Karl Benz"
+ },
+ {
+  "date": "2026-11-22",
+  "topic": "Space",
+  "q": "What is the name of the biggest object in our solar system, holding most of its mass?",
+  "a": "The Sun"
+ },
+ {
+  "date": "2026-11-22",
+  "topic": "Space",
+  "q": "Which moon of Jupiter is the most volcanically active world in our solar system?",
+  "a": "Io"
+ },
+ {
+  "date": "2026-11-22",
+  "topic": "Space",
+  "q": "Which element is the second most common in the Sun, after hydrogen?",
+  "a": "Helium"
+ },
+ {
+  "date": "2026-11-22",
+  "topic": "Space",
+  "q": "What is the name of the Moon's largest and oldest known impact basin on its far side?",
+  "a": "South Pole-Aitken"
+ },
+ {
+  "date": "2026-11-22",
+  "topic": "Space",
+  "q": "What is the name of Mars's two small moons?",
+  "a": "Phobos and Deimos"
+ },
+ {
+  "date": "2026-11-22",
+  "topic": "Space",
+  "q": "What is the name of the Sun's outer atmosphere that stretches millions of miles into space?",
+  "a": "Corona"
+ },
+ {
+  "date": "2026-11-22",
+  "topic": "Space",
+  "q": "Which country sent the first human, Yuri Gagarin, into space?",
+  "a": "Soviet Union"
+ },
+ {
+  "date": "2026-11-22",
+  "topic": "Space",
+  "q": "What do we call the belt of rocky objects found between Mars and Jupiter?",
+  "a": "Asteroid belt"
  }
 ]
