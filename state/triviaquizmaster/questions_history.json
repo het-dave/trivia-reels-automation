@@ -3112,5 +3112,53 @@
   "topic": "Animals",
   "q": "Which animal is known for having the longest neck of any land animal?",
   "a": "Giraffe"
+ },
+ {
+  "date": "2026-11-22",
+  "topic": "Technology",
+  "q": "What kind of energy source do solar panels use to make electricity?",
+  "a": "Sunlight"
+ },
+ {
+  "date": "2026-11-22",
+  "topic": "Technology",
+  "q": "What does USB stand for in USB drive?",
+  "a": "Universal Serial Bus"
+ },
+ {
+  "date": "2026-11-22",
+  "topic": "Technology",
+  "q": "What is the name of the process of converting a computer file into a smaller size?",
+  "a": "Compression"
+ },
+ {
+  "date": "2026-11-22",
+  "topic": "Technology",
+  "q": "What is a computer's main chip that does most of its calculating called?",
+  "a": "Processor"
+ },
+ {
+  "date": "2026-11-22",
+  "topic": "Technology",
+  "q": "What did the first Apple iPod mainly play?",
+  "a": "Music"
+ },
+ {
+  "date": "2026-11-22",
+  "topic": "Technology",
+  "q": "Which invention by Johannes Gutenberg spread books across Europe in the fifteenth century?",
+  "a": "Printing press"
+ },
+ {
+  "date": "2026-11-22",
+  "topic": "Technology",
+  "q": "Which American inventor is famous for improving the practical electric light bulb?",
+  "a": "Thomas Edison"
+ },
+ {
+  "date": "2026-11-22",
+  "topic": "Technology",
+  "q": "What does the V stand for in VR, the headset technology?",
+  "a": "Virtual"
  }
 ]
