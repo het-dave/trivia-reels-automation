@@ -3160,5 +3160,53 @@
   "topic": "Technology",
   "q": "What does the V stand for in VR, the headset technology?",
   "a": "Virtual"
+ },
+ {
+  "date": "2026-11-22",
+  "topic": "Sports",
+  "q": "How many players are on the field for one soccer team, including the goalkeeper?",
+  "a": "Eleven"
+ },
+ {
+  "date": "2026-11-22",
+  "topic": "Sports",
+  "q": "How many sides does home plate have in baseball?",
+  "a": "Five"
+ },
+ {
+  "date": "2026-11-22",
+  "topic": "Sports",
+  "q": "Which sport uses a long, narrow pool with lanes and a starting block?",
+  "a": "Swimming"
+ },
+ {
+  "date": "2026-11-22",
+  "topic": "Sports",
+  "q": "In which sport is the term love used for a score of zero?",
+  "a": "Tennis"
+ },
+ {
+  "date": "2026-11-22",
+  "topic": "Sports",
+  "q": "What is the length of a marathon, rounded to the nearest mile?",
+  "a": "Twenty-six miles"
+ },
+ {
+  "date": "2026-11-22",
+  "topic": "Sports",
+  "q": "In cricket, what is it called when a batter is out without scoring any runs?",
+  "a": "Duck"
+ },
+ {
+  "date": "2026-11-22",
+  "topic": "Sports",
+  "q": "In track and field, which race has runners jump over barriers and a water pit?",
+  "a": "Steeplechase"
+ },
+ {
+  "date": "2026-11-22",
+  "topic": "Sports",
+  "q": "In basketball, what is it called when a player dribbles, stops, then dribbles again?",
+  "a": "Double dribble"
  }
 ]
