@@ -3370,5 +3370,53 @@
   "topic": "History",
   "q": "Which ancient Greek city-state was famous for training its children as tough soldiers?",
   "a": "Sparta"
+ },
+ {
+  "date": "2026-11-23",
+  "topic": "Space",
+  "q": "Which planet is the hottest in our solar system, thanks to its thick greenhouse atmosphere?",
+  "a": "Venus"
+ },
+ {
+  "date": "2026-11-23",
+  "topic": "Space",
+  "q": "What is the Moon's phase called when exactly half of its face is lit after the new moon?",
+  "a": "First quarter"
+ },
+ {
+  "date": "2026-11-23",
+  "topic": "Space",
+  "q": "What type of object is Pluto classified as?",
+  "a": "Dwarf planet"
+ },
+ {
+  "date": "2026-11-23",
+  "topic": "Space",
+  "q": "Which planet has a famous giant hexagon-shaped storm at its north pole?",
+  "a": "Saturn"
+ },
+ {
+  "date": "2026-11-23",
+  "topic": "Space",
+  "q": "Which Saturn moon sprays icy geysers from cracks near its south pole?",
+  "a": "Enceladus"
+ },
+ {
+  "date": "2026-11-23",
+  "topic": "Space",
+  "q": "Which Mars rover, landing in 2012, was about the size of a small car?",
+  "a": "Curiosity"
+ },
+ {
+  "date": "2026-11-23",
+  "topic": "Space",
+  "q": "What is the name of the layer of gas that surrounds a planet?",
+  "a": "Atmosphere"
+ },
+ {
+  "date": "2026-11-23",
+  "topic": "Space",
+  "q": "Which gas giant has the fastest spin, with a day of about ten hours?",
+  "a": "Jupiter"
  }
 ]
