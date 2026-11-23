@@ -3592,5 +3592,53 @@
   "topic": "Movies",
   "q": "In Star Wars, what is the name of Han Solo's furry co-pilot?",
   "a": "Chewbacca"
+ },
+ {
+  "date": "2026-11-23",
+  "topic": "History",
+  "q": "Which ancient people wrote with symbols called cuneiform on clay tablets?",
+  "a": "Sumerians"
+ },
+ {
+  "date": "2026-11-23",
+  "topic": "History",
+  "q": "Which German inventor introduced the movable-type printing press to Europe in the 1400s?",
+  "a": "Johannes Gutenberg"
+ },
+ {
+  "date": "2026-11-23",
+  "topic": "History",
+  "q": "What was the name of the Viking-age writing alphabet made of angular letters?",
+  "a": "Runes"
+ },
+ {
+  "date": "2026-11-23",
+  "topic": "History",
+  "q": "Which ancient wonder honored a king and gave us the word mausoleum?",
+  "a": "Tomb at Halicarnassus"
+ },
+ {
+  "date": "2026-11-23",
+  "topic": "History",
+  "q": "Which Italian city-state was famous for building its streets as canals and ruling the seas?",
+  "a": "Venice"
+ },
+ {
+  "date": "2026-11-23",
+  "topic": "History",
+  "q": "Which tool, first invented in China, helped sailors find direction using a magnetized needle?",
+  "a": "Compass"
+ },
+ {
+  "date": "2026-11-23",
+  "topic": "History",
+  "q": "Which Egyptian queen ruled as pharaoh and wore a false beard in statues?",
+  "a": "Hatshepsut"
+ },
+ {
+  "date": "2026-11-23",
+  "topic": "History",
+  "q": "Which Japanese warrior class served feudal lords and followed a code called bushido?",
+  "a": "Samurai"
  }
 ]
