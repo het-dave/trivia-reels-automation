@@ -3358,5 +3358,53 @@
   "topic": "Geography",
   "q": "Which European country has the capital Lisbon?",
   "a": "Portugal"
+ },
+ {
+  "date": "2026-11-23",
+  "topic": "History",
+  "q": "Which ancient civilization built the Colossus of Rhodes, a giant statue of the sun god?",
+  "a": "Greeks"
+ },
+ {
+  "date": "2026-11-23",
+  "topic": "History",
+  "q": "Which famous queen was the last active ruler of Ptolemaic Egypt?",
+  "a": "Cleopatra"
+ },
+ {
+  "date": "2026-11-23",
+  "topic": "History",
+  "q": "Which English queen reigned when the Spanish Armada was defeated in 1588?",
+  "a": "Queen Elizabeth the First"
+ },
+ {
+  "date": "2026-11-23",
+  "topic": "History",
+  "q": "Which civilization built Machu Picchu high in the Andes mountains?",
+  "a": "Inca"
+ },
+ {
+  "date": "2026-11-23",
+  "topic": "History",
+  "q": "Which Polish astronomer proposed that the Earth travels around the Sun?",
+  "a": "Copernicus"
+ },
+ {
+  "date": "2026-11-23",
+  "topic": "History",
+  "q": "Which ancient kingdom near the Nile in Sudan built more pyramids than Egypt?",
+  "a": "Kush"
+ },
+ {
+  "date": "2026-11-23",
+  "topic": "History",
+  "q": "Which Spanish explorer led the conquest of the Aztec capital Tenochtitlan?",
+  "a": "Cortés"
+ },
+ {
+  "date": "2026-11-23",
+  "topic": "History",
+  "q": "Which American inventor developed a practical electric light bulb in 1879?",
+  "a": "Thomas Edison"
  }
 ]
