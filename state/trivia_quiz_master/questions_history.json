@@ -3688,5 +3688,53 @@
   "topic": "Food",
   "q": "Which fruit is the star of the upside-down French dessert called tarte tatin?",
   "a": "Apple"
+ },
+ {
+  "date": "2026-11-24",
+  "topic": "Sports",
+  "q": "Which sport has six players per side hitting a ball over a net without letting it touch the floor?",
+  "a": "Volleyball"
+ },
+ {
+  "date": "2026-11-24",
+  "topic": "Sports",
+  "q": "What is the painted area in basketball directly under the hoop commonly called?",
+  "a": "The key"
+ },
+ {
+  "date": "2026-11-24",
+  "topic": "Sports",
+  "q": "In baseball, how many outs does a team get in one half inning?",
+  "a": "Three"
+ },
+ {
+  "date": "2026-11-24",
+  "topic": "Sports",
+  "q": "In gymnastics, what is the padded apparatus athletes spring over called?",
+  "a": "Vault table"
+ },
+ {
+  "date": "2026-11-24",
+  "topic": "Sports",
+  "q": "In which sport do players use a long stick called a cue?",
+  "a": "Billiards"
+ },
+ {
+  "date": "2026-11-24",
+  "topic": "Sports",
+  "q": "In cricket, how many balls are bowled in a standard over?",
+  "a": "Six"
+ },
+ {
+  "date": "2026-11-24",
+  "topic": "Sports",
+  "q": "In which sport do athletes perform the Fosbury Flop?",
+  "a": "High jump"
+ },
+ {
+  "date": "2026-11-24",
+  "topic": "Sports",
+  "q": "In which country did the ancient Olympic Games originate?",
+  "a": "Greece"
  }
 ]
