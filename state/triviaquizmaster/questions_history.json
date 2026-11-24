@@ -3454,5 +3454,53 @@
   "topic": "Food",
   "q": "In which country did the rice dish paella originate?",
   "a": "Spain"
+ },
+ {
+  "date": "2026-11-24",
+  "topic": "Science",
+  "q": "Which layer of Earth is made of liquid metal and helps create its magnetic field?",
+  "a": "Outer core"
+ },
+ {
+  "date": "2026-11-24",
+  "topic": "Science",
+  "q": "What is the name of the process by which plants lose water vapor through their leaves?",
+  "a": "Transpiration"
+ },
+ {
+  "date": "2026-11-24",
+  "topic": "Science",
+  "q": "What is the name of the scale that rates how hard minerals are, from one to ten?",
+  "a": "Mohs scale"
+ },
+ {
+  "date": "2026-11-24",
+  "topic": "Science",
+  "q": "What kind of energy does a moving object have?",
+  "a": "Kinetic"
+ },
+ {
+  "date": "2026-11-24",
+  "topic": "Science",
+  "q": "Which gas, used to fill party balloons, makes your voice sound squeaky?",
+  "a": "Helium"
+ },
+ {
+  "date": "2026-11-24",
+  "topic": "Science",
+  "q": "What is the name for a tiny packet of light energy that has no mass?",
+  "a": "Photon"
+ },
+ {
+  "date": "2026-11-24",
+  "topic": "Science",
+  "q": "What do we call tiny living things, too small to see, that include bacteria?",
+  "a": "Microbes"
+ },
+ {
+  "date": "2026-11-24",
+  "topic": "Science",
+  "q": "Which gas do humans need to breathe in to survive?",
+  "a": "Oxygen"
  }
 ]
