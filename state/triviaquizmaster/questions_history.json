@@ -3598,5 +3598,53 @@
   "topic": "Sports",
   "q": "In which sport do players hit balls with a cue on a felt table with six pockets?",
   "a": "Billiards"
+ },
+ {
+  "date": "2026-11-24",
+  "topic": "Space",
+  "q": "What was the first artificial satellite launched into orbit, in 1957?",
+  "a": "Sputnik 1"
+ },
+ {
+  "date": "2026-11-24",
+  "topic": "Space",
+  "q": "Which gas giant is famous for its Great Red Spot storm?",
+  "a": "Jupiter"
+ },
+ {
+  "date": "2026-11-24",
+  "topic": "Space",
+  "q": "Which planet has the shortest year, orbiting the Sun in about 88 Earth days?",
+  "a": "Mercury"
+ },
+ {
+  "date": "2026-11-24",
+  "topic": "Space",
+  "q": "Which planet has a tiny moon named Phobos that circles it very fast?",
+  "a": "Mars"
+ },
+ {
+  "date": "2026-11-24",
+  "topic": "Space",
+  "q": "What do we call it when an astronaut leaves the spacecraft to work in open space?",
+  "a": "Spacewalk"
+ },
+ {
+  "date": "2026-11-24",
+  "topic": "Space",
+  "q": "Which planet has a moon called Io with hundreds of active volcanoes?",
+  "a": "Jupiter"
+ },
+ {
+  "date": "2026-11-24",
+  "topic": "Space",
+  "q": "Which planet, named for the Roman god of the sea, is the farthest from the Sun?",
+  "a": "Neptune"
+ },
+ {
+  "date": "2026-11-24",
+  "topic": "Space",
+  "q": "What is the curved path a moon or planet takes around a larger body called?",
+  "a": "Orbit"
  }
 ]
