@@ -3784,5 +3784,59 @@
   "topic": "Geography",
   "q": "Which island nation's capital is Wellington?",
   "a": "New Zealand"
+ },
+ {
+  "date": "2026-11-24",
+  "topic": "Science",
+  "q": "What is the process by which a caterpillar changes into a butterfly called?",
+  "a": "Metamorphosis"
+ },
+ {
+  "date": "2026-11-24",
+  "topic": "Science",
+  "q": "Which organ in your body pumps blood around it?",
+  "a": "Heart"
+ },
+ {
+  "date": "2026-11-24",
+  "topic": "Science",
+  "q": "What is the approximate speed of light in space, in miles per second?",
+  "a": "About 186,000"
+ },
+ {
+  "date": "2026-11-24",
+  "topic": "Science",
+  "q": "What gas do plants release that humans need to breathe?",
+  "a": "Oxygen"
+ },
+ {
+  "date": "2026-11-24",
+  "topic": "Science",
+  "q": "What type of animal is a bat?",
+  "a": "Mammal"
+ },
+ {
+  "date": "2026-11-24",
+  "topic": "Science",
+  "q": "Which organ in the body produces insulin?",
+  "a": "Pancreas"
+ },
+ {
+  "date": "2026-11-24",
+  "topic": "Science",
+  "q": "What is the name for a group of stars that forms a pattern in the night sky?",
+  "a": "Constellation"
+ },
+ {
+  "date": "2026-11-24",
+  "topic": "Science",
+  "q": "Which scientist discovered that penicillin could kill bacteria?",
+  "a": "Alexander Fleming"
+ },
+ {
+  "date": "2026-11-24",
+  "topic": "Science",
+  "q": "What is the only mammal known to lay eggs, along with the echidna?",
+  "a": "Platypus"
  }
 ]
