@@ -3550,5 +3550,53 @@
   "topic": "Movies",
   "q": "Who directed the 1941 film Citizen Kane and also starred in it?",
   "a": "Orson Welles"
+ },
+ {
+  "date": "2026-11-24",
+  "topic": "Sports",
+  "q": "In which sport do players hit a puck with a stick on an ice rink?",
+  "a": "Ice hockey"
+ },
+ {
+  "date": "2026-11-24",
+  "topic": "Sports",
+  "q": "How many players are on the court for one team in a basketball game?",
+  "a": "Five"
+ },
+ {
+  "date": "2026-11-24",
+  "topic": "Sports",
+  "q": "In baseball, what is the circle where the next batter waits for a turn to hit?",
+  "a": "On-deck circle"
+ },
+ {
+  "date": "2026-11-24",
+  "topic": "Sports",
+  "q": "In which sport do you perform a move called the Fosbury Flop?",
+  "a": "High jump"
+ },
+ {
+  "date": "2026-11-24",
+  "topic": "Sports",
+  "q": "In which sport would you find a peloton?",
+  "a": "Cycling"
+ },
+ {
+  "date": "2026-11-24",
+  "topic": "Sports",
+  "q": "Which Irish sport uses a stick called a hurley and a small ball called a sliotar?",
+  "a": "Hurling"
+ },
+ {
+  "date": "2026-11-24",
+  "topic": "Sports",
+  "q": "Which sport is played by hitting a shuttlecock over a high net with a racket?",
+  "a": "Badminton"
+ },
+ {
+  "date": "2026-11-24",
+  "topic": "Sports",
+  "q": "In which sport do players hit balls with a cue on a felt table with six pockets?",
+  "a": "Billiards"
  }
 ]
