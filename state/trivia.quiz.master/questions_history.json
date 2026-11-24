@@ -3514,5 +3514,53 @@
   "topic": "Food",
   "q": "Which pasta shape is named for its resemblance to a bow tie or butterfly?",
   "a": "Farfalle"
+ },
+ {
+  "date": "2026-11-24",
+  "topic": "Sports",
+  "q": "What color jersey does the overall leader of the Tour de France wear?",
+  "a": "Yellow"
+ },
+ {
+  "date": "2026-11-24",
+  "topic": "Sports",
+  "q": "In which sport might you perform a double axel or a triple lutz?",
+  "a": "Figure skating"
+ },
+ {
+  "date": "2026-11-24",
+  "topic": "Sports",
+  "q": "What is the highest possible score in a single game of ten-pin bowling?",
+  "a": "300"
+ },
+ {
+  "date": "2026-11-24",
+  "topic": "Sports",
+  "q": "In which sport do players use a mallet to hit a ball while riding horses?",
+  "a": "Polo"
+ },
+ {
+  "date": "2026-11-24",
+  "topic": "Sports",
+  "q": "In the Olympic sport of biathlon, athletes combine skiing with which activity?",
+  "a": "Rifle shooting"
+ },
+ {
+  "date": "2026-11-24",
+  "topic": "Sports",
+  "q": "In which sport do players try to score by kicking a ball into a goal, without using their hands?",
+  "a": "Soccer"
+ },
+ {
+  "date": "2026-11-24",
+  "topic": "Sports",
+  "q": "In which sport is the Davis Cup an international team competition?",
+  "a": "Tennis"
+ },
+ {
+  "date": "2026-11-24",
+  "topic": "Sports",
+  "q": "In basketball, what is the painted area near the hoop commonly called?",
+  "a": "The key"
  }
 ]
