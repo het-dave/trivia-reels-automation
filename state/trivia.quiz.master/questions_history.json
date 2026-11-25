@@ -3706,5 +3706,53 @@
   "topic": "Geography",
   "q": "Which African country has Rabat as its capital?",
   "a": "Morocco"
+ },
+ {
+  "date": "2026-11-25",
+  "topic": "Science",
+  "q": "What do we call the lowest temperature possible, where particles nearly stop moving?",
+  "a": "Absolute zero"
+ },
+ {
+  "date": "2026-11-25",
+  "topic": "Science",
+  "q": "Which element has the chemical symbol Au, from the Latin word aurum?",
+  "a": "Gold"
+ },
+ {
+  "date": "2026-11-25",
+  "topic": "Science",
+  "q": "What is the name of the boundary around a black hole beyond which light cannot escape?",
+  "a": "Event horizon"
+ },
+ {
+  "date": "2026-11-25",
+  "topic": "Science",
+  "q": "Which gas do most plants give off during photosynthesis?",
+  "a": "Oxygen"
+ },
+ {
+  "date": "2026-11-25",
+  "topic": "Science",
+  "q": "What kind of animal is a dolphin?",
+  "a": "Mammal"
+ },
+ {
+  "date": "2026-11-25",
+  "topic": "Science",
+  "q": "What do we call it when the moon blocks the sun from view on Earth?",
+  "a": "Solar eclipse"
+ },
+ {
+  "date": "2026-11-25",
+  "topic": "Science",
+  "q": "Which scientist discovered penicillin from a mold?",
+  "a": "Alexander Fleming"
+ },
+ {
+  "date": "2026-11-25",
+  "topic": "Science",
+  "q": "Which scientist is known for creating the first periodic table that predicted missing elements?",
+  "a": "Mendeleev"
  }
 ]
