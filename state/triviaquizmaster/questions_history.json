@@ -3700,5 +3700,53 @@
   "topic": "Animals",
   "q": "Which animal is the largest fish in the sea?",
   "a": "Whale shark"
+ },
+ {
+  "date": "2026-11-25",
+  "topic": "Technology",
+  "q": "What does the S stand for in SIM card, the small chip in a mobile phone?",
+  "a": "Subscriber"
+ },
+ {
+  "date": "2026-11-25",
+  "topic": "Technology",
+  "q": "What kind of storage device uses spinning magnetic platters, often called an HDD?",
+  "a": "Hard disk drive"
+ },
+ {
+  "date": "2026-11-25",
+  "topic": "Technology",
+  "q": "What is the name of the Japanese high-speed passenger trains nicknamed bullet trains?",
+  "a": "Shinkansen"
+ },
+ {
+  "date": "2026-11-25",
+  "topic": "Technology",
+  "q": "What kind of light does a laser pointer produce?",
+  "a": "A narrow beam"
+ },
+ {
+  "date": "2026-11-25",
+  "topic": "Technology",
+  "q": "Which German engineer built the Motorwagen, often called the first practical gasoline car?",
+  "a": "Karl Benz"
+ },
+ {
+  "date": "2026-11-25",
+  "topic": "Technology",
+  "q": "What do solar panels turn sunlight into?",
+  "a": "Electricity"
+ },
+ {
+  "date": "2026-11-25",
+  "topic": "Technology",
+  "q": "Which Danish company makes colorful interlocking plastic bricks?",
+  "a": "Lego"
+ },
+ {
+  "date": "2026-11-25",
+  "topic": "Technology",
+  "q": "Which Italian scientist improved the telescope and spotted four moons of Jupiter in 1610?",
+  "a": "Galileo"
  }
 ]
