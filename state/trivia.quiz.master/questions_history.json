@@ -3658,5 +3658,53 @@
   "topic": "Music",
   "q": "Which member of the band Queen played the guitar?",
   "a": "Brian May"
+ },
+ {
+  "date": "2026-11-25",
+  "topic": "Geography",
+  "q": "Which mountain on the border of Nepal and Tibet is the highest above sea level?",
+  "a": "Mount Everest"
+ },
+ {
+  "date": "2026-11-25",
+  "topic": "Geography",
+  "q": "What is the capital city of Australia's neighbor New Zealand?",
+  "a": "Wellington"
+ },
+ {
+  "date": "2026-11-25",
+  "topic": "Geography",
+  "q": "Which is the only continent that has no permanent rivers flowing to the sea?",
+  "a": "Antarctica"
+ },
+ {
+  "date": "2026-11-25",
+  "topic": "Geography",
+  "q": "What is the capital city of Turkey?",
+  "a": "Ankara"
+ },
+ {
+  "date": "2026-11-25",
+  "topic": "Geography",
+  "q": "Which African country was once called Abyssinia and has its own ancient alphabet?",
+  "a": "Ethiopia"
+ },
+ {
+  "date": "2026-11-25",
+  "topic": "Geography",
+  "q": "Which lake is the deepest in the world, found in Siberia?",
+  "a": "Lake Baikal"
+ },
+ {
+  "date": "2026-11-25",
+  "topic": "Geography",
+  "q": "Which South American country has no coastline and has the capital La Paz as a seat of government?",
+  "a": "Bolivia"
+ },
+ {
+  "date": "2026-11-25",
+  "topic": "Geography",
+  "q": "Which African country has Rabat as its capital?",
+  "a": "Morocco"
  }
 ]
