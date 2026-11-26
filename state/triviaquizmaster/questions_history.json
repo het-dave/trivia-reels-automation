@@ -3988,5 +3988,53 @@
   "topic": "Sports",
   "q": "Which racket sport is played in a four-walled court with a small rubber ball?",
   "a": "Squash"
+ },
+ {
+  "date": "2026-11-26",
+  "topic": "Space",
+  "q": "Which planet is the farthest from the Sun, with a deep blue color?",
+  "a": "Neptune"
+ },
+ {
+  "date": "2026-11-26",
+  "topic": "Space",
+  "q": "Which planet is famous for a giant storm called the Great Red Spot?",
+  "a": "Jupiter"
+ },
+ {
+  "date": "2026-11-26",
+  "topic": "Space",
+  "q": "What is the name of the boundary around a black hole beyond which nothing can return?",
+  "a": "Event horizon"
+ },
+ {
+  "date": "2026-11-26",
+  "topic": "Space",
+  "q": "Which Apollo mission had an oxygen tank problem yet brought its crew home safely?",
+  "a": "Apollo 13"
+ },
+ {
+  "date": "2026-11-26",
+  "topic": "Space",
+  "q": "Which is the larger of the two small moons of Mars?",
+  "a": "Phobos"
+ },
+ {
+  "date": "2026-11-26",
+  "topic": "Space",
+  "q": "Which planet is closest to the Sun?",
+  "a": "Mercury"
+ },
+ {
+  "date": "2026-11-26",
+  "topic": "Space",
+  "q": "Which planet has a day that lasts about ten hours, the shortest of all?",
+  "a": "Jupiter"
+ },
+ {
+  "date": "2026-11-26",
+  "topic": "Space",
+  "q": "Which planet takes the longest to orbit the Sun?",
+  "a": "Neptune"
  }
 ]
