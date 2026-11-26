@@ -3940,5 +3940,53 @@
   "topic": "Geography",
   "q": "Which country has the city of Rio de Janeiro, known for Carnival?",
   "a": "Brazil"
+ },
+ {
+  "date": "2026-11-26",
+  "topic": "Sports",
+  "q": "In which city were the first modern Summer Olympic Games held in 1896?",
+  "a": "Athens"
+ },
+ {
+  "date": "2026-11-26",
+  "topic": "Sports",
+  "q": "In rowing, what is the person who steers the boat and calls commands usually called?",
+  "a": "Coxswain"
+ },
+ {
+  "date": "2026-11-26",
+  "topic": "Sports",
+  "q": "Which country hosted the first Winter Olympics in 1924 at Chamonix?",
+  "a": "France"
+ },
+ {
+  "date": "2026-11-26",
+  "topic": "Sports",
+  "q": "Which basketball position is often called the floor general who directs the offense?",
+  "a": "Point guard"
+ },
+ {
+  "date": "2026-11-26",
+  "topic": "Sports",
+  "q": "In cricket, what is the flat strip of ground between the two wickets called?",
+  "a": "Pitch"
+ },
+ {
+  "date": "2026-11-26",
+  "topic": "Sports",
+  "q": "How many years pass between each Summer Olympic Games?",
+  "a": "Four"
+ },
+ {
+  "date": "2026-11-26",
+  "topic": "Sports",
+  "q": "In volleyball, how many hits is one team allowed before the ball must go over the net?",
+  "a": "Three"
+ },
+ {
+  "date": "2026-11-26",
+  "topic": "Sports",
+  "q": "Which racket sport is played in a four-walled court with a small rubber ball?",
+  "a": "Squash"
  }
 ]
