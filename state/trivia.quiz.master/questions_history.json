@@ -3856,5 +3856,53 @@
   "topic": "Animals",
   "q": "Which animal group do sea horses belong to?",
   "a": "Fish"
+ },
+ {
+  "date": "2026-11-26",
+  "topic": "Movies",
+  "q": "In Ghostbusters, what color is the slimy ghost nicknamed Slimer?",
+  "a": "Green"
+ },
+ {
+  "date": "2026-11-26",
+  "topic": "Movies",
+  "q": "In Ratatouille, what kind of animal is Remy, who dreams of being a chef?",
+  "a": "Rat"
+ },
+ {
+  "date": "2026-11-26",
+  "topic": "Movies",
+  "q": "In Despicable Me, what are the small yellow helpers of Gru called?",
+  "a": "Minions"
+ },
+ {
+  "date": "2026-11-26",
+  "topic": "Movies",
+  "q": "In The Sound of Music, which mountainous country is the story set in?",
+  "a": "Austria"
+ },
+ {
+  "date": "2026-11-26",
+  "topic": "Movies",
+  "q": "Which 1982 sci-fi film features a boy who befriends a stranded alien and hides him in a closet?",
+  "a": "E.T."
+ },
+ {
+  "date": "2026-11-26",
+  "topic": "Movies",
+  "q": "Which 1939 film, based on a Margaret Mitchell novel, features Scarlett O'Hara?",
+  "a": "Gone with the Wind"
+ },
+ {
+  "date": "2026-11-26",
+  "topic": "Movies",
+  "q": "Which animated Disney film from 1940 features a puppet who dreams of being a real boy?",
+  "a": "Pinocchio"
+ },
+ {
+  "date": "2026-11-26",
+  "topic": "Movies",
+  "q": "In the Star Wars films, what species is Chewbacca?",
+  "a": "Wookiee"
  }
 ]
