@@ -3844,5 +3844,53 @@
   "topic": "Food",
   "q": "What is the main liquid ingredient in Italian gelato?",
   "a": "Milk"
+ },
+ {
+  "date": "2026-11-26",
+  "topic": "Music",
+  "q": "Which instrument is played with a sustain pedal under the player's foot?",
+  "a": "Piano"
+ },
+ {
+  "date": "2026-11-26",
+  "topic": "Music",
+  "q": "What do we call the person who leads an orchestra with a baton?",
+  "a": "Conductor"
+ },
+ {
+  "date": "2026-11-26",
+  "topic": "Music",
+  "q": "What is the name for the speed of a piece of music?",
+  "a": "Tempo"
+ },
+ {
+  "date": "2026-11-26",
+  "topic": "Music",
+  "q": "Which Italian instrument maker is credited with inventing the piano around the year 1700?",
+  "a": "Bartolomeo Cristofori"
+ },
+ {
+  "date": "2026-11-26",
+  "topic": "Music",
+  "q": "Which wind instrument uses a double reed and has a name meaning high wood in French?",
+  "a": "Oboe"
+ },
+ {
+  "date": "2026-11-26",
+  "topic": "Music",
+  "q": "What is the term for a long solo passage showing off a performer's skill in a concerto?",
+  "a": "Cadenza"
+ },
+ {
+  "date": "2026-11-26",
+  "topic": "Music",
+  "q": "Which plucked instrument has a triangular frame and a row of long strings?",
+  "a": "Harp"
+ },
+ {
+  "date": "2026-11-26",
+  "topic": "Music",
+  "q": "What is the name for a musical sign that tells you to stay silent for a moment?",
+  "a": "Rest"
  }
 ]
