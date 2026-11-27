@@ -4036,5 +4036,59 @@
   "topic": "Space",
   "q": "Which planet takes the longest to orbit the Sun?",
   "a": "Neptune"
+ },
+ {
+  "date": "2026-11-27",
+  "topic": "Science",
+  "q": "Which galaxy contains our solar system?",
+  "a": "Milky Way"
+ },
+ {
+  "date": "2026-11-27",
+  "topic": "Science",
+  "q": "What force slows a sliding box as it rubs against the floor?",
+  "a": "Friction"
+ },
+ {
+  "date": "2026-11-27",
+  "topic": "Science",
+  "q": "Which unit measures the distance light travels in one year?",
+  "a": "Light-year"
+ },
+ {
+  "date": "2026-11-27",
+  "topic": "Science",
+  "q": "Which organ in your body pumps blood through blood vessels?",
+  "a": "Heart"
+ },
+ {
+  "date": "2026-11-27",
+  "topic": "Science",
+  "q": "What is the chemical element with the lightest atoms, making it the lightest element?",
+  "a": "Hydrogen"
+ },
+ {
+  "date": "2026-11-27",
+  "topic": "Science",
+  "q": "What is the name for the study of weather?",
+  "a": "Meteorology"
+ },
+ {
+  "date": "2026-11-27",
+  "topic": "Science",
+  "q": "Which organ in your body is mainly used for thinking and controlling movement?",
+  "a": "Brain"
+ },
+ {
+  "date": "2026-11-27",
+  "topic": "Science",
+  "q": "What kind of animal is a bat, in terms of its animal group?",
+  "a": "Mammal"
+ },
+ {
+  "date": "2026-11-27",
+  "topic": "Science",
+  "q": "What is the name of the process cells use to split into two identical cells?",
+  "a": "Mitosis"
  }
 ]
