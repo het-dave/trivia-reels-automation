@@ -4276,5 +4276,53 @@
   "topic": "Food",
   "q": "Which Middle Eastern snack consists of ground chickpea balls that are deep fried?",
   "a": "Falafel"
+ },
+ {
+  "date": "2026-11-27",
+  "topic": "Sports",
+  "q": "In tennis, what is the score called when both players have forty points?",
+  "a": "Deuce"
+ },
+ {
+  "date": "2026-11-27",
+  "topic": "Sports",
+  "q": "In fencing, which weapon has a flexible blade and a target limited to the torso?",
+  "a": "Foil"
+ },
+ {
+  "date": "2026-11-27",
+  "topic": "Sports",
+  "q": "On which gymnastics apparatus do men swing their legs in circles over a padded body with handles?",
+  "a": "Pommel horse"
+ },
+ {
+  "date": "2026-11-27",
+  "topic": "Sports",
+  "q": "In which sport is the Kentucky Derby run each year?",
+  "a": "Horse racing"
+ },
+ {
+  "date": "2026-11-27",
+  "topic": "Sports",
+  "q": "How long is a lane in a full size Olympic swimming pool?",
+  "a": "50 meters"
+ },
+ {
+  "date": "2026-11-27",
+  "topic": "Sports",
+  "q": "Which sport features the strokes called butterfly, backstroke, and breaststroke?",
+  "a": "Swimming"
+ },
+ {
+  "date": "2026-11-27",
+  "topic": "Sports",
+  "q": "Which country is the birthplace of the sport of sumo wrestling?",
+  "a": "Japan"
+ },
+ {
+  "date": "2026-11-27",
+  "topic": "Sports",
+  "q": "In which sport would you use a pommel horse?",
+  "a": "Gymnastics"
  }
 ]
