@@ -4144,5 +4144,53 @@
   "topic": "Sports",
   "q": "In gymnastics, which apparatus has two bars set at different heights?",
   "a": "Uneven bars"
+ },
+ {
+  "date": "2026-11-27",
+  "topic": "Space",
+  "q": "What is the name of the closest star to Earth?",
+  "a": "The Sun"
+ },
+ {
+  "date": "2026-11-27",
+  "topic": "Space",
+  "q": "Which two moons orbit Mars?",
+  "a": "Phobos and Deimos"
+ },
+ {
+  "date": "2026-11-27",
+  "topic": "Space",
+  "q": "What is the name of the mission that first sent a probe to fly past Pluto in 2015?",
+  "a": "New Horizons"
+ },
+ {
+  "date": "2026-11-27",
+  "topic": "Space",
+  "q": "Which scientist described three laws of planetary motion, showing planets orbit in ellipses?",
+  "a": "Johannes Kepler"
+ },
+ {
+  "date": "2026-11-27",
+  "topic": "Space",
+  "q": "What are the two main gases in Jupiter's atmosphere?",
+  "a": "Hydrogen and helium"
+ },
+ {
+  "date": "2026-11-27",
+  "topic": "Space",
+  "q": "Which Apollo mission first carried astronauts around the Moon, taking the Earthrise photo?",
+  "a": "Apollo 8"
+ },
+ {
+  "date": "2026-11-27",
+  "topic": "Space",
+  "q": "What is the name of Jupiter's volcanic moon, with hundreds of active volcanoes?",
+  "a": "Io"
+ },
+ {
+  "date": "2026-11-27",
+  "topic": "Space",
+  "q": "What is Earth's only natural satellite called?",
+  "a": "The Moon"
  }
 ]
