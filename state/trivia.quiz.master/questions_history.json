@@ -4096,5 +4096,53 @@
   "topic": "Food",
   "q": "Which cabbage dish is made by fermenting shredded cabbage with salt?",
   "a": "Sauerkraut"
+ },
+ {
+  "date": "2026-11-27",
+  "topic": "Sports",
+  "q": "In golf, what is one stroke under par on a hole called?",
+  "a": "Birdie"
+ },
+ {
+  "date": "2026-11-27",
+  "topic": "Sports",
+  "q": "In fencing, which of the three weapons is the lightest and only scores with the tip?",
+  "a": "Foil"
+ },
+ {
+  "date": "2026-11-27",
+  "topic": "Sports",
+  "q": "In which sport would you perform a move called a pommel horse circle?",
+  "a": "Gymnastics"
+ },
+ {
+  "date": "2026-11-27",
+  "topic": "Sports",
+  "q": "What is the name of the fast Basque ball sport played with a curved basket on the hand?",
+  "a": "Jai alai"
+ },
+ {
+  "date": "2026-11-27",
+  "topic": "Sports",
+  "q": "Which sport is played on a court with a net and uses a ball called a shuttlecock?",
+  "a": "Badminton"
+ },
+ {
+  "date": "2026-11-27",
+  "topic": "Sports",
+  "q": "What is the Olympic event for women with seven track and field events called?",
+  "a": "Heptathlon"
+ },
+ {
+  "date": "2026-11-27",
+  "topic": "Sports",
+  "q": "What is the wooden object used in cricket to hit the ball?",
+  "a": "Bat"
+ },
+ {
+  "date": "2026-11-27",
+  "topic": "Sports",
+  "q": "In gymnastics, which apparatus has two bars set at different heights?",
+  "a": "Uneven bars"
  }
 ]
