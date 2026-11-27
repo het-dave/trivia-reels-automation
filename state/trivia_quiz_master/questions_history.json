@@ -4228,5 +4228,53 @@
   "topic": "Science",
   "q": "What type of animal is a bat, in terms of its classification?",
   "a": "Mammal"
+ },
+ {
+  "date": "2026-11-27",
+  "topic": "Food",
+  "q": "Which vegetable is sliced and fried to make french fries?",
+  "a": "Potato"
+ },
+ {
+  "date": "2026-11-27",
+  "topic": "Food",
+  "q": "What is the yellow-orange part in the middle of a cracked egg called?",
+  "a": "Yolk"
+ },
+ {
+  "date": "2026-11-27",
+  "topic": "Food",
+  "q": "Which fish's eggs are the source of the luxury food called caviar?",
+  "a": "Sturgeon"
+ },
+ {
+  "date": "2026-11-27",
+  "topic": "Food",
+  "q": "Which Japanese seasoning paste is made from fermented soybeans and used in a famous soup?",
+  "a": "Miso"
+ },
+ {
+  "date": "2026-11-27",
+  "topic": "Food",
+  "q": "Which ingredient makes bread dough rise?",
+  "a": "Yeast"
+ },
+ {
+  "date": "2026-11-27",
+  "topic": "Food",
+  "q": "Which citrus fruit is traditionally used to make British marmalade?",
+  "a": "Bitter orange"
+ },
+ {
+  "date": "2026-11-27",
+  "topic": "Food",
+  "q": "Which fruit is botanically a berry, even though it is not usually called one?",
+  "a": "Banana"
+ },
+ {
+  "date": "2026-11-27",
+  "topic": "Food",
+  "q": "Which Middle Eastern snack consists of ground chickpea balls that are deep fried?",
+  "a": "Falafel"
  }
 ]
