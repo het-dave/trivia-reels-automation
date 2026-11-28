@@ -4420,5 +4420,53 @@
   "topic": "History",
   "q": "Which Polish-born scientist won Nobel Prizes in both physics and chemistry?",
   "a": "Marie Curie"
+ },
+ {
+  "date": "2026-11-28",
+  "topic": "Space",
+  "q": "Which planet has the tallest known volcano in our solar system, Olympus Mons?",
+  "a": "Mars"
+ },
+ {
+  "date": "2026-11-28",
+  "topic": "Space",
+  "q": "What is the Russian word for a space traveler?",
+  "a": "Cosmonaut"
+ },
+ {
+  "date": "2026-11-28",
+  "topic": "Space",
+  "q": "What is the floating, nearly weightless condition on the space station called?",
+  "a": "Microgravity"
+ },
+ {
+  "date": "2026-11-28",
+  "topic": "Space",
+  "q": "Which planet is tilted so far that it seems to roll on its side as it orbits?",
+  "a": "Uranus"
+ },
+ {
+  "date": "2026-11-28",
+  "topic": "Space",
+  "q": "Who was the first person to step onto the Moon?",
+  "a": "Neil Armstrong"
+ },
+ {
+  "date": "2026-11-28",
+  "topic": "Space",
+  "q": "Which planet takes about 243 Earth days to spin around once?",
+  "a": "Venus"
+ },
+ {
+  "date": "2026-11-28",
+  "topic": "Space",
+  "q": "What does the Moon's pull on Earth's oceans cause, with high and low sea levels?",
+  "a": "Tides"
+ },
+ {
+  "date": "2026-11-28",
+  "topic": "Space",
+  "q": "What is the center of our solar system?",
+  "a": "The Sun"
  }
 ]
