@@ -4522,5 +4522,53 @@
   "topic": "Animals",
   "q": "Which big cat cannot roar but can purr?",
   "a": "Cheetah"
+ },
+ {
+  "date": "2026-11-28",
+  "topic": "Geography",
+  "q": "Which country has the city of Kyoto?",
+  "a": "Japan"
+ },
+ {
+  "date": "2026-11-28",
+  "topic": "Geography",
+  "q": "Which country is made up of more than seven thousand islands in Southeast Asia?",
+  "a": "Philippines"
+ },
+ {
+  "date": "2026-11-28",
+  "topic": "Geography",
+  "q": "Which Asian country is home to the city of Mumbai?",
+  "a": "India"
+ },
+ {
+  "date": "2026-11-28",
+  "topic": "Geography",
+  "q": "Which Italian city is famous for its canals instead of streets?",
+  "a": "Venice"
+ },
+ {
+  "date": "2026-11-28",
+  "topic": "Geography",
+  "q": "Which line of latitude is at zero degrees and circles the middle of Earth?",
+  "a": "Equator"
+ },
+ {
+  "date": "2026-11-28",
+  "topic": "Geography",
+  "q": "Which river runs through Cairo and flows north into the Mediterranean Sea?",
+  "a": "Nile"
+ },
+ {
+  "date": "2026-11-28",
+  "topic": "Geography",
+  "q": "Which island is the largest in the world?",
+  "a": "Greenland"
+ },
+ {
+  "date": "2026-11-28",
+  "topic": "Geography",
+  "q": "Which country has a green cedar tree on its flag and has the capital Beirut?",
+  "a": "Lebanon"
  }
 ]
