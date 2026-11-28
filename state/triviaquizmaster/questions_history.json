@@ -4288,5 +4288,53 @@
   "topic": "Animals",
   "q": "What is the main food of a koala's cousin, the wombat?",
   "a": "Grasses and roots"
+ },
+ {
+  "date": "2026-11-28",
+  "topic": "Technology",
+  "q": "What do we call the rechargeable power source that lets a phone work without a plug?",
+  "a": "Battery"
+ },
+ {
+  "date": "2026-11-28",
+  "topic": "Technology",
+  "q": "Which company built the Model T, an early car made on a moving assembly line?",
+  "a": "Ford"
+ },
+ {
+  "date": "2026-11-28",
+  "topic": "Technology",
+  "q": "Which company did Bill Gates and Paul Allen found in 1975?",
+  "a": "Microsoft"
+ },
+ {
+  "date": "2026-11-28",
+  "topic": "Technology",
+  "q": "What does the C stand for in CPU, the main chip in a computer?",
+  "a": "Central"
+ },
+ {
+  "date": "2026-11-28",
+  "topic": "Technology",
+  "q": "Which German goldsmith introduced movable-type printing to Europe around 1450?",
+  "a": "Johannes Gutenberg"
+ },
+ {
+  "date": "2026-11-28",
+  "topic": "Technology",
+  "q": "Which programming language, with a snake-like name, is popular with beginners?",
+  "a": "Python"
+ },
+ {
+  "date": "2026-11-28",
+  "topic": "Technology",
+  "q": "Which space telescope, launched in 1990, is named after astronomer Edwin Hubble?",
+  "a": "Hubble"
+ },
+ {
+  "date": "2026-11-28",
+  "topic": "Technology",
+  "q": "Which Hungarian-born journalist invented the modern ballpoint pen?",
+  "a": "László Bíró"
  }
 ]
